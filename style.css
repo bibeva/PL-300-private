@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+
+body {
+  font: 26px/1.6 'Outfit', sans-serif;
+  margin: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  background: #eee;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 0 0 30px;
+  position: relative;
+  font-weight: 600;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 3px;
+  background: #000;
+  
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 0 10px;
+}
+
+li.active {
+  color: rgb(11, 184, 11);
+}
+
+.questionFormat {
+  padding: 30px;
+  min-height: calc(100vh - 130px);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.1);
+}
+
+.questionFormat li strong {
+  border-bottom: 2px solid #000;
+}
+
+.question {
+  margin: 0 0 25px;
+}
+
+.question img {
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.table .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.table .col-1 {
+  width: 10%;
+  padding: 0 15px;
+}
+
+.table .col-3 {
+  width: 30%;
+  padding: 0 15px;
+}
+
+.table .col-4 {
+  width: 40%;
+  padding: 0 15px;
+}
+
+.table .col-6 {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.table .col-7 {
+  width: 70%;
+  padding: 0 15px;
+}
+
+.table .col-8 {
+  width: 80%;
+  padding: 0 15px;
+}
+
+.table .col-1 .radioBox {
+  border: 1px solid #ccc;
+  padding: 5px 9px 8px 6px;
+  display: inline-block;
+  line-height: 0;
+}
+
+.table .box {
+  border: 2px solid #ccc;
+  padding: 3px 10px;
+  margin: 0 0 25px;
+}
+
+.table .box.dashed {
+  border: 2px dashed #ccc;
+}
+
+.table .box.dashed.active {
+  border: 3px solid rgb(11, 184, 11);
+}
+
+.dropdown select {
+  padding: 10px;
+  font: 24px/1.8 'Outfit', sans-serif;
+}
+
+.explanation {
+  margin-top: 50px;
+  padding: 15px;
+  background: #f0f0f0;
+}

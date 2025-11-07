@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 1 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 1</h1>
+    <div class="question">
+      <p>You have crafted a detailed report page in the Power BI service, which you've subsequently pinned to a dashboard. Following this action, you've received a surge in queries from users regarding the data, with additional requests for more visuals on the dashboard. To efficiently cater to these inquiries, you're contemplating the activation of a functionality that would allow users to directly pose questions about the dashboard's data. <br>
+How can you enable a feature that permits users to interactively query the data presented on the dashboard, specifically positioned at the dashboard's top for easy access? <br>
+Proposed Solution: Implement the Q&A feature by activating it in the 'Page Information' settings of the report page before pinning it to the dashboard. <br>
+Does this solution accomplish the intended goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Enabling the Q&A feature in Power BI for dashboards is done by adding a Q&A tile directly to the dashboard, not through the 'Page Information' settings of the report page. The Q&A tile allows users to type natural language queries at the top of the dashboard to explore data interactively.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 2 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 2</h1>
+    <div class="question">
+      <p>Your Power BI report integrates a 'Project Calendar' table and a 'Project Milestones' table from an Azure SQL database. The 'Project Milestones' table features these date-related foreign keys for comprehensive project tracking: <br>
+- Initiation Date <br>
+- Completion Date <br>
+- Review Date <br>
+To enable detailed analysis of project timelines across these key dates, you evaluate the following approach. <br>
+Proposed Solution: In the Fields pane, you label the 'Project Calendar' table as 'Initiation Date'. Next, you leverage DAX expressions to formulate 'Completion Date' and 'Review Date' as separate calculated tables. <br>
+Is this method effective and efficient in achieving the outlined objective?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Creating separate calculated tables for each date type is inefficient and unnecessary. The correct approach is to use a single Date table (the 'Project Calendar') and establish multiple relationships between it and the 'Project Milestones' table—one for each date field—activating them as needed with USERELATIONSHIP() in DAX for analysis.</p>
+    </div>
+  </div> -->
+ 
+  <!-- Multiple Questions -->
+  <!-- Question 3 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 3</h1>
+    <div class="question">
+      <p>Which of the following roles are authorized to delete reports, dashboards, and datasets within a Power BI workspace? <br>
+Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Viewers</li>
+        <li>B. Contributors</li>
+        <li>C. Members</li>
+        <li>D. Admins</li>
+      </ul>
+      <ul>
+        <li>A. Viewers</li>
+        <li class="active">B. Contributors</li>
+        <li class="active">C. Members</li>
+        <li class="active">D. Admins</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In a Power BI workspace, Contributors, Members, and Admins have permissions to delete reports, dashboards, and datasets. Viewers have read-only access and cannot modify or delete any content.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 4 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 4</h1>
+    <div class="question">
+      <p>Match each data source with the most appropriate connection type in Power BI Desktop. <br>
+<strong>Data Sources:</strong> <br>
+1. Large Enterprise SQL Database <br>
+2. Weekly Sales Excel Report <br>
+3. Real-time Stock Market Feed <br>
+<strong>Connection Types:</strong> <br>
+A. Import <br>
+B. DirectQuery <br>
+C. Streaming Dataset</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1-A, 2-C, 3-C</li>
+        <li>B. 1-B, 2-A, 3-B</li>
+        <li>C. 1-B, 2-A, 3-C</li>
+        <li>D. 1-B, 2-C, 3-A</li>
+      </ul>
+      <ul>
+        <li>A. 1-A, 2-C, 3-C</li>
+        <li>B. 1-B, 2-A, 3-B</li>
+        <li class="active">C. 1-B, 2-A, 3-C</li>
+        <li>D. 1-B, 2-C, 3-A</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A large enterprise SQL database suits DirectQuery for live, large-scale data access. A weekly sales Excel report is best with Import since it’s static and refreshed periodically. A real-time stock market feed requires a Streaming Dataset to handle continuously updating data.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 5 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 5</h1>
+    <div class="question">
+      <p>You are analyzing customer order data in Power BI. The "Orders" table contains records of orders placed by customers over the past ten years. You have a related "Calendar" table. <br>
+You need to create a measure to compare order counts for the current month with the same month in the previous year. For example, if a user selects June 2024, the measure should return the order count for June 2023. <br>
+Which DAX expression should you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. CALCULATE(COUNTROWS('Orders'), PREVIOUSYEAR('Calendar'[Date]))</li>
+        <li>B. TOTALYTD(COUNTROWS('Orders'), 'Calendar'[Date])</li>
+        <li>C. CALCULATE(COUNTROWS('Orders'), SAMEPERIODLASTYEAR('Calendar'[Date]))</li>
+        <li>D. COUNTROWS('Orders')</li>
+      </ul>
+      <ul>
+        <li>A. CALCULATE(COUNTROWS('Orders'), PREVIOUSYEAR('Calendar'[Date]))</li>
+        <li>B. TOTALYTD(COUNTROWS('Orders'), 'Calendar'[Date])</li>
+        <li class="active">C. CALCULATE(COUNTROWS('Orders'), SAMEPERIODLASTYEAR('Calendar'[Date]))</li>
+        <li>D. COUNTROWS('Orders')</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The SAMEPERIODLASTYEAR() function shifts the current filter context by one year, making it ideal for comparing the same month in the previous year. It works perfectly with CALCULATE to return the order count for that equivalent period last year.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 6 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 6</h1>
+    <div class="question">
+      <p>Define whether the following statement is true or false:  <br>
+  "When sharing Power BI dashboards with external users, it is best practice to use the Publish to web option for maximum security."</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Publish to web option makes dashboards publicly accessible to anyone with the link, offering no security. For secure sharing with external users, use Power BI sharing features such as guest access via Azure AD B2B or Power BI service sharing options, not Publish to web.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 7 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 7</h1>
+    <div class="question">
+      <p>You're tasked with creating a Power BI solution to analyze and visualize sales data for your company. Arrange the following steps in the order they would typically occur in a Power BI workflow: <br>
+1. Publish the report to Power BI Service <br>
+2. Create visuals in Power BI Desktop <br>
+3. Extract and transform data using Power Query <br>
+4. Share the dashboard in Power BI Service</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 3-1-2-4</li>
+        <li>B. 2-4-3-1</li>
+        <li>C. 2-4-1-3</li>
+        <li>D. 3-2-1-4</li>
+      </ul>
+      <ul>
+        <li>A. 3-1-2-4</li>
+        <li>B. 2-4-3-1</li>
+        <li>C. 2-4-1-3</li>
+        <li class="active">D. 3-2-1-4</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The typical Power BI workflow starts with extracting and transforming data using Power Query, then creating visuals in Power BI Desktop. After the report is ready, you publish it to the Power BI Service and finally share the dashboard with users.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 8 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 8</h1>
+    <div class="question">
+      <p>You are developing a Power BI report that connects to a large Azure SQL Database. <br>
+The dataset contains detailed website traffic logs spanning the last five years. When refreshing the data in Power BI Desktop, you encounter the following error: <br>
+"ERROR [08001] timeout expired" <br>
+This error indicates that the data loading process is taking longer than the allowed time limit. You need to optimize the data retrieval process to avoid this timeout. <br>
+Which two techniques can you use to resolve this error? Each correct answer presents a complete solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Filter the data in Power Query to retrieve only the necessary columns and rows for your report.</li>
+        <li>B. Create separate queries in Power Query for different date ranges, then merge them into a single table.</li>
+        <li>C. Consolidate multiple queries in Power Query into a single query to reduce the number of round trips to the database.</li>
+        <li>D. Disable query folding to force Power BI to process the data locally instead of on the database server.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Filter the data in Power Query to retrieve only the necessary columns and rows for your report.</li>
+        <li>B. Create separate queries in Power Query for different date ranges, then merge them into a single table.</li>
+        <li class="active">C. Consolidate multiple queries in Power Query into a single query to reduce the number of round trips to the database.</li>
+        <li>D. Disable query folding to force Power BI to process the data locally instead of on the database server.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Filtering data reduces the volume transferred, and consolidating queries minimizes multiple database calls, both improving performance. Disabling query folding is counterproductive, as it forces local processing, and splitting queries by date and merging adds complexity without guaranteeing better performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 9 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 9</h1>
+    <div class="question">
+      <p>You are tasked with generating a report focusing on product sales and customer attrition rates. The objective is to limit the display to only include the top ten items exhibiting the highest attrition rates. <br>
+Proposed Solution: Construct a measure to identify the top ten products utilizing the TOPN DAX function. Does the proposed solution make sense?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The TOPN DAX function is designed to return the top N rows of a table based on a specified expression. Creating a measure or table using TOPN to identify the top ten products with the highest attrition rates is an appropriate and effective approach for this requirement.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 10 -->
+  <div class="questionFormat">
+    <h1>Question 10</h1>
+    <div class="question">
+      <p>To analyze and compare sales performance across different regions, which visualization would you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Line Chart</li>
+        <li>B. Pie Chart</li>
+        <li>C. Bar Chart</li>
+        <li>D. Scatter Plot</li>
+      </ul>
+      <ul>
+        <li>A. Line Chart</li>
+        <li>B. Pie Chart</li>
+        <li class="active">C. Bar Chart</li>
+        <li>D. Scatter Plot</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Bar Chart is ideal for comparing values across different categories, such as sales performance across regions. It clearly shows differences in magnitude between regions, making it easier to analyze and compare. Line charts are better for trends over time, pie charts for proportions, and scatter plots for relationships between two numeric variables.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

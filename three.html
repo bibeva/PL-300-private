@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 21 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 21</h1>
+    <div class="question">
+      <p>You are developing a Power BI report to analyze temperature trends. <br>
+You need to create a calculated table named "TemperatureRange" that contains a sequence of integer values representing Celsius temperatures from -20 to 40 degrees. <br>
+How should you complete the DAX calculation? To answer, select the appropriate options in the answer area.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. TemperatureRange = GENERATESERIES(-20, 40, 1)</li>
+        <li>B. TemperatureRange = GENERATE(20, 1, 40)</li>
+        <li>C. TemperatureRange = GENERATEALL(-20, 40, 1)</li>
+        <li>D. TemperatureRange = GENERATE(-20, -1, 40)</li>
+      </ul>
+      <ul>
+        <li class="active">A. TemperatureRange = GENERATESERIES(-20, 40, 1)</li>
+        <li>B. TemperatureRange = GENERATE(20, 1, 40)</li>
+        <li>C. TemperatureRange = GENERATEALL(-20, 40, 1)</li>
+        <li>D. TemperatureRange = GENERATE(-20, -1, 40)</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The GENERATESERIES function creates a single-column table of numeric values, starting from a specified value and ending at another, with a defined increment. Here, it generates integers from -20 to 40, increasing by 1, which is perfect for representing a range of Celsius temperatures.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 22 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 22</h1>
+    <div class="question">
+      <p>Case Study</p>
+      <p>GreenScape Analytics is a consultancy firm specializing in environmental and sustainability analysis for corporate clients aiming to reduce their carbon footprint and enhance green initiatives. With a team of environmental scientists, data analysts, and sustainability consultants, GreenScape provides insights and recommendations based on extensive data analysis.
+GreenScape Analytics uses a sustainability score (out of 100) to evaluate projects, and projects with scores above 80 are generally considered strong candidates for sustainability certification. <br>
+  Goals: <br>
+- To help clients understand their environmental impact. <br>
+- To identify areas for reducing energy consumption and waste production. <br>
+- To support clients in achieving sustainability certification and compliance with environmental regulations. <br>
+Data Structure: <br>
+GreenScape has compiled a comprehensive database with the following tables: <br>
+- Clients - Contains information about the company's clients. <br>
+-- Columns: ClientID, ClientName, Industry, Size (Number of Employees) <br>
+- Projects - Details of projects undertaken for clients. <br>
+-- Columns: ProjectID, ClientID, StartDate, EndDate, ProjectType <br>
+- EnergyConsumption - Monthly energy consumption data for each project. <br>
+-- Columns: ConsumptionID, ProjectID, Year, Month, EnergyType (Electricity, Gas, Water), Consumption <br>
+- WasteProduction - Monthly waste production data for each project. <br>
+-- Columns: ProductionID, ProjectID, Year, Month, WasteType (Organic, Recyclable, Hazardous), Quantity <br>
+- SustainabilityScores - An evaluation score based on the sustainability practices of each project. <br>
+-- Columns: ScoreID, ProjectID, Score (Out of 100), EvaluationDate <br>
+QUESTION: To identify projects with potential sustainability certification, which factors should be considered? Select all that apply.
+</certification>
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Projects with sustainability scores above 80.</li>
+        <li>B. Projects with decreasing monthly energy consumption.</li>
+        <li>C. Projects with increasing waste production.</li>
+        <li>D. Projects that have been active for more than a year.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Projects with sustainability scores above 80.</li>
+        <li class="active">B. Projects with decreasing monthly energy consumption.</li>
+        <li>C. Projects with increasing waste production.</li>
+        <li>D. Projects that have been active for more than a year.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Projects with high sustainability scores indicate strong adherence to sustainable practices, making them candidates for certification. Decreasing energy consumption reflects improving efficiency, a positive sustainability factor. Increasing waste production is negative, and project duration alone does not indicate sustainability performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 23 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 23</h1>
+    <div class="question">
+      <p>You have a Power BI report that analyzes customer orders. The report imports an "Orders" table with the following date-related columns: <br>
+- Order Date <br>
+- Shipping Date <br>
+- Delivery Date <br>
+You also have a "Date" table. You need to analyze order trends over time based on each of these date columns. <br>
+Solution: You create three active relationships between the "Date" table and the "Orders" table, one for each date column.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, only one active relationship can exist between two tables. For multiple date columns, you create one active relationship and define the others as inactive, then use DAX functions like USERELATIONSHIP() to activate the inactive relationships when needed for analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 24 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 24</h1>
+    <div class="question">
+      <p>You have a Power BI report that analyzes customer orders. The report imports an "Orders" table with the following date-related columns: <br>
+- Order Date <br>
+- Shipping Date <br>
+- Delivery Date <br>
+You also have a "Date" table. You need to analyze order trends over time based on each of these date columns. <br>
+Solution: You create a single active relationship between the "Date" table and the "Orders" table using the "Order Date" column, and two more inactive relationships using Shipping and Delivery Date. You then create measures that use the USERELATIONSHIP DAX function to analyze trends based on "Shipping Date" and "Delivery Date." <br>
+Does this meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI allows only one active relationship between two tables. By creating inactive relationships for Shipping Date and Delivery Date, and using USERELATIONSHIP() in measures, you can dynamically analyze trends based on any of the date columns, effectively meeting the reporting goal.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 25 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 25</h1>
+    <div class="question">
+      <p>A BI analyst is tasked with integrating real-time sales data from an on-premises MySQL database into Power BI reports. The project utilizes Power BI's Enhanced Compute Engine capabilities to facilitate this integration. <br>
+The requirements for the solution include: <br>
+- Reducing the load on online transactional processing systems. <br>
+- Decreasing the time it takes to calculate and display report visuals. <br>
+- Ensuring the report features data up to the end of the previous day for the ongoing year. <br>
+What approach should the analyst take to align with these requirements?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Establish a data connection using DirectQuery mode for real-time data access.</li>
+        <li>B. Establish a data connection using DirectQuery mode and set up an on-premises data gateway.</li>
+        <li>C. Opt for a data connection in Import mode and configure the system for daily refreshes.</li>
+        <li>D. Select a data connection in Import mode and implement a Microsoft Power Automate flow for hourly updates.</li>
+      </ul>
+      <ul>
+        <li>A. Establish a data connection using DirectQuery mode for real-time data access.</li>
+        <li>B. Establish a data connection using DirectQuery mode and set up an on-premises data gateway.</li>
+        <li class="active">C. Opt for a data connection in Import mode and configure the system for daily refreshes.</li>
+        <li>D. Select a data connection in Import mode and implement a Microsoft Power Automate flow for hourly updates.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using Import mode reduces load on transactional systems and improves visual performance by storing a local copy of the data. Configuring daily refreshes ensures the report reflects data up to the end of the previous day, meeting the requirement for up-to-date analysis without stressing the source system. DirectQuery would increase load and slow down visuals.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 26 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 26</h1>
+    <div class="question">
+      <p>You're tasked with visualizing customer satisfaction scores across different support channels (email, phone, chat, social media, and in-app) for this quarter. <br>
+You want to create a visual that allows stakeholders to easily compare the performance of each channel. Which visual should you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. a line chart</li>
+        <li>B. a stacked bar chart</li>
+        <li>C. a 100% stacked bar chart</li>
+        <li>D. a waterfall chart</li>
+      </ul>
+      <ul>
+        <li>A. a line chart</li>
+        <li class="active">B. a stacked bar chart</li>
+        <li>C. a 100% stacked bar chart</li>
+        <li>D. a waterfall chart</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A stacked bar chart allows stakeholders to compare values across categories—in this case, customer satisfaction scores across different support channels—while also showing the contribution of subcategories if needed. Line charts show trends over time, 100% stacked bars show relative proportions, and waterfall charts show sequential changes, making them less suitable for this comparison.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 27 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 27</h1>
+    <div class="question">
+      <p>You're working with a dataset of customer feedback. One column, "Sentiment," classifies feedback as "Positive," "Negative," or "Neutral." However, the data source has inconsistencies in capitalization (e.g., "positive," "POSITIVE," "Neutral"). <br>
+Your Power BI report uses a DirectQuery connection to this data source. When analyzing the report, you notice incorrect counts and filtering issues related to the "Sentiment" column. <br>
+To fix this, you plan to use Power Query Editor to transform the "Sentiment" column, ensuring all values adhere to a consistent capitalization format (e.g., "Positive"). <br>
+Will this solution address the inconsistencies and ensure accurate analysis in your Power BI report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In DirectQuery mode, transformations applied in Power Query may not always be supported or fully executed on the source, especially text transformations like changing capitalization. Therefore, inconsistencies in the "Sentiment" column may persist. To ensure accurate analysis, the data should be standardized at the source or handled with DAX measures within Power BI.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 28 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 28</h1>
+    <div class="question">
+      <p>You're working with a dataset of customer feedback. One column, "Sentiment," classifies feedback as "Positive," "Negative," or "Neutral." However, the data source has inconsistencies in capitalization (e.g., "positive," "POSITIVE," "Neutral"). <br>
+Your Power BI report uses a DirectQuery connection to this data source. When analyzing the report, you notice incorrect counts and filtering issues related to the "Sentiment" column. <br>
+To fix this, you consider implicitly converting the "Sentiment" column values to the required data type. <br>
+Will this solution address the inconsistencies and ensure accurate analysis in your Power BI report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Implicitly converting the "Sentiment" column to a data type (e.g., text) does not resolve inconsistencies in capitalization. DirectQuery relies on the source database for query execution, so variations like "positive" vs. "POSITIVE" will still cause incorrect counts and filtering. To fix this, the data must be standardized at the source or handled with DAX transformations in the report.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 29 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 29</h1>
+    <div class="question">
+      <p>You're working with a dataset of customer feedback. One column, "Sentiment," classifies feedback as "Positive," "Negative," or "Neutral." However, the data source has inconsistencies in capitalization (e.g., "positive," "POSITIVE," "Neutral"). <br>
+Your Power BI report uses a DirectQuery connection to this data source. When analyzing the report, you notice incorrect counts and filtering issues related to the "Sentiment" column. <br>
+To fix this, the proposed solution is to add an index key to the table and normalize the casing of the "Sentiment" column directly in the data source. <br>
+Will this solution address the inconsistencies and ensure accurate analysis in your Power BI report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Normalizing the casing of the "Sentiment" column at the source ensures consistent values (e.g., all "Positive") before Power BI queries the data. This eliminates counting and filtering issues in DirectQuery mode. Adding an index key does not affect the inconsistency but can help uniquely identify rows if needed. The key fix is source-level data standardization.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 30 -->
+  <div class="questionFormat">
+    <h1>Question 30</h1>
+    <div class="question">
+      <p>You are merging two tables in Power Query: <br>
+- Sales (with columns: SaleID, ProductID, Date, Amount) <br>
+- Products (with columns: ProductID, ProductName, Price) <br>
+You want to include all rows from the Sales table and only matching rows from the Products table. Which type of join will you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Inner Join</li>
+        <li>B. Left Outer Join</li>
+        <li>C. Right Outer Join</li>
+        <li>D. Full Outer Join</li>
+      </ul>
+      <ul>
+        <li>A. Inner Join</li>
+        <li class="active">B. Left Outer Join</li>
+        <li>C. Right Outer Join</li>
+        <li>D. Full Outer Join</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Left Outer Join returns all rows from the left table (Sales) and only the matching rows from the right table (Products). If a SaleID has no corresponding ProductID in Products, the result will still include the sale with null values for Product columns. This ensures no sales data is lost while adding product details where available.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

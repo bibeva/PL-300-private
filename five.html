@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 41 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 41</h1>
+    <div class="question">
+      <p>You're a data analyst working on a project that requires access to a Power BI dataset called "Sales Insights," which is stored in a workspace called "Marketing Data." You have "Build" permission for the "Sales Insights" dataset, allowing you to create reports, but you don't have any permissions for the "Marketing Data" workspace itself. <br>
+To analyze the data and build your report, which two actions should you take? Each correct answer presents a complete solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. From the Power BI service, create a dataflow to the dataset using DirectQuery.</li>
+        <li>B. From Power BI Desktop, connect to the dataset by selecting "Get data" and choosing the "Power BI datasets" option.</li>
+        <li>C. From the Power BI service, create a new report and select the "Sales Insights" dataset as the data source.</li>
+        <li>D. From Power BI Desktop, connect to an external data source like a SQL database.</li>
+      </ul>
+      <ul>
+        <li>A. From the Power BI service, create a dataflow to the dataset using DirectQuery.</li>
+        <li class="active">B. From Power BI Desktop, connect to the dataset by selecting "Get data" and choosing the "Power BI datasets" option.</li>
+        <li class="active">C. From the Power BI service, create a new report and select the "Sales Insights" dataset as the data source.</li>
+        <li>D. From Power BI Desktop, connect to an external data source like a SQL database.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Build permission allows you to create reports from the dataset even without workspace access. You can either connect to the dataset in Power BI Desktop using “Power BI datasets,” or create a new report in the Power BI service using the “Sales Insights” dataset.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 42 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 42</h1>
+    <div class="question">
+      <p>You have a line chart in Power BI that displays the monthly sales figures for a particular product over the past year. You want to provide more context to users by displaying the profit margin for that product when they hover over a data point on the chart. What should you do?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Add profit margin to the drillthrough fields.</li>
+        <li>B. Add profit margin to the visual filters.</li>
+        <li>C. Add profit margin to the tooltips.</li>
+      </ul>
+      <ul>
+        <li>A. Add profit margin to the drillthrough fields.</li>
+        <li>B. Add profit margin to the visual filters.</li>
+        <li class="active">C. Add profit margin to the tooltips.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Adding the profit margin to the tooltip field well allows it to appear when users hover over points on the line chart, providing context without changing the visual itself.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 43 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 43</h1>
+    <div class="question">
+      <p>You're a social media manager for a popular online clothing store. You want to use Power BI's AI Insights to analyze customer comments collected from your company's social media channels. You need to extract key information to understand customer sentiment and identify areas for improvement.Specifically, you want to determine the following from the customer comments: <br>
+- The main topics customers discuss in their feedback. <br>
+- The overall sentiment expressed in the comments (positive, negative, neutral). <br>
+- The languages used by customers in their feedback. <br>
+Which AI Insights service should you use for each output? Complete the following sentences by selecting the correct answer: <br>
+- To identify the main topics customers discuss: <br>
+- To determine the overall sentiment: <br>
+- To detect the languages used:</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Key Phrase Extraction <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sentiment Analysis <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+        <li>B. Text Analytics <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sentiment Analysis <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+        <li>C. Key Phrase Extraction <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anomaly Detection <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+      </ul>
+      <ul>
+        <li class="active">A. Key Phrase Extraction <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sentiment Analysis <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+        <li>B. Text Analytics <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sentiment Analysis <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+        <li>C. Key Phrase Extraction <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anomaly Detection <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language Detection</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Key Phrase Extraction identifies the important words and themes repeatedly mentioned in customer comments, helping you understand what topics they discuss most. Sentiment Analysis evaluates the emotional tone of each comment to determine whether customers feel positive, negative, or neutral. Language Detection scans the text to recognize which languages customers are using, allowing you to understand your multilingual audience.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 44 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 44</h1>
+    <div class="question">
+      <p>In a Power BI model, you have two tables, Sales and Date, with multiple date columns in the Sales table (e.g., OrderDate, ShipDate). <br>
+You need to create a relationship to the Date table that allows for dynamic reporting on both order and ship dates. What is the best approach to model this scenario?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create two separate Date tables, one for each date type.</li>
+        <li>B. Use a single Date table and create inactive relationships, activating them as needed with USERELATIONSHIP in DAX.</li>
+        <li>C. Merge the Sales and Date tables into a single table.</li>
+      </ul>
+      <ul>
+        <li>A. Create two separate Date tables, one for each date type.</li>
+        <li class="active">B. Use a single Date table and create inactive relationships, activating them as needed with USERELATIONSHIP in DAX.</li>
+        <li>C. Merge the Sales and Date tables into a single table.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, only one active relationship can exist between two tables at a time. By creating inactive relationships between the Date table and other date columns (e.g., ShipDate), you can use the USERELATIONSHIP() function in DAX to dynamically activate the desired relationship for specific calculations, enabling flexible reporting without duplicating the Date table.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 45 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 45</h1>
+    <div class="question">
+      <p>True or False: Quick Measures in Power BI can be used to create complex DAX calculations for common scenarios like "Running Total" without writing any DAX code.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li class="active">A. True</li>
+        <li>B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Quick Measures in Power BI provide a user-friendly interface to create common calculations, such as Running Totals, Year-to-Date, Percent of Total, and more, without writing DAX manually. Power BI automatically generates the underlying DAX formula based on the fields and measures you select.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 46 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 46</h1>
+    <div class="question">
+      <p>To share a Power BI report with a colleague without granting them editing rights, you should _______</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. publish the report to the web</li>
+        <li>B. share a dashboard instead of a report</li>
+        <li>C. create a dedicated app workspace</li>
+        <li>D. provide them with view-only access to the report</li>
+      </ul>
+      <ul>
+        <li>A. publish the report to the web</li>
+        <li>B. share a dashboard instead of a report</li>
+        <li>C. create a dedicated app workspace</li>
+        <li class="active">D. provide them with view-only access to the report</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Granting view-only access allows your colleague to see and interact with the report without being able to modify it. Publishing to the web makes the report public, sharing a dashboard doesn’t replace report access, and creating a workspace alone doesn’t control individual permissions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 47 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 47</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a library. You have two CSV files: "Books" and "Authors." The "Books" file contains information about each book, including its title, ISBN, author ID, and genre. The "Authors" file contains details about each author, including their author ID, name, and nationality. You want to create a Power BI report that analyzes book data, including author information. <br>
+Challenge: You need to combine the data from these two CSV files into a single Power BI dataset with a table named "BookDetails." This table should include the following columns: <br>
+- Title <br>
+- ISBN <br>
+- Author ID <br>
+- Genre <br>
+- Author Name <br>
+- Author Nationality <br>
+Solution: How should you combine the "Books" and "Authors" queries in Power Query Editor, and how should you manage the loading of the "Authors" query to achieve this?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Combine the queries by performing a: Merge <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Delete the query</li>
+        <li>B. Combine the queries by performing a: Append <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Disable the query load</li>
+        <li>C. Combine the queries by performing a: Merge <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Disable the query load</li>
+      </ul>
+      <ul>
+        <li>A. Combine the queries by performing a: Merge <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Delete the query</li>
+        <li>B. Combine the queries by performing a: Append <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Disable the query load</li>
+        <li class="active">C. Combine the queries by performing a: Merge <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the Authors query: Disable the query load</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To create the BookDetails table, you should merge the "Books" and "Authors" queries based on Author ID. This adds author information (name and nationality) to each book row. The "Authors" query itself doesn’t need to be loaded separately into the model, so you disable its load, keeping the dataset clean and only including the combined table.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 48 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 48</h1>
+    <div class="question">
+      <p>In the development of a Power BI report, you aim to analyze the distribution of integer values by grouping them into defined intervals. To effectively create a histogram that displays these data distributions across several ranges, which two components must you incorporate?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A textual data field</li>
+        <li>B. A calculated measure</li>
+        <li>C. A quantitative data field</li>
+        <li>D. A classification of bins</li>
+      </ul>
+      <ul>
+        <li>A. A textual data field</li>
+        <li>B. A calculated measure</li>
+        <li class="active">C. A quantitative data field</li>
+        <li class="active">D. A classification of bins</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To build a histogram in Power BI, you need a quantitative (numeric) field to analyze and bins to group the numeric values into defined ranges. Text fields or standalone measures cannot directly create histograms, as histograms require numeric distributions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 49 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 49</h1>
+    <div class="question">
+      <p>When configuring Row-Level Security (RLS) in Power BI, which of the following statements are true? (Select two)</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. RLS can only be configured in the Power BI service, not in Power BI Desktop.</li>
+        <li>B. Once published to Power BI service, RLS rules cannot be tested using "Test as role" feature in Power BI Desktop.</li>
+        <li>C. RLS settings are automatically applied to all reports and dashboards that use the secured dataset within the Power BI service.</li>
+        <li>D. RLS requires a Power BI Pro license for users to configure roles and rules within Power BI Desktop.</li>
+        <li>E. User roles and permissions for RLS can be assigned and managed in the Power BI service after publishing the dataset.</li>
+      </ul>
+      <ul>
+        <li>A. RLS can only be configured in the Power BI service, not in Power BI Desktop.</li>
+        <li>B. Once published to Power BI service, RLS rules cannot be tested using "Test as role" feature in Power BI Desktop.</li>
+        <li class="active">C. RLS settings are automatically applied to all reports and dashboards that use the secured dataset within the Power BI service.</li>
+        <li>D. RLS requires a Power BI Pro license for users to configure roles and rules within Power BI Desktop.</li>
+        <li class="active">E. User roles and permissions for RLS can be assigned and managed in the Power BI service after publishing the dataset.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Row-Level Security (RLS) applies to all reports and dashboards built on the secured dataset (C), ensuring consistent data restriction. After publishing, user roles and permissions can be assigned and managed in the Power BI service (E). RLS can be configured in Power BI Desktop and tested using "View as role," and a Pro license is not required to create roles in Desktop—only for sharing and collaboration.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 50 -->
+  <div class="questionFormat">
+    <h1>Question 50</h1>
+    <div class="question">
+      <p>Arrange the following steps in the correct order to use the "Group By" feature in Power Query for creating a summary table that shows the total sales amount per year from a table named "Sales" with columns "SaleDate" and "SaleAmount". <br>
+- Choose "Sum" as the operation and select the "SaleAmount" column. <br>
+- Open the "Group By" dialog from the Home tab. <br>
+- Select "Year" as the column to group by. <br>
+- Add a custom column to extract the year from "SaleDate".</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1 - 4 - 3 - 2</li>
+        <li>B. 4 - 2 - 3 - 1</li>
+        <li>C. 2 - 3 - 4 - 1</li>
+        <li>D. 2 - 3 - 1 - 4</li>
+      </ul>
+      <ul>
+        <li>A. 1 - 4 - 3 - 2</li>
+        <li class="active">B. 4 - 2 - 3 - 1</li>
+        <li>C. 2 - 3 - 4 - 1</li>
+        <li>D. 2 - 3 - 1 - 4</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> First, you need to extract the year from the "SaleDate" column by adding a custom column. Then, open the "Group By" dialog from the Home tab, select "Year" as the grouping column, and finally choose "Sum" as the operation on the "SaleAmount" column to create the summary table.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

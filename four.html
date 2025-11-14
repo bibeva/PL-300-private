@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 31 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 31</h1>
+    <div class="question">
+      <p>You're responsible for a Power BI report that tracks marketing campaign performance. The PBIX file is around 400 MB and is published to a shared workspace capacity on powerbi.com. <br>
+The report uses an imported dataset with a large fact table containing approximately 10 million rows of campaign activity data. The dataset refreshes daily at 6:00 AM. <br>
+The report consists of a single page with various visuals, including eight custom visuals from AppSource and twelve standard Power BI visuals. Users have reported that the report is slow, especially when interacting with the visuals and filters. <br>
+To address this performance issue, which of the following solutions would be most effective?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Enable visual interactions.</li>
+        <li>B. Optimize DAX measures by using iterator functions.</li>
+        <li>C. Implement Row-Level Security (RLS).</li>
+        <li>D. Reduce the number of visuals on the report page.</li>
+        <li>E. Remove any unused columns from the tables in the data model.</li>
+      </ul>
+      <ul>
+        <li>A. Enable visual interactions.</li>
+        <li>B. Optimize DAX measures by using iterator functions.</li>
+        <li>C. Implement Row-Level Security (RLS).</li>
+        <li class="active">D. Reduce the number of visuals on the report page.</li>
+        <li>E. Remove any unused columns from the tables in the data model.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The report slowdown is mainly caused by having too many visuals (especially 8 custom ones) querying a large dataset simultaneously. Reducing the number of visuals significantly improves responsiveness and interaction speed. While removing unused columns helps reduce dataset size and refresh time, it does not directly address the slow interactions users experience.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 32 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 32</h1>
+    <div class="question">
+      <p>When designing paginated reports for Power BI, which of the following data sources can you connect to directly from Power BI Report Builder? (Select all that apply).
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. SQL Server Analysis Services (SSAS) databases</li>
+        <li>B. Power BI Semantic Models</li>
+        <li>C. Excel files stored on OneDrive for Business</li>
+        <li>D. Dataverse (formerly known as Common Data Service)</li>
+      </ul>
+      <ul>
+        <li class="active">A. SQL Server Analysis Services (SSAS) databases</li>
+        <li class="active">B. Power BI Semantic Models</li>
+        <li>C. Excel files stored on OneDrive for Business</li>
+        <li class="active">D. Dataverse (formerly known as Common Data Service)</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI Report Builder supports direct connections to structured data sources such as SSAS, Power BI datasets (semantic models), and Dataverse. Excel files stored on OneDrive for Business cannot be connected to directly; they must first be imported into a supported data source or dataset.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 33 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 33</h1>
+    <div class="question">
+      <p>In developing a report with Power BI Desktop, you aim to craft a visual that effectively presents a cumulative total. This visual must adhere to the criteria below: <br>
+Both the starting and ending value categories are positioned along the horizontal axis. The values in between should appear as floating bars to indicate progression. Identify the appropriate visual type for this requirement:</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Mixed Chart</li>
+        <li>B. Pyramid Chart</li>
+        <li>C. Bubble Chart</li>
+        <li>D. Waterfall Chart</li>
+      </ul>
+      <ul>
+        <li>A. Mixed Chart</li>
+        <li>B. Pyramid Chart</li>
+        <li>C. Bubble Chart</li>
+        <li class="active">D. Waterfall Chart</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Waterfall Chart is designed to show how an initial value progresses through a series of positive and negative changes to reach a final value. It displays starting and ending values on the horizontal axis, with intermediate values as floating bars, making it ideal for cumulative totals and visualizing contributions to a final figure.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 34 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 34</h1>
+    <div class="question">
+      <p>You need to calculate the average sales per category while ensuring that any filters applied to the category column are disregarded. Which two DAX functions, to be used in the same formula, are most suitable for this purpose?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. AVERAGE()</li>
+        <li>B. SUMMARIZE()</li>
+        <li>C. CALCULATE()</li>
+        <li>D. ALL()</li>
+      </ul>
+      <ul>
+        <li>A. AVERAGE()</li>
+        <li>B. SUMMARIZE()</li>
+        <li class="active">C. CALCULATE()</li>
+        <li class="active">D. ALL()</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To calculate an average while ignoring filters on a column, you use CALCULATE() to modify the context of the calculation and ALL() to remove any existing filters on the category column. AVERAGE() computes the average but doesn’t override filters by itself, and SUMMARIZE() is used for grouping, not for ignoring filters.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 35 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 35</h1>
+    <div class="question">
+      <p>Which of the following steps should you perform to optimize columns for merging in Power Query? (Select all that apply).</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Ensure the data types of the columns being merged are the same.</li>
+        <li>B. Remove unnecessary columns from both tables before merging.</li>
+        <li>C. Sort both tables by the merge key before merging.</li>
+        <li>D. Use the 'Remove Duplicates' function on the merge key columns.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Ensure the data types of the columns being merged are the same.</li>
+        <li class="active">B. Remove unnecessary columns from both tables before merging.</li>
+        <li>C. Sort both tables by the merge key before merging.</li>
+        <li>D. Use the 'Remove Duplicates' function on the merge key columns.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> For an efficient merge in Power Query, the columns being merged must have matching data types, and removing unnecessary columns reduces memory usage and speeds up the operation. Sorting or removing duplicates is not required for a merge to work and may not improve performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 36 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 36</h1>
+    <div class="question">
+      <p>You manage a Power BI dataset for a fictional online retailer named "Trendy." This dataset combines data from various sources to analyze customer behavior and product performance. The data sources are: <br>
+- Customer Feedback: Contains text-based reviews and ratings provided by customers on purchased products. <br>
+- Product Inventory: Tracks details about each product, including name, category, price, and stock levels. <br>
+You need to configure the appropriate privacy levels for these data sources within the Power BI semantic model. What should you configure for each data source?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Customer Feedback: Public <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Organizational</li>
+        <li>B. Customer Feedback: Private <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Organizational</li>
+        <li>C. Customer Feedback: Organizational <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Private</li>
+        <li>D. Customer Feedback: Public <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Private</li>
+      </ul>
+      <ul>
+        <li>A. Customer Feedback: Public <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Organizational</li>
+        <li class="active">B. Customer Feedback: Private <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Organizational</li>
+        <li>C. Customer Feedback: Organizational <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Private</li>
+        <li>D. Customer Feedback: Public <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Product Inventory: Private</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Customer Feedback contains personal or sensitive user-generated data, so it must be classified as Private. Product Inventory is internal business data shared across the company, so it should be Organizational.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 37 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 37</h1>
+    <div class="question">
+      <p>In managing a Power BI dataset, you aim to enhance its visibility within your organization by making it more easily discoverable. Which two actions can be taken to ensure the dataset is marked as discoverable? Select all applicable answers.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Certify the dataset.</li>
+        <li>B. Implement Row-Level Security (RLS) on the dataset.</li>
+        <li>C. Promote the dataset</li>
+        <li>D. Share the dataset within a workspace that is backed by Power BI Premium.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Certify the dataset.</li>
+        <li>B. Implement Row-Level Security (RLS) on the dataset.</li>
+        <li class="active">C. Promote the dataset</li>
+        <li>D. Share the dataset within a workspace that is backed by Power BI Premium.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Certifying and promoting a dataset increases its visibility and discoverability across the organization. RLS does not affect discoverability, and Premium capacity does not make a dataset discoverable by itself.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 38 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 38</h1>
+    <div class="question">
+      <p>True or False: To enable scheduled refreshes for a Power BI dataset that connects to an on-premises SQL Server database, configuring a service principal in Azure AD for authentication can directly support the use of the On-premises Data Gateway.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A service principal cannot be used with the On-premises Data Gateway to authenticate to on-prem SQL Server. Scheduled refresh for on-prem data requires a user account (Windows or database credentials) configured in the gateway. Service principals only work for cloud data sources.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 39 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 39</h1>
+    <div class="question">
+      <p>You have a Power BI report that analyzes customer purchase data. The report's PBIX file imports data from a CSV file stored on a network drive. <br>
+You receive a notification that the network drive has been reorganized, and the CSV file is now located in a different folder. You need to update the PBIX file to reflect the new location of the CSV file. Which three options allow you to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. From the Datasets settings in the Power BI service, modify the data source credentials.</li>
+        <li>B. In Power BI Desktop, go to Transform data, then Data source settings, and update the file path.</li>
+        <li>C. In Power BI Desktop, select Current File and adjust the Data Load settings.</li>
+        <li>D. In Power Query Editor, use the formula bar to modify the file path in the applied step.</li>
+        <li>E. In Power Query Editor, open Advanced Editor and update the file path in the M code.</li>
+      </ul>
+      <ul>
+        <li>A. From the Datasets settings in the Power BI service, modify the data source credentials.</li>
+        <li class="active">B. In Power BI Desktop, go to Transform data, then Data source settings, and update the file path.</li>
+        <li>C. In Power BI Desktop, select Current File and adjust the Data Load settings.</li>
+        <li class="active">D. In Power Query Editor, use the formula bar to modify the file path in the applied step.</li>
+        <li class="active">E. In Power Query Editor, open Advanced Editor and update the file path in the M code.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To update a changed file path, you must modify the source reference inside Power BI Desktop. This can be done through Data source settings, the formula bar, or the Advanced Editor. Changing credentials or data load settings will not update the file path.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 40 -->
+  <div class="questionFormat">
+    <h1>Question 40</h1>
+    <div class="question">
+      <p>In Power BI, you're tasked with assessing the quality of your dataset after using Power Query for data inspection. Determine the veracity of each statement below. If it’s accurate, choose Yes. If not, choose No. <br>
+- 'Column profile' in Data Preview is by default limited to evaluating the data pattern within a subset of 1,000 rows. <br>
+- Utilizing 'Column quality' in Data Preview allows for a complete assessment across all data points within the dataset. <br>
+- Activating continuous data update settings in Power Query is essential for immediate reflection of changes in the data preview.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes, Yes, No</li>
+        <li>B. Yes, No, No</li>
+        <li>C. Yes, Yes, Yes</li>
+        <li>D. No, Yes, No</li>
+      </ul>
+      <ul>
+        <li>A. Yes, Yes, No</li>
+        <li class="active">B. Yes, No, No</li>
+        <li>C. Yes, Yes, Yes</li>
+        <li>D. No, Yes, No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Column profile is limited to the first 1,000 rows by default, so that is correct. Column quality also uses only the preview subset unless you enable "Column profiling based on entire data," so it does not always assess the full dataset. Continuous data update is not required for preview changes, so the last statement is false.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

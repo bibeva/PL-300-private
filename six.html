@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 51 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 51</h1>
+    <div class="question">
+      <p>A financial institution wants to leverage its historical transaction data to identify fraudulent transactions and improve customer service. The data is stored across multiple legacy systems and needs to be consolidated, cleaned, and analyzed. <br>
+Identify the roles that would be involved in each stage of this process and explain their contributions.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Data Engineer: Consolidate and clean data from legacy systems.</li>
+        <li>B. Data Analyst: Analyze consolidated data to identify trends.</li>
+        <li>C. Data Scientist: Apply machine learning models to predict fraudulent transactions.</li>
+        <li>D. Database Administrator: Ensure the database's integrity and performance during and after the migration process.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Data Engineer: Consolidate and clean data from legacy systems.</li>
+        <li class="active">B. Data Analyst: Analyze consolidated data to identify trends.</li>
+        <li class="active">C. Data Scientist: Apply machine learning models to predict fraudulent transactions.</li>
+        <li class="active">D. Database Administrator: Ensure the database's integrity and performance during and after the migration process.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Data Engineer consolidates and cleans data from legacy systems to create a usable foundation. A Data Analyst reviews the prepared data to find trends and insights. A Data Scientist builds machine learning models to detect fraud. A Database Administrator maintains database integrity, security, and performance throughout migration and analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 52 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 52</h1>
+    <div class="question">
+      <p>True or False: It's possible to apply Row-Level Security (RLS) directly to Power BI dashboards to control user access to specific data within the dashboard.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> RLS can only be applied to datasets, not directly to dashboards. Dashboards automatically respect RLS rules from the underlying dataset, but you cannot configure RLS on a dashboard itself.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 53 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 53</h1>
+    <div class="question">
+      <p>Imagine you're a business analyst working for a manufacturing company. You're tasked with creating a Power BI report to analyze data from a custom production tracking application that your team built using Microsoft Power Apps. <br>
+This application is fully integrated within Microsoft Teams, where your production team uses it to record production data, track orders, and manage inventory. Question: To build your Power BI report and access the data from this Power Apps production tracking application, which connector should you use in Power BI Desktop?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Microsoft Teams</li>
+        <li>B. Excel workbook</li>
+        <li>C. Dataverse</li>
+        <li>D. Azure SQL Database</li>
+      </ul>
+      <ul>
+        <li>A. Microsoft Teams</li>
+        <li>B. Excel workbook</li>
+        <li class="active">C. Dataverse</li>
+        <li>D. Azure SQL Database</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power Apps applications store their structured data in Microsoft Dataverse, especially when built inside Teams. Power BI connects to this data using the Dataverse connector, allowing you to retrieve tables, relationships, and production records directly from the app’s backend for reporting.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 54 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 54</h1>
+    <div class="question">
+      <p>In Power BI Desktop, you're considering integrating data from a new data source and are considering between opting for DirectQuery or Import storage modes. Identify two advantages offered by selecting Import over DirectQuery for this purpose.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Comprehensive compatibility with the Power BI Q&A feature</li>
+        <li>B. Complete integration with the Power BI Quick Insights functionality</li>
+        <li>C. Reduced utilization of local storage resources</li>
+        <li>D. Decreased frequency of data updates required</li>
+      </ul>
+      <ul>
+        <li class="active">A. Comprehensive compatibility with the Power BI Q&A feature</li>
+        <li class="active">B. Complete integration with the Power BI Quick Insights functionality</li>
+        <li>C. Reduced utilization of local storage resources</li>
+        <li>D. Decreased frequency of data updates required</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Import mode loads data into the Power BI model, enabling features that rely on in-memory data such as Q&A and Quick Insights, both of which are limited or unavailable in DirectQuery. Import does not reduce local storage use nor reduce refresh needs.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 55 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 55</h1>
+    <div class="question">
+      <p>As a report curator working with datasets where a particular column's format might vary creating potential errors, your goal is to filter out these errors from appearing during data refreshes while also compiling an error log for subsequent analysis. To achieve this, select and sequence 5 steps from the given actions. <br>
+1. Duplicate the primary dataset. <br>
+2. Manually update the dataset format pre-refresh <br>
+3. Disable data loading for the initial dataset copy. <br>
+4. In one duplicated dataset, isolate errors, and in the alternate, cleanse the errors. <br>
+5. Adjust the refresh frequency of the dataset. <br>
+6. Implement a custom column specifically designed to document errors. <br>
+7. Exclude the problematic column likely to cause errors.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 2 - 3 - 5 - 1 - 7</li>
+        <li>B. 3 - 1 - 4 - 6 - 2</li>
+        <li>C. 1 - 3 - 6 - 4 - 7</li>
+        <li>D. 5 - 1 - 4 - 3 - 6</li>
+      </ul>
+      <ul>
+        <li>A. 2 - 3 - 5 - 1 - 7</li>
+        <li>B. 3 - 1 - 4 - 6 - 2</li>
+        <li class="active">C. 1 - 3 - 6 - 4 - 7</li>
+        <li>D. 5 - 1 - 4 - 3 - 6</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> You first duplicate the dataset, then disable load for the copy used for error capture, then add a custom error-logging column, after which you separate error rows from clean rows, and finally remove the problematic column from the clean version to prevent refresh failures.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 56 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 56</h1>
+    <div class="question">
+      <p>In Power BI Desktop, you're analyzing monthly sales data using a line chart and want to add a reference line that represents the average sales throughout the year to help identify months that performed above or below average. <br>
+Which option in the Analytics pane allows you to add this reference line directly to your line chart?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Trend line</li>
+        <li>B. Average line</li>
+        <li>C. Forecast line</li>
+        <li>D. Median line</li>
+      </ul>
+      <ul>
+        <li>A. Trend line</li>
+        <li class="active">B. Average line</li>
+        <li>C. Forecast line</li>
+        <li>D. Median line</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Average line option in the Analytics pane adds a horizontal reference line representing the mean value across the visual, helping you compare each month’s sales against the yearly average.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 57 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 57</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a marketing agency. Your colleague has created a Power BI report that analyzes campaign performance data. 
+This report uses an imported dataset that connects to a CSV file stored in a OneDrive folder. <br>
+The dataset also includes several measures that calculate key performance indicators (KPIs). You need to create a new report that focuses on a specific aspect of the campaign data, but you want to reuse the existing data and calculations to save time and effort. <br>
+Question: What type of data source should you use in your new report to leverage the existing data and measures from your colleague's report with minimal development effort?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. OneDrive folder</li>
+        <li>B. CSV file</li>
+        <li>C. Power BI dataset</li>
+        <li>D. Web data source</li>
+      </ul>
+      <ul>
+        <li>A. OneDrive folder</li>
+        <li>B. CSV file</li>
+        <li class="active">C. Power BI dataset</li>
+        <li>D. Web data source</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Connecting to the existing Power BI dataset lets you reuse all its tables, relationships, and measures without rebuilding anything. This ensures consistency and minimizes development effort since the imported data and KPIs are already defined.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 58 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 58</h1>
+    <div class="question">
+      <p>What is the maximum size limit for a Power BI dataset using the Import storage mode for a Pro account?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1 GB</li>
+        <li>B. 10 GB</li>
+        <li>C. 100 MB</li>
+        <li>D. 250 MB</li>
+      </ul>
+      <ul>
+        <li class="active">A. 1 GB</li>
+        <li>B. 10 GB</li>
+        <li>C. 100 MB</li>
+        <li>D. 250 MB</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI Pro supports Import-mode datasets up to 1 GB in size. Larger datasets (up to 10 GB or more) require Premium capacity.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 59 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 59</h1>
+    <div class="question">
+      <p>In a Power BI data model, what type of relationship should be established between a Products table, which lists products sold, and a Sales table, which records transactions, to efficiently analyze sales by product?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. One-to-one (1:1)</li>
+        <li>B. One-to-many (1:N)</li>
+        <li>C. Many-to-one (N:1)</li>
+        <li>D. Many-to-many (N:N)</li>
+      </ul>
+      <ul>
+        <li>A. One-to-one (1:1)</li>
+        <li class="active">B. One-to-many (1:N)</li>
+        <li>C. Many-to-one (N:1)</li>
+        <li>D. Many-to-many (N:N)</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Each product appears once in the Products table, but can appear many times in the Sales table as multiple transactions. Therefore, the appropriate relationship is one-to-many from Products (one) to Sales (many).</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 60 -->
+  <div class="questionFormat">
+    <h1>Question 60</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for an online retail company. <br>
+You have two Excel tables: "Customers" and "Orders." The "Customers" table contains information about each customer, including their customer ID, name, email address, and shipping address ID. <br>
+The "Orders" table contains details about each order, including the order ID, customer ID, order date, and total amount. <br>
+Challenge: You need to create a Power Query query that combines data from these two tables to provide a comprehensive view of each customer's order history. This query should have one row per customer, including their name, email address, and a list of all their orders with order dates and total amounts. <br>
+Solution: Which Power Query operation should you use to achieve this data combination and create the desired query output?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Append the "Customers" and "Orders" tables.</li>
+        <li>B. Merge the "Customers" and "Orders" tables.</li>
+        <li>C. Group the "Customers" and "Orders" tables by the "Customer ID" column.</li>
+        <li>D. Transpose the "Customers" and "Orders" tables.</li>
+      </ul>
+      <ul>
+        <li>A. Append the "Customers" and "Orders" tables.</li>
+        <li class="active">B. Merge the "Customers" and "Orders" tables.</li>
+        <li>C. Group the "Customers" and "Orders" tables by the "Customer ID" column.</li>
+        <li>D. Transpose the "Customers" and "Orders" tables.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To combine customer details with their related orders, you use Merge in Power Query, joining the tables on Customer ID. This creates a single query where each customer row contains a nested table listing all their orders, exactly matching the required one-row-per-customer output.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

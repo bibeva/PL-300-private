@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 61 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 61</h1>
+    <div class="question">
+      <p>You possess a Power BI dashboard that fetches a calendar table and a transactions table from a cloud-based SQL database. The transactions table includes the following temporal foreign keys: <br>
+- Payment Date <br>
+- Purchase Date <br>
+- Shipping Date <br>
+The requirement is to facilitate the evaluation of transaction trends over time, considering all the temporal foreign keys. <br>
+Solution: You devise measures leveraging the USERELATIONSHIP DAX function to apply filters on transactions based on the inactive association between the transactions table and the calendar table. Does this fulfill the objective?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Only one relationship between the Calendar table and the Transactions table can be active at a time. The correct approach is to keep one active relationship (for example, on Purchase Date) and create inactive relationships for Payment Date and Shipping Date.
+Then, measures using USERELATIONSHIP correctly activate the needed relationship during calculation. This enables analysis across all three date fields.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 62 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 62</h1>
+    <div class="question">
+      <p>In Power Query, which of the following M functions can be used to create a custom column that extracts the year from a date in the "PurchaseDate" column?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Date.Year([PurchaseDate])</li>
+        <li>B. DateTime.Year([PurchaseDate])</li>
+        <li>C. Year([PurchaseDate])</li>
+        <li>D. Text.Year([PurchaseDate])</li>
+      </ul>
+      <ul>
+        <li class="active">A. Date.Year([PurchaseDate])</li>
+        <li>B. DateTime.Year([PurchaseDate])</li>
+        <li>C. Year([PurchaseDate])</li>
+        <li>D. Text.Year([PurchaseDate])</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The correct M function for extracting the year from a date column is Date.Year(). It works directly with date values. The other options are invalid or not applicable in Power Query M.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 63 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 63</h1>
+    <div class="question">
+      <p>You are analyzing a dataset stored in a CSV file, where each entry records a customer service interaction. The dataset includes a 'DateTimeRecorded' column that timestamps each interaction in the format: "YYYY-MM-DD HH:MM". <br>
+To effectively assess the service interactions by date and to leverage Power BI's date hierarchy for in-depth analysis, what is the recommended course of action?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Implement a Text-to-Column split using ' ' (space) as the delimiter, then convert the resulting date column to Date/Time type.</li>
+        <li>B. Modify the 'DateTimeRecorded' column's data type directly to Date/Time.</li>
+        <li>C. Create a custom column to parse the date and time information from 'DateTimeRecorded', then set its type to Date/Time.</li>
+        <li>D. Utilize the Extract function to retrieve the date part from 'DateTimeRecorded' and convert this new column to Date type.</li>
+      </ul>
+      <ul>
+        <li>A. Implement a Text-to-Column split using ' ' (space) as the delimiter, then convert the resulting date column to Date/Time type.</li>
+        <li class="active">B. Modify the 'DateTimeRecorded' column's data type directly to Date/Time.</li>
+        <li>C. Create a custom column to parse the date and time information from 'DateTimeRecorded', then set its type to Date/Time.</li>
+        <li>D. Utilize the Extract function to retrieve the date part from 'DateTimeRecorded' and convert this new column to Date type.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The column already contains a valid combined date-and-time format, Power BI can automatically recognize and convert it to a true Date/Time type. This instantly enables the built-in date hierarchy (Year, Quarter, Month, Day) without extra splitting or custom parsing, giving the cleanest and most efficient result.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 64 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 64</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a company with two separate sales regions, each with its own Azure SQL database. These databases have identical schemas, including a table named "SalesOrders" that stores information about customer orders. <br>
+You want to create a Power BI report that analyzes sales data across both regions. <br>
+Challenge: You need to combine the "SalesOrders" tables from both databases into a single table in your Power BI data model. However, you also want to keep your data model as small as possible to optimize performance and ensure that the dataset can be efficiently refreshed on a schedule in the Power BI service. <br>
+How should you combine the "SalesOrders" tables in Power Query to achieve these goals?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Option to use to combine customer tables: Append Queries as New <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Disable loading the query to the data model</li>
+        <li>B. Option to use to combine customer tables: Merge Queries <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Disable loading the query to the data model</li>
+        <li>C. Option to use to combine customer tables: Append Queries as New <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Append Queries as New</li>
+      </ul>
+      <ul>
+        <li class="active">A. Option to use to combine customer tables: Append Queries as New <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Disable loading the query to the data model</li>
+        <li>B. Option to use to combine customer tables: Merge Queries <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Disable loading the query to the data model</li>
+        <li>C. Option to use to combine customer tables: Append Queries as New <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action to perform on the original two SQL queries: Append Queries as New</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Since both regional tables have identical schemas and need to be stacked, Append is the correct technique. Using Append Queries as New creates one combined table while disabling load on the two source queries keeps the model small and efficient. This improves refresh performance and avoids storing unnecessary intermediate tables.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 65 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 65</h1>
+    <div class="question">
+      <p>To ensure that the Power BI report reflects changes made to the source data in real-time, the connection to a SQL Server database should be configured as __________, and any transformations should be applied directly in the __________ to avoid import delays.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. First Section: DirectQuery <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: database</li>
+        <li>B. First Section: Import <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: Power Query Editor</li>
+        <li>C. First Section: Live Connection <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: SQL Server Management Studio</li>
+      </ul>
+      <ul>
+        <li class="active">A. First Section: DirectQuery <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: database</li>
+        <li>B. First Section: Import <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: Power Query Editor</li>
+        <li>C. First Section: Live Connection <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Section: SQL Server Management Studio</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> DirectQuery keeps the report synced with real-time changes because it queries SQL Server on demand. Applying transformations directly in the database ensures faster performance and avoids delays that occur when Power Query must process data during refresh.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 66 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 66</h1>
+    <div class="question">
+      <p>What is the primary purpose of the Power BI Gateway?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. To increase the data refresh rate in Power BI reports.</li>
+        <li>B. To connect Power BI reports to on-premises data sources.</li>
+        <li>C. To improve the performance of Power BI dashboards.</li>
+        <li>D. To secure Power BI apps with additional encryption.</li>
+      </ul>
+      <ul>
+        <li>A. To increase the data refresh rate in Power BI reports.</li>
+        <li class="active">B. To connect Power BI reports to on-premises data sources.</li>
+        <li>C. To improve the performance of Power BI dashboards.</li>
+        <li>D. To secure Power BI apps with additional encryption.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Power BI Gateway acts as a bridge that securely connects cloud-based Power BI services to on-premises databases and files, enabling scheduled and live data refresh.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 67 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 67</h1>
+    <div class="question">
+      <p>Upon importing revenue figures into Power BI, it's observed that within your organization, various labels are used to describe these figures, such as profit, net profit, and total revenue. <br>
+Your objective is to adjust the 'Revenue Figures' table to enhance the effectiveness of the Q&A feature for users in Power BI Dashboards. Proposed Solution: Implement management of aggregations on the 'Revenue Figures' table. Does this strategy achieve the intended outcome?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Managing aggregations improves performance but does not teach Q&A how to interpret different synonyms. To enhance Q&A effectiveness, you must add synonyms in the model or create a glossary so Q&A can understand terms like profit, net profit, and total revenue.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 68 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 68</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a construction company. You have a SharePoint Online site that contains various document libraries for different departments. One of the document libraries, named "Project Documents," contains project reports saved as Excel files. <br>
+These reports have a standardized structure and include information about project budgets, timelines, and resource allocation. You need to analyze this data in Power BI Desktop, but you only want to import the project reports from the "Project Documents" library, not any other files or documents on the SharePoint site. <br>
+Question: How should you import the data from these specific Excel files into Power BI Desktop for analysis?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Get data from a SharePoint folder, enter the site URL, and then select "Combine & Load."</li>
+        <li>B. Get data from a SharePoint list, enter the site URL, and then select "Combine & Load."</li>
+        <li>C. Get data from a SharePoint folder and enter the site URL. Select "Transform Data," then filter by the folder path to the "Project Documents" library.</li>
+      </ul>
+      <ul>
+        <li>A. Get data from a SharePoint folder, enter the site URL, and then select "Combine & Load."</li>
+        <li>B. Get data from a SharePoint list, enter the site URL, and then select "Combine & Load."</li>
+        <li class="active">C. Get data from a SharePoint folder and enter the site URL. Select "Transform Data," then filter by the folder path to the "Project Documents" library.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The SharePoint Folder connector returns all files from the site. To import only the Excel files inside “Project Documents,” you must choose Transform Data and filter the Folder Path column to that specific library before combining the files.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 69 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 69</h1>
+    <div class="question">
+      <p>You manage a Power BI dataset configured for DirectQuery mode, requiring real-time data updates to be reflected in your reports and dashboards. You aim to prominently display the exact date and time when the data was most recently updated directly within your reports and dashboards for user reference. Identify the sequence of four actions that, when performed in order, will allow you to achieve this objective. <br>
+Choose the correct order from the possible actions: <br>
+A. Navigate to the Report view. <br>
+B. Utilize the NOW DAX function to create a measure. <br>
+C. Add a new card visual to the report. <br>
+D. Insert DAX expression for the NOW function in the formula bar. <br>
+E. Launch the Table view. <br>
+F. Implement a calculated column using the TODAY DAX function. <br>
+G. Refresh the dataset to update the measure. <br>
+H. Add text box and include dynamic content referencing the measure.
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A,E,B,G</li>
+        <li>B. A,B,D,C</li>
+        <li>C. A,G,B,F</li>
+        <li>D. G,D,F,A</li>
+      </ul>
+      <ul>
+        <li>A. A,E,B,G</li>
+        <li class="active">B. A,B,D,C</li>
+        <li>C. A,G,B,F</li>
+        <li>D. G,D,F,A</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To show the most recent data refresh timestamp in a DirectQuery Power BI report, you start by navigating to Report view to work with visuals. Then, you create a measure that uses the NOW() DAX function, which dynamically returns the current date and time. You input this expression in the formula bar. Finally, you add a card visual to the report and assign the measure to it, so users can see the latest timestamp prominently. This approach ensures the timestamp updates with each data query in DirectQuery mode.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 70 -->
+  <div class="questionFormat">
+    <h1>Question 70</h1>
+    <div class="question">
+      <p>What type of visualization would best represent monthly sales trends to highlight seasonal patterns?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Pie Chart</li>
+        <li>B. Line Chart</li>
+        <li>C. Heat Map</li>
+        <li>D. Column Chart</li>
+      </ul>
+      <ul>
+        <li>A. Pie Chart</li>
+        <li class="active">B. Line Chart</li>
+        <li>C. Heat Map</li>
+        <li>D. Column Chart</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A line chart is ideal for displaying trends over time because it connects data points sequentially, making it easy to observe fluctuations and seasonal patterns in monthly sales. Pie charts and column charts show proportions or discrete comparisons, while heat maps are better for highlighting intensity across categories rather than temporal trends.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

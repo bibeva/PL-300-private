@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 71 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 71</h1>
+    <div class="question">
+      <p>Which visualization in Power BI allows for drilling down into data hierarchies within the same visual?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Pie chart</li>
+        <li>B. Scatter</li>
+        <li>C. Matrix</li>
+        <li>D. Slicer</li>
+      </ul>
+      <ul>
+        <li>A. Pie chart</li>
+        <li>B. Scatter</li>
+        <li class="active">C. Matrix</li>
+        <li>D. Slicer</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Matrix visual supports expanding and collapsing hierarchical levels directly inside the same visual, allowing true drill-down. Pie charts and scatters don’t handle hierarchies, and slicers only filter data rather than drill into structured levels.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 72 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 72</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a marketing agency. You have an Excel workbook that contains two sheets: "CampaignA" and "CampaignB." Each sheet lists the names of social media influencers who participated in the respective marketing campaigns. Some influencers participated in both campaigns. <br>
+Challenge: You need to create a master list of all influencers who participated in either campaign, ensuring that each influencer appears only once in the list, even if they participated in both campaigns. You want to achieve this using Power Query Editor in Power BI Desktop. <br>
+Solution: Which three actions should you perform in sequence to create this master list with no duplicate influencer names? <br>
+Available Actions: <br>
+A. From Power BI Desktop, import the data from Excel, and select the "CampaignA" and "CampaignB" sheets. <br>
+B. From Power Query Editor, merge "CampaignB" into "CampaignA." <br>
+C. From Power Query Editor, append "CampaignB" to "CampaignA." <br>
+D. From Power Query Editor, select the resulting appended table and then select "Remove Duplicates." <br>
+E. From Power Query Editor, group the tables by the "Influencer Name" column. <br>
+F. From Power Query Editor, transpose the tables.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A, C, D</li>
+        <li>B. A, F, C</li>
+        <li>C. C, F, E</li>
+        <li>D. C, B, D</li>
+      </ul>
+      <ul>
+        <li class="active">A. A, C, D</li>
+        <li>B. A, F, C</li>
+        <li>C. C, F, E</li>
+        <li>D. C, B, D</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> You first import both sheets, then append them to stack all influencer names into one table. Since some influencers appear in both campaigns, removing duplicates after the append produces a clean master list. Merging, grouping, or transposing wouldn’t correctly combine the lists for this purpose.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 73 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 73</h1>
+    <div class="question">
+      <p>You are tasked with importing data from a Microsoft Excel document located in a SharePoint Online library into a Power BI dataset. The goal is to enable dataset refreshing within the Power BI service. Which two data source options should you utilize to establish a connection to the document? Each correct choice offers a full solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Excel Online (Business)</li>
+        <li>B. XML</li>
+        <li>C. SharePoint Folder</li>
+        <li>D. Web</li>
+      </ul>
+      <ul>
+        <li class="active">A. Excel Online (Business)</li>
+        <li>B. XML</li>
+        <li class="active">C. SharePoint Folder</li>
+        <li>D. Web</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Excel files stored in SharePoint Online should be accessed either through Excel Online (Business) or SharePoint Folder, because both connectors are fully supported for scheduled refresh and correctly authenticate against SharePoint Online. Using Web to connect to a SharePoint Excel file often results in refresh failures in the Power BI service because it does not authenticate correctly for protected SharePoint/OneDrive resources.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 74 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 74</h1>
+    <div class="question">
+      <p>A retail company uses Power BI to track sales performance. The sales team needs access to the latest sales data, while the marketing team requires access to both sales and customer feedback data. Which approach ensures appropriate access while maintaining data governance?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create a single workspace for both teams and manage access at the report level</li>
+        <li>B. Create separate workspaces for sales and marketing, using role-based access controls</li>
+        <li>C. Grant all employees access to all data to encourage data democratization</li>
+      </ul>
+      <ul>
+        <li>A. Create a single workspace for both teams and manage access at the report level</li>
+        <li class="active">B. Create separate workspaces for sales and marketing, using role-based access controls</li>
+        <li>C. Grant all employees access to all data to encourage data democratization</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Separate workspaces allow each team to access only the data relevant to them, while role-based controls ensure proper governance and prevent unauthorized access, unlike a shared workspace or unrestricted access.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 75 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 75</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a customer service department. You have a CSV file that contains customer call logs. This file includes a column named "CallTime" that records the date and time of each call. However, the data in "CallTime" is in a non-standard format: "December 31, 2018, 10:30 AM." <br>
+You want to analyze call volumes and trends over time using Power BI's built-in date hierarchy, which allows you to drill down from year to quarter to month to day. <br>
+Challenge: The non-standard format of the "CallTime" column prevents you from directly using Power BI's date hierarchy. You need to transform this column to make it compatible with the date hierarchy. <br>
+Solution: What should you do in Power Query Editor to transform the "CallTime" column and enable the use of Power BI's built-in date hierarchy for your analysis?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Change the data type of the "CallTime" column to Date/Time.</li>
+        <li>B. Apply a transformation to extract only the year from the "CallTime" column.</li>
+        <li>C. Split the "CallTime" column into separate columns for date and time using the comma (,) as the delimiter.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Change the data type of the "CallTime" column to Date/Time.</li>
+        <li>B. Apply a transformation to extract only the year from the "CallTime" column.</li>
+        <li>C. Split the "CallTime" column into separate columns for date and time using the comma (,) as the delimiter.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power Query can automatically interpret formats like “December 31, 2018, 10:30 AM.” Converting the column to Date/Time standardizes it so Power BI can generate the full date hierarchy without needing to split or manually extract parts.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 76 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 76</h1>
+    <div class="question">
+      <p>When creating a dashboard in Power BI, you intend to implement alerts to be notified when the data within dashboard visuals meet certain criteria. Identify the three visual types from the list below that are compatible with the alert feature, each representing a viable solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Card</li>
+        <li>B. Gauge</li>
+        <li>C. Performance Indicator (KPI)</li>
+        <li>D. Area Chart</li>
+      </ul>
+      <ul>
+        <li class="active">A. Card</li>
+        <li class="active">B. Gauge</li>
+        <li class="active">C. Performance Indicator (KPI)</li>
+        <li>D. Area Chart</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI alerts work only on single-value visuals such as Cards, Gauges, and KPI indicators. Charts like Area Charts cannot trigger alerts because they display multiple data points rather than a single aggregate value.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 77 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 77</h1>
+    <div class="question">
+      <p>In Power Query, which of the following M code snippets correctly extracts the year from a date in the "OrderDate" column and creates a custom column named "Year"?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Table.AddColumn(#"Previous Step", "Year", each Date.Year([OrderDate]))</li>
+        <li>B. Table.AddColumn(#"Previous Step", "Year", each Year([OrderDate]))</li>
+        <li>C. Table.AddColumn(#"Previous Step", "Year", each [OrderDate].Year())</li>
+        <li>D. Table.AddColumn(#"Previous Step", "Year", Date.Year([OrderDate]))</li>
+      </ul>
+      <ul>
+        <li class="active">A. Table.AddColumn(#"Previous Step", "Year", each Date.Year([OrderDate]))</li>
+        <li>B. Table.AddColumn(#"Previous Step", "Year", each Year([OrderDate]))</li>
+        <li>C. Table.AddColumn(#"Previous Step", "Year", each [OrderDate].Year())</li>
+        <li>D. Table.AddColumn(#"Previous Step", "Year", Date.Year([OrderDate]))</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power Query requires a row-by-row function when creating a custom column, so the each keyword must wrap Date.Year([OrderDate]). This properly extracts the year from the OrderDate column, while the other options use incorrect syntax or unsupported functions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 78 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 78</h1>
+    <div class="question">
+      <p>Following user feedback for more interactive engagement with a Power BI dashboard, you decide to implement a feature for enhanced data exploration. 
+How can you enable users to conduct ad-hoc queries on the dashboard data effectively? <br>
+Solution: Turn on the Q&A feature from the dashboard's general settings, making it accessible for users to query data through natural language. <br>
+Does this solution meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Enabling the Q&A feature allows users to type natural language questions directly within the dashboard, instantly generating visuals based on their queries. This provides exactly the kind of ad-hoc, interactive data exploration the requirement describes, so the solution fully meets the goal.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 79 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 79</h1>
+    <div class="question">
+      <p>Imagine you're a sales manager who uses a Power BI dashboard called "Sales Performance" to track your team's progress. This dashboard contains a tile with a map visual that shows sales by region. You want to gain a deeper understanding of the regional sales data by exploring related insights and adding relevant visuals to your dashboard. <br>
+Challenge: You need to use the "View insights" feature in Power BI to generate and pin additional tiles that provide more context and details about the regional sales data displayed in the map visual. <br>
+Solution: Which three actions should you perform in sequence to achieve this? <br>
+Available Actions: <br>
+A. From the "Sales Performance" dashboard, select the map visual tile to open the underlying report. <br>
+B. From the report, select the map visual and then select "Get insights." <br>
+C. From the "Sales Performance" dashboard, select the map visual tile options, and then select "View insights." <br>
+D. From the "Focus mode" view, pin the relevant visuals to the "Sales Performance" dashboard. <br>
+E. From the "Focus mode" view, review the generated visuals and insights. <br>
+F. From the "Sales Performance" dashboard, select "Edit" to modify the report layout.
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. C, E, D</li>
+        <li>B. F, A, B</li>
+        <li>C. A, E, B</li>
+        <li>D. C, D, A</li>
+      </ul>
+      <ul>
+        <li class="active">A. C, E, D</li>
+        <li>B. F, A, B</li>
+        <li>C. A, E, B</li>
+        <li>D. C, D, A</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> First, from the dashboard, you select the map visual tile options and choose "View insights" to generate AI-driven insights. Next, you review the generated visuals and insights in the focus mode to identify which ones provide meaningful context. Finally, you pin the relevant visuals back to the dashboard to enhance the "Sales Performance" dashboard with additional insights. This sequence ensures a smooth, end-to-end workflow for exploring and adding insights.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 80 -->
+  <div class="questionFormat">
+    <h1>Question 80</h1>
+    <div class="question">
+      <p>You are tasked with analyzing the distribution of character lengths within a text column named 'Feedback' in a Power BI Desktop project. The goal is to broadly understand the distribution while minimizing impact on the model size. How should you approach this task to analyze the character length distribution of the 'Feedback' column most efficiently?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create a DAX measure that calculates the length of 'Feedback' entries on-the-fly for analysis in visuals.</li>
+        <li>B. Create a DAX calculated column to determine the length of each 'Feedback' entry.</li>
+        <li>C. Use the Column Profiling Tools in Power Query Editor to examine the 'Feedback' column's length distribution without adding any columns to your model.</li>
+      </ul>
+      <ul>
+        <li>A. Create a DAX measure that calculates the length of 'Feedback' entries on-the-fly for analysis in visuals.</li>
+        <li>B. Create a DAX calculated column to determine the length of each 'Feedback' entry.</li>
+        <li class="active">C. Use the Column Profiling Tools in Power Query Editor to examine the 'Feedback' column's length distribution without adding any columns to your model.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Column profiling in Power Query allows you to inspect the distribution of data, including value lengths, without creating additional calculated columns or measures that increase the dataset size. This approach efficiently provides insights into character lengths while keeping the model lean, unlike calculated columns or on-the-fly DAX measures, which would consume memory and impact performance.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

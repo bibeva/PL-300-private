@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 81 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 81</h1>
+    <div class="question">
+      <p>You are analyzing a dataset sourced from a CSV file that details customer feedback. This file includes a column labeled "Timestamp," which logs the date and time each feedback instance was recorded, formatted as "2021-07-15 at 14:45." <br>
+To facilitate analysis by date using Power BI's built-in date hierarchies, what action should you take?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Convert the "Timestamp" column's data type to Date.</li>
+        <li>B. Divide the "Timestamp" column into two by using " at " as the delimiter.</li>
+        <li>C. Create a conditional column that extracts "2021" if the "Timestamp" starts with "2021," and designate this column as an Integer.</li>
+        <li>D. Use the Transform function from the Date transformation tools on the "Timestamp" column.</li>
+      </ul>
+      <ul>
+        <li>A. Convert the "Timestamp" column's data type to Date.</li>
+        <li class="active">B. Divide the "Timestamp" column into two by using " at " as the delimiter.</li>
+        <li>C. Create a conditional column that extracts "2021" if the "Timestamp" starts with "2021," and designate this column as an Integer.</li>
+        <li>D. Use the Transform function from the Date transformation tools on the "Timestamp" column.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The value "2021-07-15 at 14:45" is not a standard date/time format. Power BI cannot convert it directly into a proper Date/Time type until the text " at " is removed. Splitting the column using " at " separates the date from the time, allowing you to convert the date part into a valid Date type and use Power BI’s built-in date hierarchy for analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 82 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 82</h1>
+    <div class="question">
+      <p>Imagine you're a sales manager who wants to monitor key sales metrics on the go using your mobile phone. You have several Power BI reports that track sales performance, but they are not optimized for viewing on a small screen in portrait mode. You need to create a mobile-friendly dashboard that displays the most important metrics clearly and concisely. <br>
+Challenge: How should you build this mobile-optimized dashboard using your existing Power BI reports? <br>
+Solution: Arrange the following actions in the correct sequence to create a dashboard that is easy to view and navigate on a mobile phone in portrait mode. <br>
+Available Actions: <br>
+A. From the Power BI service, create a new dashboard and name it "Mobile Sales."<br>
+B. Pin visuals and tiles from your existing reports to the "Mobile Sales" dashboard.<br>
+C. Open the "Mobile Sales" dashboard in the Power BI service.<br>
+D. Create a dedicated mobile layout for each of your existing reports.<br>
+E. Edit the "Mobile Sales" dashboard in mobile view to optimize the layout for portrait mode.<br>
+F. Rearrange, resize, or remove tiles in the mobile layout to fit the portrait orientation and prioritize key metrics.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A, B, C, E, F</li>
+        <li>B. B, C, E, F, A</li>
+        <li>C. C, A, B, F, D</li>
+      </ul>
+      <ul>
+        <li class="active">A. A, B, C, E, F</li>
+        <li>B. B, C, E, F, A</li>
+        <li>C. C, A, B, F, D</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> This sequence is correct because you begin by creating the new dashboard, then pin relevant visuals to it, open the dashboard, and finally switch to mobile view where you can adjust layout, size, and arrangement so the dashboard displays clearly on a phone in portrait mode.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 83 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 83</h1>
+    <div class="question">
+      <p>Which M function in Power Query can be used to replace null values in a column named "Sales" with a constant value, say 0, in a custom column named "AdjustedSales"?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Table.ReplaceValue(#"Previous Step", null, 0, Replacer.ReplaceValue, {"Sales"})</li>
+        <li>B. Table.TransformColumns(#"Previous Step", {"Sales", each if _ = null then 0 else _, type number})</li>
+        <li>C. Table.FillNulls(#"Previous Step", "Sales", 0)</li>
+        <li>D. Table.AddColumn(#"Previous Step", "AdjustedSales", each if [Sales] = null then 0 else [Sales], type number)</li>
+      </ul>
+      <ul>
+        <li>A. Table.ReplaceValue(#"Previous Step", null, 0, Replacer.ReplaceValue, {"Sales"})</li>
+        <li>B. Table.TransformColumns(#"Previous Step", {"Sales", each if _ = null then 0 else _, type number})</li>
+        <li>C. Table.FillNulls(#"Previous Step", "Sales", 0)</li>
+        <li class="active">D. Table.AddColumn(#"Previous Step", "AdjustedSales", each if [Sales] = null then 0 else [Sales], type number)</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> This function properly creates a new custom column called AdjustedSales and checks each row in the Sales column, replacing null values with 0 while keeping all existing numeric values intact, giving you a clean, usable column for analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 84 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 84</h1>
+    <div class="question">
+      <p>Your Power Query script is taking a long time to load data, and you suspect that the performance issue lies with the query steps. Which of the following steps can be optimized to improve performance? (Select all that apply)</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Filtering rows early in the query.</li>
+        <li>B. Using the 'Remove Duplicates' function on a large dataset before necessary filtering.</li>
+        <li>C. Consolidating multiple 'Add Column' steps into a single custom column step.</li>
+        <li>D. Increasing the data refresh frequency.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Filtering rows early in the query.</li>
+        <li>B. Using the 'Remove Duplicates' function on a large dataset before necessary filtering.</li>
+        <li class="active">C. Consolidating multiple 'Add Column' steps into a single custom column step.</li>
+        <li>D. Increasing the data refresh frequency.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Filtering rows early reduces the amount of data processed in later steps, improving performance. Consolidating multiple column-creation steps into one minimizes repeated scans of the dataset. Removing duplicates too early slows performance, and increasing refresh frequency does nothing to optimize query speed.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 85 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 85</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a research organization. You have a folder containing hundreds of CSV files with data from various scientific experiments. Each file has metadata embedded in its properties, such as the experiment date, researcher name, and equipment used. You want to analyze this metadata in Power BI to understand trends and patterns in your research activities, but you don't need the actual experimental data in your report. <br>
+Challenge: How can you extract and load only the metadata from these CSV files into Power BI without importing the raw data itself? <br>
+Solution: Which three actions should you perform in sequence to achieve this? <br>
+Available Actions: <br>
+A. From Power BI Desktop, select Get Data, and then select Folder. <br>
+B. From Power Query Editor, combine the Binary columns. <br>
+C. From Power Query Editor, expand the Content column. <br>
+D. From Power Query Editor, remove the Content column. <br>
+E. From Power Query Editor, expand the Attributes column. <br>
+F. From Power BI Desktop, select Get Data, and then select Text/CSV.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A, B, F</li>
+        <li>B. A, D, E</li>
+        <li>C. B, D, C</li>
+        <li>D. C, D, E</li>
+      </ul>
+      <ul>
+        <li>A. A, B, F</li>
+        <li class="active">B. A, D, E</li>
+        <li>C. B, D, C</li>
+        <li>D. C, D, E</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> First, you connect to the folder to read file-level metadata. Then, instead of expanding the file contents, you remove the Content column to avoid loading raw data. Finally, you expand the Attributes column, which contains metadata such as creation date, researcher name, and other file properties.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 86 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 86</h1>
+    <div class="question">
+      <p>As a data strategist for an international e-commerce company, you have developed a Power BI dashboard that presents comprehensive insights into the company's online transactions. Your current assignment involves delivering a customized version of this dashboard that exclusively showcases transaction data for a specific region. <br>
+Proposed strategy: <br>
+Incorporate a query string parameter within the data source URL, specifying both the relevant database table or field along with the specific region of interest. <br>
+Will this strategy effectively achieve the specified requirement?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Query string parameters in the report URL can filter visuals, but they cannot filter the underlying data source at the query level. Power BI does not support passing query string parameters into the actual data source connection to restrict imported or DirectQuery data by region. To deliver a region-specific dashboard, you would instead use row-level security (RLS), separate datasets, or region-filtered queries in Power Query.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 87 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 87</h1>
+    <div class="question">
+      <p>Following the establishment of role-based security measures within a Power BI Desktop dataset, access is controlled based on a role designated as "Market Analysts." To confirm the functionality of these security settings, what action should be undertaken?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Within Power Query Editor, configure a dynamic column based on user access levels.</li>
+        <li>B. Utilize the "View as" option in the Report view.</li>
+        <li>C. Implement a row-level filter using a DAX formula in the Report view.</li>
+        <li>D. Generate a dynamic scenario analysis parameter in the Report view.</li>
+      </ul>
+      <ul>
+        <li>A. Within Power Query Editor, configure a dynamic column based on user access levels.</li>
+        <li class="active">B. Utilize the "View as" option in the Report view.</li>
+        <li>C. Implement a row-level filter using a DAX formula in the Report view.</li>
+        <li>D. Generate a dynamic scenario analysis parameter in the Report view.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To verify whether your role-based security (RLS) settings work correctly, Power BI Desktop provides the "View as" feature. It allows you to simulate how the report appears for specific roles like "Market Analysts," ensuring filters and restrictions behave as expected.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 88 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 88</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a delivery company. You're creating a Power BI report that tracks delivery routes and performance metrics for drivers. The report will be used by drivers on their mobile devices while they are on the road. You want to enhance the report by incorporating location-based insights, such as displaying nearby delivery locations or visualizing delivery routes on a map. <br>
+Challenge: How can you configure your Power BI report to effectively utilize geographical data and display location-based information relevant to each driver's current location when they view the report on their mobile device? <br>
+Solutions: Which two actions should you perform to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Enable location tracking for the Power BI mobile app.</li>
+        <li>B. In the Data Category settings, set the geographic data category for the relevant columns (e.g., city, state, zip code).</li>
+        <li>C. Create a hierarchy for columns of the geography data type to enable drill-down functionality in visuals.</li>
+        <li>D. Use the columns with the geography data type in visuals that support location-based data, such as maps and scatter plots.</li>
+      </ul>
+      <ul>
+        <li>A. Enable location tracking for the Power BI mobile app.</li>
+        <li class="active">B. In the Data Category settings, set the geographic data category for the relevant columns (e.g., city, state, zip code).</li>
+        <li>C. Create a hierarchy for columns of the geography data type to enable drill-down functionality in visuals.</li>
+        <li class="active">D. Use the columns with the geography data type in visuals that support location-based data, such as maps and scatter plots.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong>To display location-based insights in Power BI, you must first categorize your columns correctly as geographic data (e.g., city, state, postal code). Then, using these categorized columns in visuals that support maps (like Map or Filled Map) allows the report to render delivery routes and locations accurately. Enabling location tracking in the mobile app is not necessary for displaying data—it’s only used for capturing user location. Creating hierarchies is optional and mainly aids drill-down functionality, not the display of location-based data.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 89 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 89</h1>
+    <div class="question">
+      <p>In the process of developing a data model within Power BI Desktop, your goal is to decrease the overall size of the model. Which approach should you employ to achieve a more compact model size?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Adjust the Filters settings under the Query reduction options.</li>
+        <li>B. Modify the Slicers settings within the Query reduction options.</li>
+        <li>C. Modify the Slicers settings within the Query reduction options.</li>
+        <li>D. Change the table Storage Mode to Import.</li>
+      </ul>
+      <ul>
+        <li>A. Adjust the Filters settings under the Query reduction options.</li>
+        <li>B. Modify the Slicers settings within the Query reduction options.</li>
+        <li>C. Modify the Slicers settings within the Query reduction options.</li>
+        <li class="active">D. Change the table Storage Mode to Import.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using Import storage mode allows Power BI to load data into its in-memory engine, enabling highly efficient compression and faster query performance. This reduces the model size compared to DirectQuery, which maintains external storage and can result in larger metadata overhead. Adjusting filters or slicers under Query reduction options affects user interactions and query frequency but does not directly reduce the data model size.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 90 -->
+  <div class="questionFormat">
+    <h1>Question 90</h1>
+    <div class="question">
+      <p>Imagine you're a BI analyst working for a manufacturing company. You've created a Power BI dataset that analyzes production data stored in an on-premises SQL Server database. You want to publish this dataset to the Power BI service and schedule it to refresh daily so that your reports always have the latest production data. <br>
+Challenge: You know that the Power BI service cannot directly access on-premises data sources. You need to set up a secure connection between the Power BI service and your SQL Server database to enable data refresh. <br>
+Solution: Which four actions should you perform in sequence to configure this connection and schedule the daily refresh of your dataset? <br>
+Available Actions: <br>
+A. Configure an on-premises data gateway. <br>
+B. Add a data source to the gateway and specify the SQL Server database connection details.   <br>
+C. Add the dataset owner's user account to the data source credentials in the gateway. <br>
+D. Configure a scheduled refresh for the dataset in the Power BI service. <br>
+E. Create a Power BI dataflow to connect to the SQL Server database. <br>
+F. Enable the "Enhanced data connectivity" option in the Power BI admin portal.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A, B, C, D</li>
+        <li>B. A, D, C, E</li>
+        <li>C. F, A, B, C</li>
+        <li>D. D, E, F, A</li>
+      </ul>
+      <ul>
+        <li class="active">A. A, B, C, D</li>
+        <li>B. A, D, C, E</li>
+        <li>C. F, A, B, C</li>
+        <li>D. D, E, F, A</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To enable daily refresh of a dataset that connects to an on-premises SQL Server, you first need to install and configure an on-premises data gateway. Then, add the SQL Server database as a data source in the gateway and provide the connection details. Next, ensure that the dataset owner's credentials are configured for that data source. Finally, in the Power BI service, set up a scheduled refresh for the dataset. This sequence ensures secure access to the on-premises database and automated daily refreshes.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

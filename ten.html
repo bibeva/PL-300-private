@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 91 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 91</h1>
+    <div class="question">
+      <p>How does the refresh behavior of Power BI reports change when using a live connection to a database compared to importing data?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Live connection reports require manual refresh to load updated data</li>
+        <li>B. Live connection reports automatically reflect updates in the source database without the need for a dataset refresh in Power BI</li>
+        <li>C. Live connection reports only update data during scheduled refresh periods set in the Power BI service</li>
+        <li>D. Live connection and imported data reports refresh at the same frequency and method</li>
+      </ul>
+      <ul>
+        <li>A. Live connection reports require manual refresh to load updated data</li>
+        <li class="active">B. Live connection reports automatically reflect updates in the source database without the need for a dataset refresh in Power BI</li>
+        <li>C. Live connection reports only update data during scheduled refresh periods set in the Power BI service</li>
+        <li>D. Live connection and imported data reports refresh at the same frequency and method</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Live connections do not import data into Power BI; instead, they query the source database directly. This means any changes in the source are immediately reflected in the report, unlike imported models that require scheduled or manual refresh.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 92 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 92</h1>
+    <div class="question">
+      <p>After developing a data model and accompanying report in Power BI Desktop, it operates smoothly in the test environment. However, upon deployment to the Power BI service, both the model and report encounter performance problems. Your task is to enhance the performance of the model. <br>
+Proposed Solution: Eliminate unused columns from the data model that do not feature in any reports. <br>
+Does the proposed solution help in the task?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Removing unused columns reduces model size and memory usage, which improves performance in the Power BI service. It helps optimize the dataset, making queries faster and lowering load on the service.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 93 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 93</h1>
+    <div class="question">
+      <p>You are a Power BI developer for a busy e-commerce company. You've created a report to track website traffic and sales conversions. This report is crucial for the marketing team to monitor campaign effectiveness and identify areas for improvement. The report uses an imported dataset containing a single fact table with 15 million rows of web traffic data. <br>
+This dataset refreshes every 6 hours to ensure the marketing team has access to near real-time information. The report currently consists of a single, densely packed page with 10 custom visuals from AppSource and 15 standard Power BI visuals. The marketing team has reported that the report is slow to load and becomes unresponsive when interacting with the visuals. <br>
+You need to recommend a solution to improve the performance of the report. What should you recommend?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Reduce the refresh frequency of the dataset to once a day.</li>
+        <li>B. Upgrade the App Workspace to a Power BI Premium capacity.</li>
+        <li>C. Remove any unused columns from the tables in the data model.</li>
+        <li>D. Convert the imported dataset to a DirectQuery connection.</li>
+      </ul>
+      <ul>
+        <li>A. Reduce the refresh frequency of the dataset to once a day.</li>
+        <li class="active">B. Upgrade the App Workspace to a Power BI Premium capacity.</li>
+        <li>C. Remove any unused columns from the tables in the data model.</li>
+        <li>D. Convert the imported dataset to a DirectQuery connection.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The performance issue is caused by a heavy report page with many visuals, including 10 custom AppSource visuals that are more resource-intensive. Premium capacity provides more memory and processing power, improving visual rendering and interaction. Reducing refresh, removing columns, or switching to DirectQuery won’t fix the visual-heavy performance issue.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 94 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 94</h1>
+    <div class="question">
+      <p>You are developing a Power BI report that connects to a data source that ingests new data in real-time. The data source continuously updates with high-frequency data, and your goal is to create a report that adheres to the following requirements: <br>
+- Performs real-time analytics <br>
+- Minimizes load on the data source to avoid overloading the system <br>
+- Always displays the latest data without needing to perform manual or scheduled data refreshes <br>
+Question: Which connectivity mode should you select for your Power BI dataset?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. DirectQuery mode</li>
+        <li>B. Dual mode</li>
+        <li>C. Aggregations mode</li>
+        <li>D. Push dataset mode</li>
+      </ul>
+      <ul>
+        <li>A. DirectQuery mode</li>
+        <li>B. Dual mode</li>
+        <li>C. Aggregations mode</li>
+        <li class="active">D. Push dataset mode</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A push dataset receives data pushed into Power BI from an external system, enabling true real-time visuals without scheduled refreshes or constant queries to the source, which reduces load and shows updates immediately.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 95 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 95</h1>
+    <div class="question">
+      <p>You are managing a Microsoft Power BI report that has grown to a 550 MB PBIX file size. This report, housed in a Power BI App workspace operating on a shared capacity, is frequently accessed by numerous users. The dataset within this report draws from an imported single fact table that holds approximately 12 million entries. It's configured to undergo data refreshes daily at 08:00 AM and 05:00 PM. <br>
+Currently, the report layout consists of a single page featuring 15 third-party AppSource visuals and 10 standard Power BI visuals. User feedback indicates a significant delay in loading and interacting with the visuals on the report. To enhance the performance and user experience of this report, what action should you recommend?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Modify existing DAX measures to incorporate more iterator functions.</li>
+        <li>B. Establish row-level security (RLS) policies.</li>
+        <li>C. Transition standard visuals to additional third-party AppSource visuals.</li>
+        <li>D. Distribute the visuals across several pages instead of a single page.</li>
+      </ul>
+      <ul>
+        <li>A. Modify existing DAX measures to incorporate more iterator functions.</li>
+        <li>B. Establish row-level security (RLS) policies.</li>
+        <li>C. Transition standard visuals to additional third-party AppSource visuals.</li>
+        <li class="active">D. Distribute the visuals across several pages instead of a single page.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Splitting the crowded single page into multiple pages reduces the number of visuals loading at once, especially heavy AppSource visuals, which significantly improves performance and responsiveness.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 96 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 96</h1>
+    <div class="question">
+      <p>In a Power BI model with bidirectional cross-filtering enabled between the Sales and Customers tables, what potential issue should you be aware of?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Increased model complexity and potential ambiguity in filter propagation</li>
+        <li>B. Improved query performance due to optimized filter paths</li>
+        <li>C. Reduced need for DAX measures to calculate related table values</li>
+        <li>D. Simplification of the model's relationship diagram</li>
+      </ul>
+      <ul>
+        <li class="active">A. Increased model complexity and potential ambiguity in filter propagation</li>
+        <li>B. Improved query performance due to optimized filter paths</li>
+        <li>C. Reduced need for DAX measures to calculate related table values</li>
+        <li>D. Simplification of the model's relationship diagram</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Enabling bidirectional cross-filtering between tables like Sales and Customers allows filters to flow in both directions, which can simplify some calculations. However, it also increases the complexity of the model, as multiple filter paths may exist between tables. This can lead to ambiguous relationships, unexpected results in visuals, and potential performance issues when Power BI tries to resolve which filters to apply. Careful modeling is needed to avoid these complications.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 97 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 97</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst for a large online retailer. You're creating a Power BI report to track sales performance across different product categories and regions. Your data model has two tables: <br>
+- Sales: Contains detailed information about each sale, such as the order ID, product ID, customer ID, date, quantity, and revenue. <br>
+- Products: Contains information about each product, including product ID, category, cost, and other attributes. <br>
+To protect sensitive data, you've implemented Row-Level Security (RLS) on both tables. For example, sales managers might only be able to see sales data for their assigned regions, and product managers might only be able to see data for the product categories they manage. <br>
+Now, you need to create a relationship between the Sales and Products tables to analyze sales by product category. However, it's crucial that this relationship respects the RLS rules you've already defined. When you filter by product category, you want to ensure that users only see sales data that they are authorized to access based on their RLS roles. <br>
+Question: How should you create the relationship between the Sales and Products tables to ensure that bidirectional cross-filtering works correctly with the existing RLS settings?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create an inactive relationship between the tables and select "Apply security filter in both directions."</li>
+        <li>B. Create an active relationship between the tables and select "Apply security filter in both directions."</li>
+        <li>C. Create an inactive relationship between the tables and select "Assume referential integrity."</li>
+        <li>D. Create an active relationship between the tables and select "Assume referential integrity."</li>
+      </ul>
+      <ul>
+        <li>A. Create an inactive relationship between the tables and select "Apply security filter in both directions."</li>
+        <li class="active">B. Create an active relationship between the tables and select "Apply security filter in both directions."</li>
+        <li>C. Create an inactive relationship between the tables and select "Assume referential integrity."</li>
+        <li>D. Create an active relationship between the tables and select "Assume referential integrity."</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To analyze sales by product category while respecting existing RLS rules, the relationship between Sales and Products must be active so that it participates in filtering by default. Enabling "Apply security filter in both directions" ensures that RLS applied on either table (Sales or Products) propagates correctly across the relationship. This allows users to see only the data they are authorized to access while maintaining correct bidirectional filter behavior for reporting and analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 98 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 98</h1>
+    <div class="question">
+      <p>In Power BI Desktop, you intend to utilize M language to create a universal date table covering a span of 15 years. To ensure the table includes rows for sequential days throughout the designated date range, with an aim to reduce administrative workload, which M language function is appropriate for this task?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. #datetime</li>
+        <li>B. #timespan</li>
+        <li>C. List.Dates</li>
+        <li>D. List.Times</li>
+      </ul>
+      <ul>
+        <li>A. #datetime</li>
+        <li>B. #timespan</li>
+        <li class="active">C. List.Dates</li>
+        <li>D. List.Times</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The List.Dates function in Power Query M is designed to generate a list of sequential dates given a start date, a count, and a duration interval (typically #duration(1,0,0,0) for daily increments). This makes it ideal for creating a universal date table spanning multiple years, as it automatically produces one row per day, reducing manual effort and ensuring consistency in your date dimension.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 99 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 99</h1>
+    <div class="question">
+      <p>You're designing a Power BI report for a museum to display on a large, vertically oriented screen in their lobby. The report will showcase visitor demographics and popular exhibits in real-time. <br>
+To ensure the report makes the best use of the screen's unusual dimensions and is visually appealing, you need to optimize its layout. What should you do?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. In Power BI Desktop, adjust the "Page view" settings to "Fit to width."</li>
+        <li>B. In Power BI Desktop, use the "Personalize visuals" options to change the visual sizes.</li>
+        <li>C. In Power BI Desktop, go to "Canvas settings" and set a custom width and height.</li>
+        <li>D. In the Power BI service, adjust the display settings for the report.</li>
+      </ul>
+      <ul>
+        <li>A. In Power BI Desktop, adjust the "Page view" settings to "Fit to width."</li>
+        <li>B. In Power BI Desktop, use the "Personalize visuals" options to change the visual sizes.</li>
+        <li class="active">C. In Power BI Desktop, go to "Canvas settings" and set a custom width and height.</li>
+        <li>D. In the Power BI service, adjust the display settings for the report.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To optimize a report for a large, vertically oriented screen, you should configure the report page dimensions explicitly in Power BI Desktop’s canvas settings. This allows you to set a custom width and height that match the physical display, ensuring visuals are proportionally arranged and make full use of the screen space. Simply fitting to width or personalizing visuals does not guarantee proper alignment for non-standard screen orientations.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 100 -->
+  <div class="questionFormat">
+    <h1>Question 100</h1>
+    <div class="question">
+      <p>In Power Query Editor, after linking to a customer database, you decide to eliminate the "CustomerID" column from your dataset. The approach must guarantee that any columns added in the future are automatically excluded from the dataset upon refresh. What step should you take to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Highlight "CustomerID" and apply the Exclude Remaining Columns operation</li>
+        <li>B. Employ the Remove Column feature on the "CustomerID" field</li>
+        <li>C. Utilize the Select Columns function and select the columns to keep.</li>
+        <li>D. Apply the Rotate command, followed by a row exclusion process to eliminate "CustomerID"</li>
+      </ul>
+      <ul>
+        <li class="active">A. Highlight "CustomerID" and apply the Exclude Remaining Columns operation</li>
+        <li>B. Employ the Remove Column feature on the "CustomerID" field</li>
+        <li>C. Utilize the Select Columns function and select the columns to keep.</li>
+        <li>D. Apply the Rotate command, followed by a row exclusion process to eliminate "CustomerID"</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Exclude Remaining Columns feature in Power Query dynamically removes all columns except the ones you explicitly select (in this case, all except "CustomerID"). This ensures that if new columns are added to the source in the future, they are automatically excluded from your dataset during refresh. Simply using Remove Column or Select Columns is static and would not automatically handle new columns added later.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

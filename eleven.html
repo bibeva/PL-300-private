@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 101 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 101</h1>
+    <div class="question">
+      <p>You're a data analyst for a chain of fitness centers. You're creating a report to analyze membership sign-ups across different classes offered (Yoga, Zumba, Spin, etc.) for each quarter of the year. You have a total of 12 different class categories. <br>
+You need to design a visual that allows regional managers to quickly compare the number of sign-ups for each class category within a specific quarter. 
+This will help them understand class popularity and allocate resources effectively. What is the best visual to use to achieve this goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. a scatter plot</li>
+        <li>B. a line chart</li>
+        <li>C. a clustered bar chart</li>
+        <li>D. a treemap</li>
+      </ul>
+      <ul>
+        <li>A. a scatter plot</li>
+        <li>B. a line chart</li>
+        <li class="active">C. a clustered bar chart</li>
+        <li>D. a treemap</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A clustered bar chart is best because it clearly compares sign-ups across all 12 class categories within a selected quarter. It displays categories side-by-side, making differences easy to spot, unlike line charts or scatter plots, while treemaps are less precise for comparing similar-sized values.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 102 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 102</h1>
+    <div class="question">
+      <p>You are a data analyst working with a dataset in Power BI that contains detailed sales transactions for an electronics retailer. The dataset includes a SalesAmount column with the transaction amount for each sale. You want to analyze the distribution of sales amounts to understand which sales amount ranges are most common. <br>
+Task: Create a histogram in Power BI to visualize the distribution of sales amounts. You decide to use bins to categorize the SalesAmount data into discrete intervals. <br>
+Question: How should you configure the bins to analyze sales amounts ranging from $0 to $1000, with each bin representing a range of $100?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Use the "Grouping" feature on the SalesAmount column to manually define each $100 interval</li>
+        <li>B. Use the "New column" feature in Power BI to create a custom DAX formula that categorizes each sale into the correct $100 interval</li>
+        <li>C. Use the "Bins" feature on the SalesAmount column, setting the bin size to $100</li>
+        <li>D. Import the data into Excel, create the bins manually, and then import the modified dataset back into Power BI</li>
+      </ul>
+      <ul>
+        <li>A. Use the "Grouping" feature on the SalesAmount column to manually define each $100 interval</li>
+        <li>B. Use the "New column" feature in Power BI to create a custom DAX formula that categorizes each sale into the correct $100 interval</li>
+        <li class="active">C. Use the "Bins" feature on the SalesAmount column, setting the bin size to $100</li>
+        <li>D. Import the data into Excel, create the bins manually, and then import the modified dataset back into Power BI</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Bins feature is the built-in and fastest way to create $100 intervals for a histogram. By setting the bin size to 100, Power BI automatically groups SalesAmount values from $0–1000 into clean, evenly spaced ranges without needing manual grouping or extra DAX.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 103 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 103</h1>
+    <div class="question">
+      <p>You have developed a Power BI model that pulls data from the following sources: <br>
+- DataSource1: A CSV file stored in SharePoint Online. <br> 
+- DataSource2: An Azure SQL Managed Instance within a secure subnet. <br>
+- DataSource3: A public REST API that returns JSON data. <br>
+You now need to publish this model to the Power BI Service. <br>
+Question: Which of the following data sources require an on-premises data gateway for scheduled refreshes?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. DataSource1 only</li>
+        <li>B. DataSource2 only</li>
+        <li>C. DataSource3 only</li>
+        <li>D. DataSource1 and DataSource2 only</li>
+      </ul>
+      <ul>
+        <li>A. DataSource1 only</li>
+        <li class="active">B. DataSource2 only</li>
+        <li>C. DataSource3 only</li>
+        <li>D. DataSource1 and DataSource2 only</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> SharePoint Online (CSV) and public REST APIs refresh directly in the Power BI Service without a gateway. The Azure SQL Managed Instance inside a secure subnet is not cloud-accessible, so it requires an on-premises (or VNet) data gateway for scheduled refresh.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 104 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 104</h1>
+    <div class="question">
+      <p>You're a Power BI consultant working for a marketing agency. You've built a report to analyze social media campaign performance for a client. The data source is an Excel spreadsheet that the client updates weekly with new data. <br>
+You used Power Query to shape the data, including renaming some columns (e.g., "Impressions" to "Reach") and adding custom columns (e.g., "Engagement Rate"). 
+When you try to refresh the report after the client updated the spreadsheet, you encounter the following error message: <br>
+Expression.Error: The column 'Campaign Name' of the table wasn't found. <br>
+What are two possible reasons for this error? Each correct answer presents a complete solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. The client deleted the "Campaign Name" column from the spreadsheet.</li>
+        <li>B. The client changed the "Campaign Name" column to "Campaign ID" in the spreadsheet.</li>
+        <li>C. The client moved the spreadsheet to a different folder on their computer.</li>
+        <li>D. The client changed the formatting of the "Campaign Name" column in the spreadsheet.</li>
+      </ul>
+      <ul>
+        <li class="active">A. The client deleted the "Campaign Name" column from the spreadsheet.</li>
+        <li class="active">B. The client changed the "Campaign Name" column to "Campaign ID" in the spreadsheet.</li>
+        <li>C. The client moved the spreadsheet to a different folder on their computer.</li>
+        <li>D. The client changed the formatting of the "Campaign Name" column in the spreadsheet.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The error occurs because Power Query can’t find a column it expects. This happens if the client deleted the “Campaign Name” column or renamed it to something else like “Campaign ID.” Moving the file or changing formatting wouldn’t cause a missing-column error.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 105 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 105</h1>
+    <div class="question">
+      <p>When using Power Query in Power BI to create a custom column that calculates the length of a text string in a column named "CustomerName", which of the following syntax options correctly applies the Text.Length function?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. = Text.Length([CustomerName])</li>
+        <li>B. = "Text.Length"([CustomerName])</li>
+        <li>C. = Text.Length{"CustomerName"}</li>
+        <li>D. = Text[Length([CustomerName])]</li>
+      </ul>
+      <ul>
+        <li class="active">A. = Text.Length([CustomerName])</li>
+        <li>B. = "Text.Length"([CustomerName])</li>
+        <li>C. = Text.Length{"CustomerName"}</li>
+        <li>D. = Text[Length([CustomerName])]</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The correct M syntax for calculating text length is Text.Length([CustomerName]) because it properly calls the function and passes the column value. The other options use incorrect quoting or function formats.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 106 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 106</h1>
+    <div class="question">
+      <p>You're a data analyst working with customer feedback data. You have a table named "Feedback" in your Power BI model, which includes a column named "Comments" containing free-text feedback from customers. <br>
+ You suspect that a bug causes manual entry in comments to generate symbol-text of length greater than 100. You want to initially understand the distribution of comment lengths without increasing the size of your Power BI model before performing any further analysis. What should you do?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. In Power Query Editor, add a conditional column that categorizes comments based on their length.</li>
+        <li>B. In the report view, add a DAX measure that calculates the average length of the comments.</li>
+        <li>C. In Power Query Editor, add a custom column that calculates the length of each comment.</li>
+        <li>D. From Power Query Editor, change the distribution for the "Column profile", then choose the "group by length" option for the "Comments" column.</li>
+      </ul>
+      <ul>
+        <li>A. In Power Query Editor, add a conditional column that categorizes comments based on their length.</li>
+        <li>B. In the report view, add a DAX measure that calculates the average length of the comments.</li>
+        <li>C. In Power Query Editor, add a custom column that calculates the length of each comment.</li>
+        <li class="active">D. From Power Query Editor, change the distribution for the "Column profile", then choose the "group by length" option for the "Comments" column.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The goal is to explore comment-length distribution without increasing model size. Adding calculated or custom columns (A or C) increases the model size. A DAX measure (B) does not give distribution information. Power Query’s Column Profile tools allow you to view value lengths and distribution without loading extra columns into the model.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 107 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 107</h1>
+    <div class="question">
+      <p>You're a Power BI administrator for a large retail company. You have a dataset called "Inventory" that tracks stock levels, product information, and supplier details. This dataset is stored in a dedicated Power BI workspace. The procurement team, responsible for managing supplier relationships and ordering new stock, needs to be able to analyze the "Inventory" dataset using Microsoft Excel. <br>
+Currently, they don't have any specific permissions within the Power BI workspace. What should you do to enable the procurement team to analyze the "Inventory" dataset with Excel?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Grant the procurement team "Build" permissions to the "Inventory" dataset.</li>
+        <li>B. Send the procurement team a copy of the original Excel file that the "Inventory" dataset is based on.</li>
+        <li>C. Add the procurement team as "Viewers" to the Power BI workspace where the "Inventory" dataset is stored.</li>
+        <li>D. Create a paginated report connected to the "Inventory" dataset and share it with the procurement team.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Grant the procurement team "Build" permissions to the "Inventory" dataset.</li>
+        <li>B. Send the procurement team a copy of the original Excel file that the "Inventory" dataset is based on.</li>
+        <li>C. Add the procurement team as "Viewers" to the Power BI workspace where the "Inventory" dataset is stored.</li>
+        <li>D. Create a paginated report connected to the "Inventory" dataset and share it with the procurement team.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To analyze a Power BI dataset in Excel using features like Analyze in Excel, users must have Build permission on the dataset. Viewer access alone is not enough, and sending the original Excel file bypasses the Power BI dataset entirely. Paginated reports don’t allow Excel-based analysis. Granting Build allows them to connect to the dataset directly from Excel and create PivotTables, PivotCharts, etc.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 108 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 108</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst creating a Power BI report to analyze website traffic trends. You have a stacked area chart that shows the number of website visitors over time, broken down by traffic source (e.g., organic search, social media, direct traffic). You've also added a slicer that allows users to filter the data by specific months. <br>
+However, when users select a month in the slicer, the stacked area chart only shows the data for that month, making it difficult to compare the selected month's traffic with the overall trend. <br>
+Challenge: How can you improve the user experience by allowing users to clearly compare the selected month's data with the rest of the data in the stacked area chart? <br>
+Which interaction mode should you ensure is active between the slicer and the stacked area chart to achieve this comparison?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Filter</li>
+        <li>B. Highlight</li>
+        <li>C. None</li>
+        <li>D. Drillthrough</li>
+      </ul>
+      <ul>
+        <li>A. Filter</li>
+        <li class="active">B. Highlight</li>
+        <li>C. None</li>
+        <li>D. Drillthrough</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Filter would remove all other months, leaving only the selected month visible, which is the current problem. Highlight keeps the full trend in the stacked area chart but visually emphasizes the selected month, allowing users to compare the chosen month against the overall data.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 109 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 109</h1>
+    <div class="question">
+      <p>You're a Power BI developer for a healthcare organization. You've created a dataset called "Patient Data" that contains protected health information (PHI). This dataset is connected to a report used by doctors and nurses to monitor patient progress. To comply with privacy regulations, you need to ensure that only authorized personnel can access the detailed patient data. <br>
+However, you also want to allow administrative staff to analyze aggregated data in Microsoft Excel for reporting purposes. You've already granted the administrative staff "Build" permissions for the "Patient Data" dataset. What "Export data" setting should you configure to prevent administrative staff from accessing the detailed data while still allowing them to connect to the dataset from Excel?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. None</li>
+        <li>B. Summarized data, data with current layout and underlying data</li>
+        <li>C. Summarized data and data with current layout</li>
+        <li>D. Publish the report to a workspace that the administrative staff doesn't have access to</li>
+      </ul>
+      <ul>
+        <li>A. None</li>
+        <li>B. Summarized data, data with current layout and underlying data</li>
+        <li class="active">C. Summarized data and data with current layout</li>
+        <li>D. Publish the report to a workspace that the administrative staff doesn't have access to</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> By allowing only summarized data and data with the current layout, you prevent users from exporting the underlying row-level data, which contains sensitive patient information. This ensures administrative staff can analyze aggregated metrics in Excel without accessing detailed PHI, maintaining compliance with privacy regulations.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 110 -->
+  <div class="questionFormat">
+    <h1>Question 110</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for an online retail company. You're building a Power BI report to analyze customer orders and identify trends in purchasing behavior. You have access to an Azure SQL database that contains two tables: "Customers" and "Orders." <br>
+The "Customers" table contains information about each customer, such as their name, email address, and location. The "Orders" table contains details about each order, such as the order date, products purchased, and total amount. Both tables are linked by a common column called "CustomerID." <br>
+Challenge: You need to combine these two tables in Power Query Editor to create a single query that includes all the relevant information from both tables. This consolidated query will serve as the foundation for your Power BI report, allowing you to analyze customer orders in conjunction with customer demographics and purchasing history. <br>
+How should you combine the "Customers" and "Orders" tables in Power Query Editor to achieve this consolidated view?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Append the "Customers" query to the "Orders" query.</li>
+        <li>B. Merge the "Orders" query into the "Customers" query, using "CustomerID" as the join column.</li>
+        <li>C. Create a relationship between the "Customers" and "Orders" queries in the Power BI data model.</li>
+      </ul>
+      <ul>
+        <li>A. Append the "Customers" query to the "Orders" query.</li>
+        <li class="active">B. Merge the "Orders" query into the "Customers" query, using "CustomerID" as the join column.</li>
+        <li>C. Create a relationship between the "Customers" and "Orders" queries in the Power BI data model.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Merging the tables in Power Query allows you to create a single consolidated query containing both customer details and their corresponding orders. Using "CustomerID" as the join key ensures each order is correctly matched to the respective customer. Appending (Option A) would stack the tables vertically, which is incorrect for combining related data. Creating a relationship in the data model (Option C) keeps the tables separate and does not produce a single unified query.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

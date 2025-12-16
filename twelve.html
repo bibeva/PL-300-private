@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 111 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 111</h1>
+    <div class="question">
+      <p>A healthcare provider uses Power BI Service to analyze patient data. Due to privacy laws, it's crucial that patient data is not exposed to unauthorized staff. Which Power BI feature should be prioritized to ensure compliance with privacy laws?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Workspace access control</li>
+        <li>B. Publish to web</li>
+        <li>C. Row-level security (RLS)</li>
+        <li>D. Data encryption</li>
+      </ul>
+      <ul>
+        <li>A. Workspace access control</li>
+        <li>B. Publish to web</li>
+        <li class="active">C. Row-level security (RLS)</li>
+        <li>D. Data encryption</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> RLS ensures only authorized users can see specific patient records by filtering data at the row level. This directly protects sensitive patient information and helps meet privacy laws, while the other options do not provide the same level of granular control.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 112 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 112</h1>
+    <div class="question">
+      <p>You're a data analyst for a chain of coffee shops. You have two Excel workbooks stored in a OneDrive folder: one for customer loyalty program data and another for sales transactions. Both workbooks contain a table named "Customers" with identical columns (CustomerID, Name, Email, etc.). <br>
+You want to create a Power BI report that combines data from both "Customers" tables to analyze customer behavior and loyalty program effectiveness. You need to be able to publish the report and dataset separately, allowing for independent updates and management. Which storage mode should you use for the report file and the dataset file?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Report file: LiveConnect <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: Import</li>
+        <li>B. Report file: Import <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: DirectQuery</li>
+        <li>C. Report file: DirectQuery <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: Import</li>
+      </ul>
+      <ul>
+        <li class="active">A. Report file: LiveConnect <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: Import</li>
+        <li>B. Report file: Import <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: DirectQuery</li>
+        <li>C. Report file: DirectQuery <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataset file: Import</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Import mode stores and refreshes all data in the dataset, ideal for combining Excel tables. The report should use LiveConnect so it connects to the published dataset without duplicating or importing data again, allowing independent updates and management.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 113 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 113</h1>
+    <div class="question">
+      <p>In your role, you've developed a Power BI report for your organization, featuring four distinct pages showcasing various aspects of financial metrics. The first page displays visuals related to revenue and costs, the second delves into liabilities analysis, the third examines receivables, and the fourth focuses on capital assets. <br>
+A fifth page has been introduced as the dashboard's entry point. What approach should you employ on the entry page to facilitate user navigation to the different sections of the report? <br>
+Proposed Solution: <br>
+- Generate a bookmark for each section of the report. <br>
+- Incorporate four navigational controls onto the entry page, configuring each to employ the Bookmark as its action mechanism. <br>
+- Assign the corresponding bookmark to each navigational control, directing to its respective report section. <br>
+Does this accomplish the intended goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Creating bookmarks for each report page and assigning them to navigation buttons on the entry page enables users to click and jump directly to the desired section. This approach is fully supported and achieves the intended navigation experience.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 114 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 114</h1>
+    <div class="question">
+      <p>Imagine you're a sales manager who wants to stay up-to-date on your team's performance. You have a Power BI report that tracks key sales metrics, and you want to receive a snapshot of this report in your email inbox every Monday morning. <br>
+Question: Which feature in Power BI Service should you use to automatically receive an email with a snapshot of your sales report every Monday morning?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Report sharing</li>
+        <li>B. Report subscription</li>
+        <li>C. Email embedding</li>
+        <li>D. Data alerts</li>
+      </ul>
+      <ul>
+        <li>A. Report sharing</li>
+        <li class="active">B. Report subscription</li>
+        <li>C. Email embedding</li>
+        <li>D. Data alerts</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Report subscriptions in the Power BI Service allow you to schedule automatic email deliveries of report snapshots at defined times, such as every Monday morning, ensuring you stay updated without manually opening the report.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 115 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 115</h1>
+    <div class="question">
+      <p>You are a Power BI developer creating a sales performance report for a company. The report contains sensitive employee performance data, including individual sales figures and commission earnings. <br>
+You want to allow managers to export summarized data from the report visuals for their team meetings but prevent them from exporting the underlying employee-level data to protect privacy. What should you do in Power BI Desktop to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Modify the data source permissions to restrict data access.</li>
+        <li>B. Configure the "Data Load" settings to import only summarized data.</li>
+        <li>C. Adjust the "Relationship" settings to hide sensitive columns.</li>
+        <li>D. Configure the "Report settings" to control data export options.</li>
+      </ul>
+      <ul>
+        <li>A. Modify the data source permissions to restrict data access.</li>
+        <li>B. Configure the "Data Load" settings to import only summarized data.</li>
+        <li>C. Adjust the "Relationship" settings to hide sensitive columns.</li>
+        <li class="active">D. Configure the "Report settings" to control data export options.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI report settings let you restrict exports to summarized data only and block access to underlying data, allowing managers to export aggregated visuals for meetings while protecting sensitive employee-level sales and commission details.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 116 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 116</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a large organization with a complex hierarchical structure. You're building a Power BI report that displays sensitive sales data. You need to ensure that each user can only see the sales data for their own department and any departments below them in the hierarchy. For example, a regional manager should be able to see data for their entire region, including all the departments within that region, while a department manager should only see data for their specific department. <br>
+Challenge: <br>
+You need to implement Row-Level Security (RLS) to enforce these access restrictions. However, you want to avoid hardcoding any department names or IDs in your DAX expressions, as the organizational structure might change over time. You need a dynamic solution that adapts to the user's role and position in the hierarchy. <br>
+Proposed Solution: <br>
+Ingest one or multiple tables that contain a mapping between the employee email and the related access (departments, regions). Construct a DAX measure that uses the USERPRINCIPALNAME() function to identify the logged-in user and combines it with RLS roles defined using DAX expressions that reference the mapping table. This table(s) are then added to the model to filter the related dimensions accordingly. <br>
+Does this proposed solution effectively address the challenge and provide a dynamic and flexible way to implement RLS based on user roles and the departmental hierarchy?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using a security mapping table combined with USERPRINCIPALNAME() is the recommended dynamic RLS pattern in Power BI. It avoids hardcoding values, adapts automatically as the hierarchy changes, and ensures users see only their department and subordinate departments through relationship-based filter propagation.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 117 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 117</h1>
+    <div class="question">
+      <p>Imagine you're the Power BI administrator for a global financial institution with branches in various countries. You're responsible for managing a suite of Power BI reports that contain confidential customer financial data. Each country has a dedicated financial advisor who needs to access and analyze the data for their respective region. <br>
+However, you need to ensure that these advisors can only see data for their assigned country and cannot modify the report designs or underlying data. <br>
+Challenge: <br>
+How can you configure Power BI to grant these financial advisors the appropriate level of access to the reports, ensuring they can only view data for their assigned country and cannot make any changes to the reports?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Publish the reports to the web and provide the financial advisors with the public URLs.</li>
+        <li>B. Share the reports with the financial advisors and grant them "Viewer" access.</li>
+        <li>C. Create a dedicated workspace for each country and assign the financial advisors as "Members" of their respective workspaces.</li>
+        <li>D. Implement RLS to restrict data access by country and share the reports with the financial advisors, granting them "Viewer" access.</li>
+      </ul>
+      <ul>
+        <li>A. Publish the reports to the web and provide the financial advisors with the public URLs.</li>
+        <li>B. Share the reports with the financial advisors and grant them "Viewer" access.</li>
+        <li>C. Create a dedicated workspace for each country and assign the financial advisors as "Members" of their respective workspaces.</li>
+        <li class="active">D. Implement RLS to restrict data access by country and share the reports with the financial advisors, granting them "Viewer" access.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Row-level security ensures each advisor only sees data for their assigned country, while Viewer access prevents any modification to reports or datasets, meeting both data privacy and governance requirements.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 118 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 118</h1>
+    <div class="question">
+      <p>You're building a Power BI report to analyze sales performance for a chain of bookstores. You have two tables: "Books" which lists each book with its ISBN, Title, and Author, and "Sales" which records each transaction with TransactionID, ISBN, Quantity, and Price. <br>
+To analyze sales by book title and author, you need to create a relationship between these tables. For optimal report performance, what relationship cardinality should you set in Power BI? The perspective is from Sales to Books.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. One to one</li>
+        <li>B. Many to many</li>
+        <li>C. One to many</li>
+        <li>D. Many to one</li>
+      </ul>
+      <ul>
+        <li>A. One to one</li>
+        <li>B. Many to many</li>
+        <li>C. One to many</li>
+        <li class="active">D. Many to one</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Each transaction in the "Sales" table can reference only one book, but each book in the "Books" table can appear in many transactions. From the perspective of the "Sales" table, this is a many-to-one (many sales rows to one book row) relationship, which ensures efficient filtering and aggregation in reports.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 119 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 119</h1>
+    <div class="question">
+      <p>You are the Power BI administrator for "Green Meadows", an environmental non-profit organization. Green Meadows uses Power BI to track donations, volunteer hours, and the impact of their conservation efforts. In a dedicated workspace, you have six reports and three dashboards, all included within the workspace App. <br>
+You need to provide all employees at Green Meadows with access to two specific dashboards and four specific reports within this workspace. The app already contains an audience setup called "Employee View" that includes only these 6 items. You want to achieve this with a single action, rather than granting access individually to each item. <br>
+Solution: You create a security group in Azure Active Directory called "Green Meadows Employees" and add all employees to it. You then share the App with that group, adding them to the "Employee View" audience. <br>
+Does this meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> By creating a security group in Azure Active Directory and sharing the Power BI App with that group while assigning them to the "Employee View" audience, all employees in the group automatically gain access to only the six selected items in the App. This approach provides centralized, single-action access control without granting permissions individually to each report or dashboard.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 120 -->
+  <div class="questionFormat">
+    <h1>Question 120</h1>
+    <div class="question">
+      <p>Select whether the following statement is true or false: <br>
+"Bins in Power BI can be used to categorize continuous data fields into discrete intervals, but they cannot be applied to text data."</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li class="active">A. True</li>
+        <li>B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, bins are designed to group continuous numeric data into discrete intervals, allowing for easier analysis of distributions or ranges. Text fields, being categorical rather than continuous, cannot be directly binned using this feature.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

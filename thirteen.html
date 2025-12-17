@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 121 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 121</h1>
+    <div class="question">
+      <p>You have a column that contains full names in the format "FirstName LastName". You want to create two additional columns for first and last names by writing a single line of code for each in Power Query. Which code allows you to achieve that? Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Text.BeforeDelimiter([FullName], " ")</li>
+        <li>B. Text.AfterDelimiter([FullName], " ")</li>
+        <li>C. Text.Split([FullName], " ")</li>
+      </ul>
+      <ul>
+        <li class="active">A. Text.BeforeDelimiter([FullName], " ")</li>
+        <li class="active">B. Text.AfterDelimiter([FullName], " ")</li>
+        <li>C. Text.Split([FullName], " ")</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Text.BeforeDelimiter extracts everything before the space, which gives the first name, and Text.AfterDelimiter extracts everything after the space, which gives the last name. Text.Split returns a list of values, not a single text value, so it cannot directly be used as a one-line expression for a column without further steps.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 122 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 122</h1>
+    <div class="question">
+      <p>In Power BI, ___________ allows for real-time dashboard updates, while ___________ enables natural language queries for exploring data.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Power BI Dataset; Power BI Q&A</li>
+        <li>B. DirectQuery; Dataflows </li>
+        <li>C. Dataflows; DirectQuery</li>
+        <li>D. DirectQuery; Power BI Q&A</li>
+      </ul>
+      <ul>
+        <li>A. Power BI Dataset; Power BI Q&A</li>
+        <li>B. DirectQuery; Dataflows </li>
+        <li>C. Dataflows; DirectQuery</li>
+        <li class="active">D. DirectQuery; Power BI Q&A</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> DirectQuery enables real-time or near real-time updates by querying the data source directly, while Power BI Q&A allows users to explore data using natural language questions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 123 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 123</h1>
+    <div class="question">
+      <p>You are the Power BI administrator for "Solaris Energy", a company specializing in solar panel installations. Solaris Energy uses Power BI dashboards to track sales, installations, customer satisfaction, and employee performance. Some of these dashboards contain sensitive customer data, such as names, addresses, and phone numbers. <br>
+You need to implement a solution that allows users to easily identify which dashboards contain Personally Identifiable Information (PII) when browsing through the available dashboards on powerbi.com. The solution should be simple to implement and avoid significant changes to the existing dashboard layouts.
+What should you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Microsoft Information Protection sensitivity labels</li>
+        <li>B. Dashboard themes</li>
+        <li>C. Bookmarks within dashboards</li>
+        <li>D. Row-level security (RLS)</li>
+      </ul>
+      <ul>
+        <li class="active">A. Microsoft Information Protection sensitivity labels</li>
+        <li>B. Dashboard themes</li>
+        <li>C. Bookmarks within dashboards</li>
+        <li>D. Row-level security (RLS)</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Sensitivity labels let you classify and clearly mark dashboards that contain PII directly in the Power BI Service, making it easy for users to identify sensitive content without changing dashboard layouts or functionality.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 124 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 124</h1>
+    <div class="question">
+      <p>You are designing a Power BI report to analyze customer profitability. <br>
+You have two datasets: a "CustomerInfo" table containing customer details (CustomerID, CustomerName, Segment, Country) and an "Orders" table with order information (OrderID, CustomerID, OrderDate, ProductID, SalesAmount). <br>
+CustomerID in "CustomerInfo" is currenty stored as text, while CustomerID in "Orders" is stored as whole number.
+As convention, data engineers in your company stores numerical IDs as whole number. <br>
+You need to create the data model and relationships to enable analysis of customer profitability by segment and country.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A relationship should be created between the CustomerID column in the "CustomerInfo" table and the OrderID column in the "Orders" table.</li>
+        <li>B. The "Segment" and "Country" fields used for analyzing customer profitability should come from the "CustomerInfo" table.</li>
+        <li>C. The data type of the column "CustomerID in "CustomerInfo" tables must be set to Whole Number.</li>
+      </ul>
+      <ul>
+        <li>A. A relationship should be created between the CustomerID column in the "CustomerInfo" table and the OrderID column in the "Orders" table.</li>
+        <li class="active">B. The "Segment" and "Country" fields used for analyzing customer profitability should come from the "CustomerInfo" table.</li>
+        <li class="active">C. The data type of the column "CustomerID in "CustomerInfo" tables must be set to Whole Number.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Segment and Country are descriptive customer attributes, so they must come from the CustomerInfo dimension table to analyze profitability correctly. Also, CustomerID data types must match across tables to create a valid relationship, so converting CustomerInfo.CustomerID to Whole Number is required. Option A is incorrect because relationships should be based on CustomerID, not OrderID.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 125 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 125</h1>
+    <div class="question">
+      <p>For a Power BI Pro account, how often can data be refreshed in the Import storage model?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Real-time</li>
+        <li>B. Up to 48 times per day</li>
+        <li>C. Up to 8 times per day</li>
+        <li>D. Once a day</li>
+      </ul>
+      <ul>
+        <li>A. Real-time</li>
+        <li>B. Up to 48 times per day</li>
+        <li class="active">C. Up to 8 times per day</li>
+        <li>D. Once a day</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> With a Power BI Pro license, datasets using the Import storage model support a maximum of eight scheduled refreshes per day in the Power BI service. More frequent refreshes, such as up to 48 times per day, are only available with Power BI Premium capacities.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 126 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 126</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst for a university with several departments (e.g., Mathematics, Biology, Literature). You've created a Power BI report to analyze student performance data, which includes sensitive information like grades and personal details. <br>
+To protect student privacy, you've implemented Row-Level Security (RLS) with a role called "Faculty" that allows professors to see data only for students in their own department. You've published the dataset and report to a Power BI workspace accessible to all faculty members. <br>
+Now, you need to ensure that professors can only see data for their respective departments when they access the report. <br>
+Question: <br>
+What should you do to apply the "Faculty" RLS role to the appropriate professors?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. From powerbi.com, add professors to the "Faculty" role for the dataset.</li>
+        <li>B. From powerbi.com, share the dataset with all faculty members.</li>
+        <li>C. From Power BI Desktop, modify the Row-Level Security settings.</li>
+        <li>D. From Power BI Desktop, import a table that contains a list of all faculty members.</li>
+      </ul>
+      <ul>
+        <li class="active">A. From powerbi.com, add professors to the "Faculty" role for the dataset.</li>
+        <li>B. From powerbi.com, share the dataset with all faculty members.</li>
+        <li>C. From Power BI Desktop, modify the Row-Level Security settings.</li>
+        <li>D. From Power BI Desktop, import a table that contains a list of all faculty members.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> After publishing the dataset, Row-Level Security is enforced in the Power BI service by assigning users or security groups to the defined RLS roles. Adding professors to the “Faculty” role in powerbi.com ensures that, when they open the report, the RLS filters are applied and they only see student data for their own department.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 127 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 127</h1>
+    <div class="question">
+      <p>You are developing a sales report for a retail company with multiple stores across different regions. <br>
+The report needs to allow users to easily analyze sales data at various levels of granularity, starting from the regional level and drilling down to individual stores and then to specific product categories. <br>
+What should you create in the Power BI model to enable this drill-down functionality within the report visuals?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A calculated column that combines the region, store, and product category information.</li>
+        <li>B. A DAX measure that calculates the sales amount for each combination of region, store, and product category.</li>
+        <li>C. A hierarchy that organizes the region, store, and product category fields in a hierarchical structure.</li>
+        <li>D. A group that categorizes stores based on their sales performance.</li>
+      </ul>
+      <ul>
+        <li>A. A calculated column that combines the region, store, and product category information.</li>
+        <li>B. A DAX measure that calculates the sales amount for each combination of region, store, and product category.</li>
+        <li class="active">C. A hierarchy that organizes the region, store, and product category fields in a hierarchical structure.</li>
+        <li>D. A group that categorizes stores based on their sales performance.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Creating a hierarchy in the Power BI model allows visuals to support built-in drill-down and drill-up actions, letting users move naturally from regions to stores and then to product categories without complex DAX or combined columns.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 128 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 128</h1>
+    <div class="question">
+      <p>You are a Power BI developer for "Adventure Works Cycles", a company that manufactures and sells bicycles. You've created a data model to analyze sales performance across different regions. Your model includes two tables: <br>
+- Regions: This table contains details about the sales regions (RegionID, RegionName, Country). There are five distinct sales regions. <br>
+- SalesData: This table contains confidential sales data (SalesID, RegionID, ProductID, SalesAmount, SalesDate). <br>
+Regions and SalesDate are related with a cardinality of one-to-many. You need to ensure that sales managers can only view the sales data for their assigned region. For example, the sales manager for the "North America" region should only see sales data related to North America. <br>
+What should you implement to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Add a slicer to the report that filters the Regions table by RegionName.</li>
+        <li>B. Create a row-level security (RLS) role for each region and define the role memberships based on the sales managers.</li>
+        <li>C. Create a RegionID parameter that filters the SalesData table.</li>
+        <li>D. Add a calculated column to the SalesData table that uses the USERNAME DAX function.</li>
+      </ul>
+      <ul>
+        <li>A. Add a slicer to the report that filters the Regions table by RegionName.</li>
+        <li class="active">B. Create a row-level security (RLS) role for each region and define the role memberships based on the sales managers.</li>
+        <li>C. Create a RegionID parameter that filters the SalesData table.</li>
+        <li>D. Add a calculated column to the SalesData table that uses the USERNAME DAX function.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> RLS enforces data access at the dataset level, ensuring each sales manager only sees rows for their assigned region regardless of filters or slicers, which is the correct and secure approach for confidential regional sales data.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 129 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 129</h1>
+    <div class="question">
+      <p>You are working as a data analyst for a multinational corporation, tasked with optimizing the company's global sales data analysis process. The company uses Power BI for its data analytics and reporting needs. The sales data are stored in a SQL Server database and an Azure Blob Storage, where SQL Server stores transactional sales data, and the Blob Storage contains JSON files with market research data. <br>
+You have been asked to create a comprehensive Power BI report that provides insights into sales performance metrics while integrating market research data for enhanced analytical depth. The report should offer the ability to filter data by various dimensions, including time periods, product categories, and geographic regions. Additionally, you must ensure that the report is efficient in terms of data refresh rates and performance when accessed by users across different geographies. <br>
+Question: Which of the following approaches will BEST meet these requirements while ensuring optimal performance and scalability?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Import both the SQL Server transactional data and the Azure Blob Storage JSON files into Power BI, creating a single model. Use Power Query to transform and merge the data, implementing calculated columns in DAX for dynamic filtering.</li>
+        <li>B. Set up DirectQuery connections for both the SQL Server and Azure Blob Storage sources. Use Power BI's composite models feature to combine these sources, and rely on DirectQuery for real-time data access and analysis.</li>
+        <li>C. Use Azure Data Factory to preprocess and combine the SQL Server and Blob Storage data into a SQL Data Warehouse. Import the combined data from the Data Warehouse into Power BI, leveraging materialized views for improved query performance.</li>
+      </ul>
+      <ul>
+        <li>A. Import both the SQL Server transactional data and the Azure Blob Storage JSON files into Power BI, creating a single model. Use Power Query to transform and merge the data, implementing calculated columns in DAX for dynamic filtering.</li>
+        <li>B. Set up DirectQuery connections for both the SQL Server and Azure Blob Storage sources. Use Power BI's composite models feature to combine these sources, and rely on DirectQuery for real-time data access and analysis.</li>
+        <li class="active">C. Use Azure Data Factory to preprocess and combine the SQL Server and Blob Storage data into a SQL Data Warehouse. Import the combined data from the Data Warehouse into Power BI, leveraging materialized views for improved query performance.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> This approach offloads heavy transformations and joins to the data platform, enables optimized, scalable querying with materialized views, supports fast Import-mode performance, and allows controlled refresh schedules, making it the most efficient and scalable solution for global users.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 130 -->
+  <div class="questionFormat">
+    <h1>Question 130</h1>
+    <div class="question">
+      <p>True or False: Embedding a Power BI report into an external website automatically grants all visitors access to view the report.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Embedding a Power BI report in an external website does not automatically grant access. Users still need the appropriate permissions, unless the report is explicitly published to the web using the “Publish to web” feature, which creates a public link. Standard embedding (e.g., via Power BI Embedded) requires authentication and proper licensing for viewers.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

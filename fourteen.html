@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 131 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 131</h1>
+    <div class="question">
+      <p>What is the primary characteristic of dual storage mode in Power BI?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. It duplicates data across multiple Power BI reports.</li>
+        <li>B. It allows a table to be accessed using both DirectQuery and Import methods.</li>
+        <li>C. It requires manual synchronization between DirectQuery and imported data.</li>
+        <li>D. It only supports connections to SQL Server databases.</li>
+      </ul>
+      <ul>
+        <li>A. It duplicates data across multiple Power BI reports.</li>
+        <li class="active">B. It allows a table to be accessed using both DirectQuery and Import methods.</li>
+        <li>C. It requires manual synchronization between DirectQuery and imported data.</li>
+        <li>D. It only supports connections to SQL Server databases.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Dual storage mode lets a table behave as Import or DirectQuery depending on how it’s queried. This improves performance by using cached (imported) data when possible, while still allowing real-time queries against the source when needed, especially in composite models.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 132 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 132</h1>
+    <div class="question">
+      <p>When using Power Query's "Group By" feature to aggregate data in a sales table with a high volume of transactions across multiple years, you need to find the year with the highest total sales. Which "Group By" operation and subsequent action can accurately achieve this?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Group by "Year" with "Sum" of "SalesAmount", then sort the summary table by the summed "SalesAmount" in descending order and keep the top row.</li>
+        <li>B. Group by "SaleDate" with "Count" of "SalesAmount", then filter the summary table for the highest count. </li>
+        <li>C. Group by "CustomerID" with "Sum" of "SalesAmount", then apply a custom column to calculate the rank of each sum.</li>
+        <li>D. Group by "Year" with "Average" of "SalesAmount", then use a conditional column to find the maximum average.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Group by "Year" with "Sum" of "SalesAmount", then sort the summary table by the summed "SalesAmount" in descending order and keep the top row.</li>
+        <li>B. Group by "SaleDate" with "Count" of "SalesAmount", then filter the summary table for the highest count. </li>
+        <li>C. Group by "CustomerID" with "Sum" of "SalesAmount", then apply a custom column to calculate the rank of each sum.</li>
+        <li>D. Group by "Year" with "Average" of "SalesAmount", then use a conditional column to find the maximum average.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Grouping by Year and summing SalesAmount correctly aggregates total sales per year. Sorting the result in descending order and keeping the top row directly identifies the year with the highest total sales, which matches the requirement exactly.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 133 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 133</h1>
+    <div class="question">
+      <p>You're tasked with designing an interactive report for a global sales team. The report has four pages: "Regional Performance," "Product Breakdown," "Customer Insights," and "Individual Sales Targets." Each page includes a slicer for "Region" to filter data. <br>
+The sales team wants to maintain the selected region across the first three pages for a consistent analysis. However, "Individual Sales Targets" should remain unaffected by any regional selections made on other pages. How would you achieve this in Power BI?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Remove the "Region" slicer from the first three pages and add "Region" to the page-level filters for each.</li>
+        <li>B. Remove the "Region" slicer from the first three pages and add "Region" to the report-level filters.</li>
+        <li>C. Synchronize the "Region" slicer across the "Regional Performance," "Product Breakdown," and "Customer Insights" pages.</li>
+      </ul>
+      <ul>
+        <li>A. Remove the "Region" slicer from the first three pages and add "Region" to the page-level filters for each.</li>
+        <li>B. Remove the "Region" slicer from the first three pages and add "Region" to the report-level filters.</li>
+        <li class="active">C. Synchronize the "Region" slicer across the "Regional Performance," "Product Breakdown," and "Customer Insights" pages.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using the Sync slicers feature allows the Region selection to persist consistently across the first three pages while explicitly excluding the "Individual Sales Targets" page from synchronization. This ensures shared context where needed without affecting pages that must remain independent, which page-level or report-level filters cannot selectively control.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 134 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 134</h1>
+    <div class="question">
+      <p>In the context of Power BI dataset management, you need to understand who has the authority to grant dataset certification permissions within an organization. At which organizational scope level are these certification permissions typically assigned? Choose the best answer.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Data Model level</li>
+        <li>B. Tenant level</li>
+        <li>C. Workspace level</li>
+        <li>D. Project Group level</li>
+      </ul>
+      <ul>
+        <li>A. Data Model level</li>
+        <li class="active">B. Tenant level</li>
+        <li>C. Workspace level</li>
+        <li>D. Project Group level</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Dataset certification permissions are managed at the tenant level because certification is a governance feature that applies across the entire Power BI organization. Only Power BI administrators or users explicitly granted tenant-level permissions can certify datasets, ensuring consistent trust and control over certified content organization-wide.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 135 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 135</h1>
+    <div class="question">
+      <p>What is the best way to visualize the distribution of customer feedback ratings?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Histogram</li>
+        <li>B. Pie Chart</li>
+        <li>C. Line Chart</li>
+        <li>D. Stacked Column Chart</li>
+      </ul>
+      <ul>
+        <li class="active">A. Histogram</li>
+        <li>B. Pie Chart</li>
+        <li>C. Line Chart</li>
+        <li>D. Stacked Column Chart</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A histogram is designed to show the distribution of numerical values by grouping ratings into ranges, making it easy to see frequency patterns, spread, and skewness. Pie, line, and stacked column charts are better suited for proportions or trends, not distribution analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 136 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 136</h1>
+    <div class="question">
+      <p>True or False: Creating hierarchies in your Power BI model can improve report performance by reducing the number of relationships needed between tables.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Hierarchies only organize fields for easier navigation and drill-down in visuals; they do not change the data model structure or reduce the number of relationships between tables, so they do not improve report performance in that way.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 137 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 137</h1>
+    <div class="question">
+      <p>True or False: The Performance Analyzer in Power BI Desktop can be used to analyze (directly or indirectly) the performance impact of model calculations and relationships.
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li class="active">A. True</li>
+        <li>B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Performance Analyzer helps measure how long visuals take to render, which indirectly reflects the impact of DAX calculations, model relationships, and query complexity on report performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 138 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 138</h1>
+    <div class="question">
+      <p>To update a Power BI app after it has been published, you must ___________.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. delete the original app and republish it with the updates</li>
+        <li>B. update the content in the workspace and republish the app</li>
+        <li>C. request that all users uninstall the previous version of the app</li>
+        <li>D. manually send the updated reports to all app users</li>
+      </ul>
+      <ul>
+        <li>A. delete the original app and republish it with the updates</li>
+        <li class="active">B. update the content in the workspace and republish the app</li>
+        <li>C. request that all users uninstall the previous version of the app</li>
+        <li>D. manually send the updated reports to all app users</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI apps are built from workspace content, so when reports or dashboards are updated in the workspace, republishing the app pushes those changes to all app users automatically without deleting or redistributing anything.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 139 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 139</h1>
+    <div class="question">
+      <p>After assembling a comprehensive analytics dashboard in Power BI Desktop, focused on tracking operational metrics and customer interactions, you notice optimal functionality in your local testing phase. However, post-deployment on the Power BI service, you encounter significant slowdowns in both the dashboard's responsiveness and data processing times. <br>
+To enhance your dashboard's operational efficiency: <br>
+Proposed Solution: Implement summarization and aggregation strategies for the underlying data within your model. <br>
+Will this strategy provide improvements?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Implementing summarization and aggregation reduces data volume and query complexity, which lowers memory usage and processing time in the Power BI service, leading to faster visuals and improved overall dashboard performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 140 -->
+  <div class="questionFormat">
+    <h1>Question 140</h1>
+    <div class="question">
+      <p>You utilize the following Power Query M formula to produce a sequence of dates: = List.Dates(#date(2021,12,15), 180, #duration(1,0,0,0)) <br>
+What does this date sequence represent?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A sequence of hours starting from December 15, 2021, for the next 180 hours</li>
+        <li>B. A series of days beginning on December 15, 2021, and continuing for 180 days thereafter</li>
+        <li>C. A collection of weeks commencing from December 15, 2021, spanning the next 26 weeks</li>
+      </ul>
+      <ul>
+        <li>A. A sequence of hours starting from December 15, 2021, for the next 180 hours</li>
+        <li class="active">B. A series of days beginning on December 15, 2021, and continuing for 180 days thereafter</li>
+        <li>C. A collection of weeks commencing from December 15, 2021, spanning the next 26 weeks</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> List.Dates creates a list starting from the given date, repeats it for the specified count, and increments by the provided duration. Here, the duration is one day, so it generates 180 consecutive daily dates starting from December 15, 2021.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 171 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 171</h1>
+    <div class="question">
+      <p>Imagine you're a BI developer working for a software company. You're building a Power BI report to analyze customer usage data for a new mobile app.The data is stored in three separate Azure SQL databases: <br>
+- Development Database: Used for testing new features and development work. <br>
+- Test Database: Used for quality assurance and user acceptance testing. <br>
+- Production Database: Contains the live production data used by the app. <br>
+You want to create a single Power BI report (.pbix file) that can connect to any of these databases depending on the current development stage. You want to avoid using deployment pipelines to keep the solution simple and minimize administrative overhead. <br>
+Challenge: How can you configure your Power BI report to dynamically switch between these databases without creating separate reports or using deployment pipelines? <br>
+What type and how many parameters should you create in your Power BI report to achieve this dynamic data source switching?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create three parameters of type Text.</li>
+        <li>B. Create two parameters of type True/False.</li>
+        <li>C. Create one parameter of type Text.</li>
+        <li>D. Create one parameter of type Decimal Number.</li>
+      </ul>
+      <ul>
+        <li>A. Create three parameters of type Text.</li>
+        <li>B. Create two parameters of type True/False.</li>
+        <li class="active">C. Create one parameter of type Text.</li>
+        <li>D. Create one parameter of type Decimal Number.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A single Text parameter can store the database name (or server/database combination). By changing this parameter value, the same PBIX can dynamically point to Development, Test, or Production without duplicating reports or using deployment pipelines.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 172 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 172</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working on a Power BI report. You've connected to an Excel file stored on a shared network drive and created a query to import data from it. However, when you try to execute the query in Power Query Editor, you encounter the following error message: <br>
+"DataSource.Error: Could not find file." <br>
+Question: What are two possible reasons why you're getting this error message?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. The file has been deleted or moved to a different location.</li>
+        <li>B. The file is currently open in another application, preventing Power BI from accessing it.</li>
+        <li>C. Your network connection is unstable or unavailable, preventing Power BI from reaching the file.</li>
+        <li>D. You don't have the necessary permissions to access the file on the shared drive.</li>
+      </ul>
+      <ul>
+        <li class="active">A. The file has been deleted or moved to a different location.</li>
+        <li>B. The file is currently open in another application, preventing Power BI from accessing it.</li>
+        <li class="active">C. Your network connection is unstable or unavailable, preventing Power BI from reaching the file.</li>
+        <li>D. You don't have the necessary permissions to access the file on the shared drive.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The “Could not find file” error typically occurs when the file path is no longer valid because the file was deleted or moved, or when Power BI cannot reach the shared network location due to an unstable or unavailable network connection.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 173 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 173</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst who has created a Power BI report to track website traffic for your company. The report contains a line chart that shows the number of website visitors over time. You want to give your colleagues the option to view this data as a column chart if they prefer that visualization. <br>
+However, you don't want to spend a lot of time creating and maintaining separate visuals or report pages. <br>
+Question: What's the simplest and most efficient way to allow users to switch between viewing the website traffic data as a line chart or a column chart within the same report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Add a slicer to the report that allows users to filter the data and change the chart type.</li>
+        <li>B. Create a duplicate page in the report with a column chart and provide a navigation button.</li>
+        <li>C. Enable the "Personalize visuals" option in the report settings.</li>
+        <li>D. Embed the report in a custom web application and provide a toggle to switch between chart types.</li>
+      </ul>
+      <ul>
+        <li>A. Add a slicer to the report that allows users to filter the data and change the chart type.</li>
+        <li>B. Create a duplicate page in the report with a column chart and provide a navigation button.</li>
+        <li class="active">C. Enable the "Personalize visuals" option in the report settings.</li>
+        <li>D. Embed the report in a custom web application and provide a toggle to switch between chart types.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Personalize visuals allows users to change the visual type themselves, such as switching between a line chart and a column chart, without duplicating visuals or pages, making it the simplest and most efficient solution.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 174 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 174</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a large retail chain. You're analyzing sales data to understand overall performance and identify trends. However, you've noticed that some extreme values (outliers) are skewing your analysis and making it difficult to get a clear picture of typical sales patterns. You want to exclude these outliers from your calculations to get a more accurate representation of sales performance. <br>
+Challenge: You need to create a DAX measure that calculates the total sales amount while excluding transactions that fall below the 5th percentile or above the 95th percentile of all sales values. This will allow you to focus on the core sales data and exclude any extreme values that might be distorting your analysis. <br>
+Which DAX function should you use to identify and exclude these outlier sales transactions based on their percentiles?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. RANKX</li>
+        <li>B. PERCENTILE.EXC</li>
+        <li>C. PERCENTILE.INC</li>
+        <li>D. TOP</li>
+      </ul>
+      <ul>
+        <li>A. RANKX</li>
+        <li class="active">B. PERCENTILE.EXC</li>
+        <li>C. PERCENTILE.INC</li>
+        <li>D. TOP</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> PERCENTILE.INC is used in DAX to calculate percentile thresholds, such as the 5th and 95th percentiles, including boundary values. These calculated limits can then be applied in a FILTER expression to exclude extreme sales values and focus analysis on typical sales behavior.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 175 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 175</h1>
+    <div class="question">
+      <p>In your company's Power BI environment, you manage a dataset within a model that includes an "Employee Records" table. This table features the following attributes: <br>
+Employee ID <br>
+First Name <br>
+Last Name <br>
+Division <br> 
+Earnings <br>
+The unique identifier for each employee entry is the "Employee ID." Your task is to develop a DAX measure that computes the mean earnings for staff members who are part of the marketing division. Which DAX formula should you implement?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. DISTINCTCOUNT('Employee Records'[Earnings])</li>
+        <li>B. CALCULATE(DISTINCTCOUNT('Employee Records'[Earnings]), 'Employee Records'[Division] = "Marketing")</li>
+        <li>C. CALCULATE(AVERAGE('Employee Records'[Earnings]), 'Employee Records'[Division] = "Marketing")</li>
+        <li>D. AVERAGE('Employee Records'[Earnings])</li>
+      </ul>
+      <ul>
+        <li>A. DISTINCTCOUNT('Employee Records'[Earnings])</li>
+        <li>B. CALCULATE(DISTINCTCOUNT('Employee Records'[Earnings]), 'Employee Records'[Division] = "Marketing")</li>
+        <li class="active">C. CALCULATE(AVERAGE('Employee Records'[Earnings]), 'Employee Records'[Division] = "Marketing")</li>
+        <li>D. AVERAGE('Employee Records'[Earnings])</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> AVERAGE calculates the mean of the Earnings column, and CALCULATE applies a filter context so the calculation includes only employees whose Division is Marketing. This correctly returns the average earnings for marketing staff only.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 176 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 176</h1>
+    <div class="question">
+      <p>You're a data analyst for a popular online bookstore. You're tasked with creating a report to analyze customer purchase patterns. The data is stored in an Excel spreadsheet that contains details about each book purchased. You have a table named Book Purchases with the following columns: <br>
+Purchase ID <br>
+Customer ID <br>
+Book Title <br>
+ISBN <br>
+Price   <br>
+Quantity <br>
+Customers can purchase multiple books in a single order, resulting in multiple rows with the same Customer ID in the table. You need to create a DAX measure to calculate the total number of unique customers who have made purchases. Which DAX formula should you use?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Count('Book Purchases'[Customer ID])</li>
+        <li>B. CountA('Book Purchases'[Customer ID])</li>
+        <li>C. CountRows('Book Purchases')</li>
+        <li>D. DistinctCount('Book Purchases'[Customer ID])</li>
+      </ul>
+      <ul>
+        <li>A. Count('Book Purchases'[Customer ID])</li>
+        <li>B. CountA('Book Purchases'[Customer ID])</li>
+        <li>C. CountRows('Book Purchases')</li>
+        <li class="active">D. DistinctCount('Book Purchases'[Customer ID])</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Because a single customer can appear in multiple rows when they purchase more than one book, a simple COUNT or COUNTA would count transactions rather than customers. DISTINCTCOUNT evaluates the Customer ID column and returns the number of unique customers, which correctly represents how many individual customers have made at least one purchase.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 177 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 177</h1>
+    <div class="question">
+      <p>You are analyzing sales data in Power Query Editor for a retail management system. The dataset includes the following columns: <br>
+- Tax Due <br>
+- Order ID <br>
+- Shipping Cost <br>
+- Order Subtotal <br>
+- Items per Order <br>
+The "Order ID" column serves as a unique identifier for each sales transaction. The "Order Subtotal" and "Items per Order" columns always have data, but the "Tax Due" and "Shipping Cost" columns sometimes contain null values for transactions where no tax or shipping was charged.You aim to calculate monthly metrics including: <br>
+- Average number of items per transaction  <br>
+- Average shipping cost per transaction <br>
+- Maximum number of items per transaction <br>
+What modification should you make to the query to facilitate these calculations?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Convert null values in the 'Items per Order' column to 0.</li>
+        <li>B. Eliminate rows with null values in the 'Tax Due' column.</li>
+        <li>C. Eliminate rows with null values in the 'Shipping Cost' column.</li>
+        <li>D. Convert null values in the 'Shipping Cost' column to 0.</li>
+      </ul>
+      <ul>
+        <li>A. Convert null values in the 'Items per Order' column to 0.</li>
+        <li>B. Eliminate rows with null values in the 'Tax Due' column.</li>
+        <li>C. Eliminate rows with null values in the 'Shipping Cost' column.</li>
+        <li class="active">D. Convert null values in the 'Shipping Cost' column to 0.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To correctly calculate average shipping cost per transaction, nulls must be treated as zero where no shipping was charged. Removing rows would distort averages and counts, and Items per Order already has complete data. Converting null shipping values to 0 preserves all transactions and enables accurate monthly metrics.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 178 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 178</h1>
+    <div class="question">
+      <p>Imagine you're a Power BI administrator responsible for managing your organization's Premium capacities. You need to ensure that the capacities are running smoothly, have sufficient resources to handle the workload, and are being utilized efficiently. You also want to be able to identify any performance bottlenecks or issues that might be affecting report performance or user experience. <br>
+Question: Which of the following methods provides the most comprehensive way for Power BI Premium capacity admins to monitor the utilization and performance of their capacities?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. By analyzing Azure Monitor logs for Power BI.</li>
+        <li>B. By using the Power BI Premium Capacity Metrics app.</li>
+        <li>C. By reviewing the Power BI Admin portal's usage metrics.</li>
+        <li>D. By querying the Power BI activity log through the XMLA endpoint.</li>
+      </ul>
+      <ul>
+        <li>A. By analyzing Azure Monitor logs for Power BI.</li>
+        <li class="active">B. By using the Power BI Premium Capacity Metrics app.</li>
+        <li>C. By reviewing the Power BI Admin portal's usage metrics.</li>
+        <li>D. By querying the Power BI activity log through the XMLA endpoint.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Premium Capacity Metrics app is specifically designed for Power BI Premium admins to monitor capacity utilization, performance, and health in a comprehensive way. It provides detailed insights into CPU and memory usage, dataset refreshes, and user activity, enabling proactive management of performance and bottlenecks. Other options provide partial or indirect information.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 179 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 179</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a library. You have two tables in an Azure SQL database: "Books" and "Loans." The "Books" table contains information about each book in the library, such as title, author, and ISBN. The "Loans" table records information about each book loan, including the borrower's name, loan date, and due date. Both tables are linked by a common column called "BookID." <br>
+You're building a Power BI report to analyze book loan patterns and identify popular books. You need to combine the "Books" and "Loans" tables into a single table that includes all loan records and their associated book details. <br>
+Challenge: How should you merge these tables in Power BI Desktop to achieve the following: <br>
+- Include all loan records in the merged table, even if there's no matching book record. <br>
+- For each loan record, include the corresponding book details if available. <br>
+- Exclude any book records that have not been loaned out.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Merge the "Books" table into the "Loans" table using a left outer join based on "BookID."</li>
+        <li>B. Append the "Books" table to the "Loans" table.</li>
+        <li>C. Merge the "Loans" table into the "Books" table using an inner join based on "BookID."</li>
+        <li>D. Create a relationship between the "Books" and "Loans" tables in the Power BI data model.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Merge the "Books" table into the "Loans" table using a left outer join based on "BookID."</li>
+        <li>B. Append the "Books" table to the "Loans" table.</li>
+        <li>C. Merge the "Loans" table into the "Books" table using an inner join based on "BookID."</li>
+        <li>D. Create a relationship between the "Books" and "Loans" tables in the Power BI data model.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using a left outer join from Loans → Books ensures that all loan records are included, even if some loans reference books that might not exist in the "Books" table. The corresponding book details will be added where available. This approach excludes books that have never been loaned because the base table is "Loans," fulfilling the requirement to focus only on loaned books. Other options either exclude loans (inner join), combine unrelated data (append), or only create relationships without merging tables.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 180 -->
+  <div class="questionFormat">
+    <h1>Question 180</h1>
+    <div class="question">
+      <p>You are developing a Power BI report for a real estate company that tracks property sales performance. The report includes a visual that displays the profit margin for each property sold. The profit margin is calculated using a DAX measure. <br>
+The real estate agents have requested that the report adheres to specific formatting guidelines for clarity: <br>
+- Profit margins must be displayed with two decimal places for consistency (e.g., 12.34%). <br>
+- Negative profit margins, indicating a loss, must be displayed in red font with parentheses for easy identification (e.g., (5.67%)). <br>
+What two actions should you perform in Power BI to meet these formatting requirements? Each correct answer presents part of the solution.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. For the visual, apply conditional formatting to the background color of the data points.</li>
+        <li>B. Configure the DAX measure to use a custom format string.</li>
+        <li>C. For the visual, apply conditional formatting to the font size of the data labels.</li>
+        <li>D. For the visual, set "Value decimal places" to 2 in the formatting options</li>
+      </ul>
+      <ul>
+        <li>A. For the visual, apply conditional formatting to the background color of the data points.</li>
+        <li class="active">B. Configure the DAX measure to use a custom format string.</li>
+        <li>C. For the visual, apply conditional formatting to the font size of the data labels.</li>
+        <li class="active">D. For the visual, set "Value decimal places" to 2 in the formatting options</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To display profit margins with two decimal places and format negative values with parentheses and red font, you should configure the DAX measure with a custom format string that specifies percentage formatting with two decimals and negative number style. Additionally, you should set "Value decimal places" to 2 in the visual’s formatting options to ensure the displayed values consistently show two decimal places. Conditional formatting for background or font size is not needed for this requirement.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

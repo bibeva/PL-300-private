@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 161 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 161</h1>
+    <div class="question">
+      <p>To dynamically segment customers into "High", "Medium", and "Low" categories based on their total purchases using DAX, you should use the ___________ function within a SWITCH() statement to define the thresholds.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. CALCULATE(), SUM()</li>
+        <li>B. SUM(), SUMX()</li>
+        <li>C. RANKX(), CALCULATE()</li>
+        <li>D. TOTALYTD(), CALCULATE()</li>
+      </ul>
+      <ul>
+        <li>A. CALCULATE(), SUM()</li>
+        <li>B. SUM(), SUMX()</li>
+        <li class="active">C. RANKX(), CALCULATE()</li>
+        <li>D. TOTALYTD(), CALCULATE()</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> RANKX() is commonly used to dynamically rank customers based on a calculated measure such as total purchases, while CALCULATE() evaluates that total within the required filter context. The rank result can then be passed into a SWITCH() statement to assign customers into High, Medium, or Low segments based on rank thresholds.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 162 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 162</h1>
+    <div class="question">
+      <p>When connecting to cloud data sources in Power BI Desktop, which of the following connectors can be used? Select all that apply
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Azure SQL Database</li>
+        <li>B. Google BigQuery</li>
+        <li>C. Amazon Redshift</li>
+        <li>D. Dataflows</li>
+      </ul>
+      <ul>
+        <li class="active">A. Azure SQL Database</li>
+        <li class="active">B. Google BigQuery</li>
+        <li class="active">C. Amazon Redshift</li>
+        <li class="active">D. Dataflows</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI Desktop supports multiple cloud data source connectors. Azure SQL Database, Google BigQuery, and Amazon Redshift are direct cloud database connectors. Dataflows are also cloud-based and can be connected to from Power BI Desktop, making all listed options valid cloud data sources.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 163 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 163</h1>
+    <div class="question">
+      <p>You oversee a Power BI workspace operating under a shared capacity, which includes a report built on a dataset labeled "SalesData2021". To enable an incremental refresh for "SalesData2021", what is the initial step you should undertake?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Configure the data source credentials in Power BI Desktop.</li>
+        <li>B. Establish filter parameters for the dataset in Power BI Desktop.</li>
+        <li>C. Initiate a manual refresh of the dataset in the Power BI service.</li>
+        <li>D. Transition your Power BI workspace to a Premium capacity.</li>
+      </ul>
+      <ul>
+        <li>A. Configure the data source credentials in Power BI Desktop.</li>
+        <li class="active">B. Establish filter parameters for the dataset in Power BI Desktop.</li>
+        <li>C. Initiate a manual refresh of the dataset in the Power BI service.</li>
+        <li>D. Transition your Power BI workspace to a Premium capacity.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Incremental refresh always starts in Power BI Desktop by defining RangeStart and RangeEnd parameters and applying them as filters to the data. Without these parameters, incremental refresh cannot be configured, regardless of capacity or service-side settings.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 164 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 164</h1>
+    <div class="question">
+      <p>Match each Power Query step to its objective in simplifying the data structure. <br>
+Steps: <br>
+1-Remove Columns <br>
+2-Merge Queries <br>
+3-Pivot Column <br>
+Objectives: <br>
+A) Reduce the number of tables by combining related data. <br>
+B) Reduce dataset complexity by eliminating unnecessary data. <br>
+C) Transform row values into column headers to simplify analysis.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1-C, 2-A, 3-B</li>
+        <li>B. 1-A, 2-B, 3-C</li>
+        <li>C. 1-B, 2-A, 3-C</li>
+      </ul>
+      <ul>
+        <li>A. 1-C, 2-A, 3-B</li>
+        <li>B. 1-A, 2-B, 3-C</li>
+        <li class="active">C. 1-B, 2-A, 3-C</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Remove Columns is used to eliminate unnecessary data and reduce dataset complexity. Merge Queries combines related tables into one, reducing the number of tables. Pivot Column converts row values into column headers, making the data easier to analyze and summarize.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 165 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 165</h1>
+    <div class="question">
+      <p>Given the following schema where Table A (Columns: ID, Country, Sales) needs to be appended with Table B (Columns: ID, Category, Revenue), and considering that Revenue and Sales are equivalent, which transformation should you apply to harmonize the schema for effective appending?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Rename the 'Revenue' column in Table B to 'Sales' before appending.</li>
+        <li>B. Merge the tables instead of appending.</li>
+        <li>C. Create a custom column in Table B to match the 'Name' column in Table A.</li>
+        <li>D. Remove the 'Category' column from Table B before appending.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Rename the 'Revenue' column in Table B to 'Sales' before appending.</li>
+        <li>B. Merge the tables instead of appending.</li>
+        <li>C. Create a custom column in Table B to match the 'Name' column in Table A.</li>
+        <li>D. Remove the 'Category' column from Table B before appending.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Appending requires matching column names. Since Revenue and Sales represent the same data, renaming Revenue to Sales aligns the schemas, ensuring values are appended into the same column instead of creating separate fields.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 166 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 166</h1>
+    <div class="question">
+      <p>True or False: In Power BI Premium, once a workspace is assigned to a Premium capacity, it cannot be moved to a different Premium capacity.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A workspace assigned to a Power BI Premium capacity can be reassigned to a different Premium capacity at any time, provided you have the required permissions. This flexibility helps administrators manage capacity usage and performance efficiently.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 167 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 167</h1>
+    <div class="question">
+      <p>If your measures and visuals in a Power BI report are loading slowly, which tool should you use to diagnose and identify performance bottlenecks?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Query Editor</li>
+        <li>B. DAX Studio</li>
+        <li>C. Performance Analyzer</li>
+        <li>D. Power BI Service</li>
+      </ul>
+      <ul>
+        <li>A. Query Editor</li>
+        <li>B. DAX Studio</li>
+        <li class="active">C. Performance Analyzer</li>
+        <li>D. Power BI Service</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Performance Analyzer in Power BI helps diagnose slow-loading reports by measuring the time taken by visuals, DAX queries, and rendering. It allows you to identify which visuals or measures are causing performance bottlenecks so you can optimize them effectively.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 168 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 168</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst working for a retail company. You're tasked with creating a visual representation of sales data for the past year, along with a forecast of sales trends for the next quarter. <br>
+You want to choose a visualization that effectively displays both the historical data and the predicted future trends. <br>
+Question: Which type of visualization in Power BI would be most suitable for this purpose, allowing you to clearly show the historical sales data and the projected sales forecast in a single visual?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Ribbon chart</li>
+        <li>B. Scatter chart</li>
+        <li>C. Line chart</li>
+        <li>D. Decomposition tree</li>
+      </ul>
+      <ul>
+        <li>A. Ribbon chart</li>
+        <li>B. Scatter chart</li>
+        <li class="active">C. Line chart</li>
+        <li>D. Decomposition tree</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A line chart in Power BI is ideal for displaying trends over time. It allows you to plot historical sales data and overlay a forecast for future periods using Power BI’s built-in forecasting feature. This provides a clear visual of both past performance and projected trends in a single visual.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 169 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 169</h1>
+    <div class="question">
+      <p>Which of the following DAX functions would you use to create a complex calculated table that lists all the unique combinations of products and stores, even if some combinations have no sales records? (Select two)</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. DISTINCT()</li>
+        <li>B. CROSSJOIN()</li>
+        <li>C. SUMMARIZE()</li>
+        <li>D. RELATEDTABLE()</li>
+      </ul>
+      <ul>
+        <li>A. DISTINCT()</li>
+        <li class="active">B. CROSSJOIN()</li>
+        <li class="active">C. SUMMARIZE()</li>
+        <li>D. RELATEDTABLE()</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> CROSSJOIN() generates all possible combinations of the rows from two or more tables, which is useful for creating a table with every product-store combination, even if no sales exist. SUMMARIZE() can be used to create a table of unique values for a column or combination of columns, helping define the base sets before applying CROSSJOIN(). DISTINCT() only returns unique values from a single column, and RELATEDTABLE() retrieves related rows but does not create all possible combinations.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 170 -->
+  <div class="questionFormat">
+    <h1>Question 170</h1>
+    <div class="question">
+      <p>Which role allows a user to view reports and dashboards in a Power BI workspace but does not permit downloading the reports?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Viewer</li>
+        <li>B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+      <ul>
+        <li class="active">A. Viewer</li>
+        <li>B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, the Viewer role allows users to access reports and dashboards within a workspace for viewing purposes only. They can interact with the content (like using slicers or filters) but cannot edit, publish, or download the reports. Other roles like Contributor, Member, and Admin provide increasing levels of edit and management permissions.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

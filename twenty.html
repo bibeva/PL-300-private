@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 191 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 191</h1>
+    <div class="question">
+      <p>You have a dataset in Power BI Desktop containing information about projects. This dataset includes "Project Start Date" and "Project End Date" columns. You need to add a custom column called "Project Duration" that calculates the total number of days between these two dates for each project.
+Which of the following M code snippets correctly calculates the "Project Duration" column?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Table.AddColumn(#"Previous Step", "Project Duration", each Duration.Days([EndDate] - [StartDate]))</li>
+        <li>B. Table.AddColumn(#"Previous Step", "Project Duration", each [EndDate] - [StartDate])</li>
+        <li>C. Table.AddColumn(#"Previous Step", "Project Duration", Duration.Days([EndDate] - [StartDate]))</li>
+        <li>D. Table.AddColumn(#"Previous Step", "Project Duration", each [EndDate].DaysSince([StartDate]))</li>
+      </ul>
+      <ul>
+        <li class="active">A. Table.AddColumn(#"Previous Step", "Project Duration", each Duration.Days([EndDate] - [StartDate]))</li>
+        <li>B. Table.AddColumn(#"Previous Step", "Project Duration", each [EndDate] - [StartDate])</li>
+        <li>C. Table.AddColumn(#"Previous Step", "Project Duration", Duration.Days([EndDate] - [StartDate]))</li>
+        <li>D. Table.AddColumn(#"Previous Step", "Project Duration", each [EndDate].DaysSince([StartDate]))</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Subtracting two date values in Power Query returns a duration. The Duration.Days function converts that duration into a numeric value representing total days. The each keyword is required to apply the calculation row by row, making this the correct and complete M code solution.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 192 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 192</h1>
+    <div class="question">
+      <p>In your organization, there are over 100 datasets currently available on your Power BI service. Out of these, ten datasets have been validated against your organization's stringent data quality and reliability standards. <br>
+You need to configure your Power BI environment so that these ten high-quality datasets are easily recognizable and prioritized in search results by users seeking to generate reports. How should you adjust the settings of these datasets to achieve this?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Enhance the visibility of the datasets.</li>
+        <li>B. Highlight the dataset on the main dashboard.</li>
+        <li>C. Certify the datasets officially.</li>
+        <li>D. Include the datasets in a dedicated app.</li>
+      </ul>
+      <ul>
+        <li>A. Enhance the visibility of the datasets.</li>
+        <li>B. Highlight the dataset on the main dashboard.</li>
+        <li class="active">C. Certify the datasets officially.</li>
+        <li>D. Include the datasets in a dedicated app.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Certifying datasets in Power BI marks them as trusted, high-quality sources that meet organizational standards. Certified datasets are clearly labeled and prioritized in search results, making them easy for users to identify and reuse with confidence.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 193 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 193</h1>
+    <div class="question">
+      <p>You are developing a Power BI report to display company-confidential information from the "ConfidentialData" table. This table includes a column named "EmployeeEmail" which stores the email address of each employee in the organization. <br>
+To ensure data security, you need to restrict access so that employees can only see data rows associated with their own email address. How can you achieve this row-level security (RLS) in your Power BI report? <br>
+Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Create a role in Power BI Desktop and define a DAX expression that filters the "ConfidentialData" table based on the "EmployeeEmail" column and the USERPRINCIPALNAME() function.</li>
+        <li>B. Publish the report to the Power BI service and configure row-level security in the dataset settings, then provide workspace-level access to each employee</li>
+        <li>C. Share the report with individual employees, granting them Viewer access.</li>
+        <li>D. Add a calculated column to the "ConfidentialData" table that compares "EmployeeEmail" with the current user's email address.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Create a role in Power BI Desktop and define a DAX expression that filters the "ConfidentialData" table based on the "EmployeeEmail" column and the USERPRINCIPALNAME() function.</li>
+        <li>B. Publish the report to the Power BI service and configure row-level security in the dataset settings, then provide workspace-level access to each employee</li>
+        <li>C. Share the report with individual employees, granting them Viewer access.</li>
+        <li>D. Add a calculated column to the "ConfidentialData" table that compares "EmployeeEmail" with the current user's email address.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Dynamic RLS is implemented by creating roles in Power BI Desktop using DAX that compares EmployeeEmail with the logged-in user. Sharing reports or workspace access alone does not enforce row-level filtering, and calculated columns cannot detect the current user.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 194 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 194</h1>
+    <div class="question">
+      <p>Imagine you're a Power BI developer tasked with fine-tuning a complex report. You've received feedback that some visuals are loading slowly, impacting the user experience. To pinpoint the bottlenecks and optimize the report's performance, you decide to leverage the Performance Analyzer in Power BI Desktop. <br>
+What is the essential first step you need to take to begin investigating the performance of your report pages and visuals using this tool?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Start recording with Performance Analyzer.</li>
+        <li>B. Refresh the visuals on the report page.</li>
+        <li>C. Publish the report to the Power BI service.</li>
+        <li>D. Export the performance data to a .json file.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Start recording with Performance Analyzer.</li>
+        <li>B. Refresh the visuals on the report page.</li>
+        <li>C. Publish the report to the Power BI service.</li>
+        <li>D. Export the performance data to a .json file.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To analyze report performance in Power BI Desktop, the first essential step is to start recording in the Performance Analyzer pane. This action captures the load times and query durations for report visuals, enabling you to identify which visuals or queries are causing performance issues.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 195 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 195</h1>
+    <div class="question">
+      <p>You are a data analyst for a retail chain that operates internationally. You are building a Power BI report to analyze sales performance across different regions. You have a table named "StoreLocation" with the following columns: <br>
+StoreID (Whole Number) <br>
+StoreName (Text) <br>
+City (Text) <br>
+Region (Text) <br>
+Country (Text) <br>
+You want to create a map visualization that displays store locations and allows users to drill down from Country to Region to City. Which of the following actions is necessary to ensure that Power BI correctly maps the store locations?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Convert the data type of City, Region, and Country to "Geography".</li>
+        <li>B. Set the Summarization property for City, Region, and Country to "Do not summarize".</li>
+        <li>C. Assign the appropriate data category (City, State or Province, Country/Region) to the City, Region, and Country columns.</li>
+        <li>D. Create a calculated column that combines the City, Region, and Country values into a single location string.</li>
+      </ul>
+      <ul>
+        <li>A. Convert the data type of City, Region, and Country to "Geography".</li>
+        <li>B. Set the Summarization property for City, Region, and Country to "Do not summarize".</li>
+        <li class="active">C. Assign the appropriate data category (City, State or Province, Country/Region) to the City, Region, and Country columns.</li>
+        <li>D. Create a calculated column that combines the City, Region, and Country values into a single location string.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI relies on data categories to correctly interpret geographic fields for map visuals. Assigning the correct data category to each column ensures accurate geocoding and enables proper drill-down from Country to Region to City.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 196 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 196</h1>
+    <div class="question">
+      <p>To calculate the year-to-date total of sales in a DAX formula, you should use the __________ function wrapped around the SUM of the SalesAmount column, specifying a date column within the same table.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. TOTALYTD</li>
+        <li>B. CALCULATE</li>
+        <li>C. SUMX</li>
+        <li>D. DATEADD</li>
+      </ul>
+      <ul>
+        <li class="active">A. TOTALYTD</li>
+        <li>B. CALCULATE</li>
+        <li>C. SUMX</li>
+        <li>D. DATEADD</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The TOTALYTD function is specifically designed to calculate year-to-date values in DAX. It is used by wrapping it around an expression like SUM(Sales[SalesAmount]) and requires a date column from the same table or a related date table to define the time context.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 197 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 197</h1>
+    <div class="question">
+      <p>You have a Microsoft Excel workbook stored in your OneDrive for Business account. You want to load this workbook into a Power BI dataset so that it can be refreshed in the Power BI Service. Which two connectors can you use to ensure the dataset remains up-to-date in Power BI?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Web Connector</li>
+        <li>B. Excel Online</li>
+        <li>C. Data Lake Folder</li>
+        <li>D. JSON</li>
+        <li>E. SharePoint Folder</li>
+      </ul>
+      <ul>
+        <li>A. Web Connector</li>
+        <li class="active">B. Excel Online</li>
+        <li>C. Data Lake Folder</li>
+        <li>D. JSON</li>
+        <li class="active">E. SharePoint Folder</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Excel Online connector (allows Power BI to connect directly to an Excel file stored in OneDrive for Business, supporting automatic refresh. The SharePoint Folder connector also works because OneDrive for Business is backed by SharePoint, enabling scheduled refresh of files stored there. Other connectors like Web, Data Lake Folder, or JSON do not reliably support automatic refresh for OneDrive-hosted Excel files.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 198 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 198</h1>
+    <div class="question">
+      <p>You are a business intelligence consultant working with "Contoso Retail", a large retail chain with stores across the country. Contoso Retail uses a SQL Server Analysis Services (SSAS) multidimensional cube hosted on their local network to analyze sales data. You have developed a Power BI report that connects to this SSAS cube to provide insights into sales trends, product performance, and regional analysis. <br>
+You now need to publish this report to the Power BI service so that regional managers across the country can access it. However, it's crucial that these managers always see the most up-to-date sales figures from the on-premises SSAS cube when viewing the report in the Power BI service. What should you implement to ensure that the report in the Power BI service always reflects the latest data from the SSAS cube?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Configure an OData feed from the SSAS cube.</li>
+        <li>B. Install and configure an on-premises data gateway.</li>
+        <li>C. Set up a data refresh subscription for the report.</li>
+        <li>D. Schedule a daily refresh of the Power BI dataset.</li>
+      </ul>
+      <ul>
+        <li>A. Configure an OData feed from the SSAS cube.</li>
+        <li class="active">B. Install and configure an on-premises data gateway.</li>
+        <li>C. Set up a data refresh subscription for the report.</li>
+        <li>D. Schedule a daily refresh of the Power BI dataset.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To ensure that a Power BI report published to the service always accesses the latest data from an on-premises SSAS multidimensional cube, you must use an on-premises data gateway. This gateway securely connects Power BI Service to on-premises data sources in real time, enabling live connections or scheduled queries without moving the data to the cloud.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 199 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 199</h1>
+    <div class="question">
+      <p>For a project in Power BI, you're setting up collaborative workspaces. One requirement is to enable a designated user to manage all workspace membership levels without providing unnecessary permissions beyond what's required for this task. What is the minimal role that should be assigned to the user to meet this requirement?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Viewer</li>
+        <li>B. Admin</li>
+        <li>C. Contributor</li>
+        <li>D. Member</li>
+      </ul>
+      <ul>
+        <li>A. Viewer</li>
+        <link>B. Admin</li>
+        <li>C. Contributor</li>
+        <li class="active">D. Member</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI workspaces, a Member can manage other users’ access and roles within the workspace without having full administrative control over the workspace settings. Assigning the Member role allows the designated user to manage memberships efficiently while limiting unnecessary permissions that an Admin would have.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 200 -->
+  <div class="questionFormat">
+    <h1>Question 200</h1>
+    <div class="question">
+      <p>When configuring relationships in Power BI, which of the following statements are true regarding the use of cardinality? Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Cardinality determines the number of instances in one table that can relate to the number of instances in another table</li>
+        <li>B. Many-to-many relationships allow for the direct analysis of measures across two tables without the need for a bridging table</li>
+        <li>C. A one-to-one relationship is typically used when joining tables with unique keys that correspond to each other</li>
+        <li>D. Cross-filter direction can be set to both to automatically filter both tables exclusively in a one-to-many relationship</li>
+        <li>E. Single-directional cross-filtering is recommended to prevent ambiguity in filter context for related tables</li>
+      </ul>
+      <ul>
+        <li class="active">A. Cardinality determines the number of instances in one table that can relate to the number of instances in another table</li>
+        <li>B. Many-to-many relationships allow for the direct analysis of measures across two tables without the need for a bridging table</li>
+        <li class="active">C. A one-to-one relationship is typically used when joining tables with unique keys that correspond to each other</li>
+        <li>D. Cross-filter direction can be set to both to automatically filter both tables exclusively in a one-to-many relationship</li>
+        <li class="active">E. Single-directional cross-filtering is recommended to prevent ambiguity in filter context for related tables</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A is true because cardinality defines how rows in one table relate to rows in another. C is true since one-to-one relationships are used when both tables have unique matching keys. E is true because single-directional filtering is recommended to avoid ambiguous filter propagation. B is misleading, as many-to-many relationships often require careful modeling, and D is incorrect because bi-directional filtering should be used cautiously, not automatically.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 211 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 211</h1>
+    <div class="question">
+      <p>Your infrastructure includes multiple Microsoft SQL Server databases located on-premises. <br>
+To facilitate access for Power BI Service users to these databases without direct internet exposure of the servers, and to simplify the setup process for users, what deployment is necessary?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. A cloud-hosted secure data bridge</li>
+        <li>B. A dedicated network tunneling service</li>
+        <li>C. An on-premises data gateway</li>
+        <li>D. A single-user connectivity enhancer</li>
+      </ul>
+      <ul>
+        <li>A. A cloud-hosted secure data bridge</li>
+        <li>B. A dedicated network tunneling service</li>
+        <li class="active">C. An on-premises data gateway</li>
+        <li>D. A single-user connectivity enhancer</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> An on-premises data gateway securely connects Power BI Service to on-premises SQL Server databases without exposing them to the internet. It centralizes connectivity, simplifies setup for users, and allows scheduled refresh and live connections from Power BI Service.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 212 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 212</h1>
+    <div class="question">
+      <p>Imagine you work for a large consulting firm with a diverse workforce, including full-time employees and external consultants. You've developed a Power BI report to analyze project performance data, including sensitive information like project budgets, client details, and employee contributions. <br>
+To ensure data security, you've implemented Row-Level Security (RLS) with a role called "Consultants" that allows external consultants to see only the data related to the projects they are involved in. <br>
+Your organization uses various Microsoft 365 resources to manage users and access: <br>
+- Internal Employees Group: A Microsoft 365 group containing all full-time employees. <br>
+- Consultants Mailing List: A mail-enabled security group containing all external consultants. <br>
+- Company-Wide Team: A Microsoft Teams org-wide team that includes both employees and consultants for general communication and collaboration.  <br>
+- Project Management Workspace: A Power BI workspace containing reports and dashboards related to project management, where consultants have "Viewer" access. <br>
+Question: To which Microsoft 365 resource can you assign the "Consultants" RLS role to effectively manage access to the project performance report?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Consultants Mailing List</li>
+        <li>B. Company-Wide Team</li>
+        <li>C. Project Management Workspace</li>
+        <li>D. Internal Employees Group</li>
+      </ul>
+      <ul>
+        <li class="active">A. Consultants Mailing List</li>
+        <li>B. Company-Wide Team</li>
+        <li>C. Project Management Workspace</li>
+        <li>D. Internal Employees Group</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Row-Level Security roles in Power BI can be assigned to users or security groups, including mail-enabled security groups. The Consultants Mailing List fits this requirement and allows centralized management of external consultants’ access. Microsoft Teams, workspaces, and internal employee groups are not appropriate for assigning an RLS role intended specifically for consultants.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 213 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 213</h1>
+    <div class="question">
+      <p>Imagine you are designing a data warehouse to analyze customer orders for an e-commerce platform. You choose a star schema to organize your data, which includes a central table for orders and several related tables for customer information, product details, and shipping information. <br>
+To ensure accurate analysis and reporting, it's crucial to understand the relationships between these tables. What type of relationship exists between the central order table (fact table) and the surrounding customer, product, and shipping tables (dimension tables) in a star schema?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. One-to-one</li>
+        <li>B. Many-to-many</li>
+        <li>C. Many-to-one</li>
+        <li>D. One-to-many</li>
+      </ul>
+      <ul>
+        <li>A. One-to-one</li>
+        <li>B. Many-to-many</li>
+        <li class="active">C. Many-to-one</li>
+        <li>D. One-to-many</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In a star schema, the fact table contains many records (for example, many orders) that each reference a single record in a dimension table (such as one customer, one product, or one shipping method). Therefore, from the fact table to the dimension tables, the relationship is many-to-one.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 214 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 214</h1>
+    <div class="question">
+      <p>Within your Microsoft Power BI environment, you are tasked with assigning roles to two users to perform specific functions, adhering to the principle of least privilege. The responsibilities are as follows: <br>
+- Username: Analyst1 needs to create and publish apps. <br>
+- Username: Developer1 needs to publish reports to the workspace and have the ability to delete dashboards. <br>
+What is the most appropriate role assignment for each user?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Analyst1: Admin, Developer1: Contributor</li>
+        <li>B. Analyst1: Contributor, Developer1: Admin</li>
+        <li>C. Analyst1: Member, Developer1: Admin</li>
+        <li>D. Analyst1: Member, Developer1: Contributor</li>
+      </ul>
+      <ul>
+        <li>A. Analyst1: Admin, Developer1: Contributor</li>
+        <li>B. Analyst1: Contributor, Developer1: Admin</li>
+        <li class="active">C. Analyst1: Member, Developer1: Admin</li>
+        <li>D. Analyst1: Member, Developer1: Contributor</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Creating and publishing apps requires the Member role, so Analyst1 cannot be just a Contributor. Also, Contributors cannot delete dashboards—that permission is reserved for Admins. Since Developer1 must publish reports and delete dashboards, Admin is the minimum role that satisfies both requirements.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 215 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 215</h1>
+    <div class="question">
+      <p>You're analyzing sales data for a global retail company. You want to create a report that allows users to drill down into sales figures by different geographical levels: Country, Region, and City. <br>
+To enable this drill-down functionality in your Power BI report, you need to structure the geographical data in a hierarchical format. What are the steps you should take to create this geographical hierarchy in Power BI Desktop?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Import the geographical data, create a new table, and manually type in the Country, Region, and City for each row.</li>
+        <li>B. Import the geographical data, go to the Data view, and use the Group By function to group the data by Country, Region, and City.</li>
+        <li>C. Import the geographical data, go to the Report view, and in the Fields pane, right-click on the Country field and select New hierarchy. Add the Region and City fields to the hierarchy from the model view</li>
+        <li>D. Import the geographical data, split the data into three separate queries (Country, Region, City), and then merge the queries back together in the Report view.</li>
+      </ul>
+      <ul>
+        <li>A. Import the geographical data, create a new table, and manually type in the Country, Region, and City for each row.</li>
+        <li>B. Import the geographical data, go to the Data view, and use the Group By function to group the data by Country, Region, and City.</li>
+        <li class="active">C. Import the geographical data, go to the Report view, and in the Fields pane, right-click on the Country field and select New hierarchy. Add the Region and City fields to the hierarchy from the model view</li>
+        <li>D. Import the geographical data, split the data into three separate queries (Country, Region, City), and then merge the queries back together in the Report view.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI Desktop, drill-down is enabled by creating a hierarchy in the Fields pane. You start by creating a new hierarchy on a top-level field like Country, then add Region and City in the correct order. This allows visuals to support drill-down and drill-up naturally.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 216 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 216</h1>
+    <div class="question">
+      <p>You have designed a dashboard in Microsoft Power BI Service featuring a card visual that displays the current year's cumulative sales figures. Access to this dashboard is granted through the Viewer role assigned within the workspace. <br>
+One of your users needs to be automatically updated daily with the value displayed on this sales card visual. How should you facilitate these updates?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Set up a subscription for the dashboard.</li>
+        <li>B. Configure a data-driven alert for the card visual.</li>
+        <li>C. Enable direct sharing of the dashboard with the user.</li>
+        <li>D. Mention the user in a dashboard comment.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Set up a subscription for the dashboard.</li>
+        <li>B. Configure a data-driven alert for the card visual.</li>
+        <li>C. Enable direct sharing of the dashboard with the user.</li>
+        <li>D. Mention the user in a dashboard comment.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A dashboard subscription sends automatic, scheduled updates (such as daily) to users showing the latest values from visuals like a card. This works for users with Viewer access. Alerts are only triggered when a value crosses a threshold, not for regular daily updates.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 217 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 217</h1>
+    <div class="question">
+      <p>You manage a Power BI workspace for your marketing team. The workspace contains six reports and three dashboards. You need to share a campaign performance dashboard and two related reports with the entire sales department, giving them read-only access. <br>
+Solution: You select all six reports and all three dashboards in the workspace and enable "Include in app" for all of them. Does this meet the goal?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Including all six reports and all three dashboards in the app gives the sales department access to more content than required. To meet the goal of sharing only one dashboard and two specific reports with read-only access, you should include only those selected items in the app. This follows the principle of least privilege and avoids unnecessary exposure of other marketing reports.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 218 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 218</h1>
+    <div class="question">
+      <p>You manage a Power BI workspace for your marketing team. The workspace contains six reports and three dashboards. You need to share a campaign performance dashboard and two related reports with the entire sales department, giving them read-only access. <br>
+Solution: You assign all users in the organization the "Viewer" role to the workspace. <br>
+Does this meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Assigning the Viewer role to all users in the organization grants read-only access to all six reports and all three dashboards, not just the campaign performance dashboard and two reports. This exceeds the requirement and violates least-privilege access. An app should be used to share only the specific content with the sales department.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 219 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 219</h1>
+    <div class="question">
+      <p>You are a Power BI developer for a large enterprise. You have created several reports containing sensitive financial data that needs to be shared with the company's board of directors. The board members are busy individuals who need easy access to these reports without any complicated setup or login procedures. <br>
+How should you distribute these reports to the board members to ensure they have secure and convenient access? <br>
+Grant access by: [Answer choice] <br>
+Grant access to: [Answer choice]</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Publishing to the web, Everyone</li>
+        <li>B. Using a workspace, All board members individually</li>
+        <li>C. Using an app, A dedicated security group in Azure Active Directory</li>
+        <li>D. Sharing individual reports, Each board member's personal email address</li>
+      </ul>
+      <ul>
+        <li>A. Publishing to the web, Everyone</li>
+        <li>B. Using a workspace, All board members individually</li>
+        <li class="active">C. Using an app, A dedicated security group in Azure Active Directory</li>
+        <li>D. Sharing individual reports, Each board member's personal email address</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Publishing content via a Power BI app provides a clean, easy-to-use experience for busy board members while keeping the data secure. Assigning access through an AAD security group simplifies management, ensures consistent permissions, and avoids exposing sensitive financial data publicly or managing access user by user.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 220 -->
+  <div class="questionFormat">
+    <h1>Question 220</h1>
+    <div class="question">
+      <p>A business intelligence (BI) specialist has configured a Power BI dataflow to pull data using DirectQuery from an on-site Microsoft SQL Server. This dataflow also has the Enhanced Dataflows Compute Engine enabled. Your task is to incorporate this dataflow into a report while adhering to the following objectives: <br>
+- Reduce reliance on real-time online data processing. <br>
+- Decrease both the calculation and display times of report visuals. <br>
+- Ensure the data includes records from the current year until the day before the present. <br>
+What action should you take?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Establish a connection to the dataflow using DirectQuery.</li>
+        <li>B. Establish a connection to the dataflow using DirectQuery and set up a gateway for this dataset.</li>
+        <li>C. Establish a connection to the dataflow using Import mode and arrange for daily updates.</li>
+        <li>D. Establish a connection to the dataflow using Import mode and configure an hourly data refresh via Microsoft Power Automate.</li>
+      </ul>
+      <ul>
+        <li>A. Establish a connection to the dataflow using DirectQuery.</li>
+        <li>B. Establish a connection to the dataflow using DirectQuery and set up a gateway for this dataset.</li>
+        <li class="active">C. Establish a connection to the dataflow using Import mode and arrange for daily updates.</li>
+        <li>D. Establish a connection to the dataflow using Import mode and configure an hourly data refresh via Microsoft Power Automate.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using Import mode loads the data into Power BI’s in-memory engine, which reduces reliance on real-time queries and improves visual calculation and display performance. Scheduling daily refreshes ensures the data remains current (e.g., including records up to yesterday) without the performance overhead of DirectQuery.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

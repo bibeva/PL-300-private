@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 201 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 201</h1>
+    <div class="question">
+      <p>Imagine you manage a Power BI workspace for your team's sales reports. You want to allow a new team member, Alex, to publish updated versions of the sales reports on the workspace App. <br>
+However, you don't want Alex to change the workspace settings, such as adding or removing members or modifying the workspace name. Which role should you assign to Alex in the Power BI service to provide him with the necessary publishing permissions while restricting his ability to alter workspace settings?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Viewer</li>
+        <li>B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+      <ul>
+        <li>A. Viewer</li>
+        <li class="active">B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Contributor role in a Power BI workspace allows a user to publish and update reports and dashboards without granting access to workspace settings or membership management. This ensures Alex can manage content effectively while preventing changes to the workspace configuration, which would require higher roles like Member or Admin.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 202 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 202</h1>
+    <div class="question">
+      <p>Imagine you're developing a Power BI report for a company with a large sales team. The report displays sales performance data for individual sales representatives, including their sales figures, targets, and customer interactions. To protect the confidentiality of this data, you need to implement dynamic Row-Level Security (RLS). This means that each sales representative should only be able to see their own data when they access the report. You have a table called SalesPerformance with the following columns:
+SalesRepName <br>
+EmailAddress <br>
+Region <br>
+SalesAmount <br>
+TargetAmount <br>
+Question: Which DAX expression should you use in your RLS rule to ensure that sales representatives can only see their own data, and this rule works correctly both when testing the report in Power BI Desktop and after publishing it to the Power BI service?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. [EmailAddress] - USERNAME()</li>
+        <li>B. [SalesRepName] - USERPRINCIPALNAME()</li>
+        <li>C. [SalesRepName] = USERNAME()</li>
+        <li>D. [EmailAddress] = USERPRINCIPALNAME()</li>
+      </ul>
+      <ul>
+        <li>A. [EmailAddress] - USERNAME()</li>
+        <li>B. [SalesRepName] - USERPRINCIPALNAME()</li>
+        <li>C. [SalesRepName] = USERNAME()</li>
+        <li class="active">D. [EmailAddress] = USERPRINCIPALNAME()</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To implement dynamic RLS in Power BI, you compare a column that uniquely identifies the user, such as EmailAddress, with the USERPRINCIPALNAME() function, which returns the logged-in user's email. This ensures each sales representative sees only their own data both in Power BI Desktop’s “View as” feature and in the Power BI Service after publishing.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 203 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 203</h1>
+    <div class="question">
+      <p>You manage a Microsoft Power BI report for your organization. The PBIX file size is substantial at 550 MB, and the report is hosted on a shared capacity on powerbi.com within an App workspace. The report draws from an imported dataset comprising a single fact table with 12 million rows, refreshed bi-daily at 08:00 and 17:00. <br>
+The report layout consists of a single page, featuring 15 third-party AppSource visuals and 10 built-in Power BI visuals. Users have reported experiencing delays when loading and interacting with the visuals. To enhance the report’s performance, which of the following actions would you recommend?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Modify DAX measures to utilize iterator functions more extensively.</li>
+        <li>B. Activate enhanced visual interaction settings.</li>
+        <li>C. Transition from built-in visuals to more third-party AppSource visuals.</li>
+        <li>D. Distribute the visuals across several pages.</li>
+      </ul>
+      <ul>
+        <li>A. Modify DAX measures to utilize iterator functions more extensively.</li>
+        <li>B. Activate enhanced visual interaction settings.</li>
+        <li>C. Transition from built-in visuals to more third-party AppSource visuals.</li>
+        <li class="active">D. Distribute the visuals across several pages.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Having too many visuals on a single page, especially a mix of built-in and third-party AppSource visuals, can significantly slow down rendering and interaction. Splitting visuals across multiple pages reduces the number of visuals that need to load simultaneously, improving performance. Using more iterators or third-party visuals typically worsens performance, and enhanced interaction settings do not address the core load issue.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 204 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 204</h1>
+    <div class="question">
+      <p>You’re developing a Power BI solution to analyse how current inventory levels influence sales performance so the procurement team can adjust re-ordering. <br>
+Data Structure <br>
+- SQL Server: <br>
+Table Name: CurrentInventory <br>
+Columns: ProductID, CurrentStock <br>
+- BI Team Semantic Model <br>
+Model Name: SalesTransactions <br>
+Tables: Transactions, Products, Calendar <br>
+To analyse the impact of inventory levels on sales performance, how should you configure your model in Power BI Desktop? <br>
+1. Select "Get Data" - > "Power BI Semantic model" and connect to the SalesTransactions semantic model from Power BI Desktop. <br>
+2. Select "Get Data" - > SQL Server <br>
+3. Select the CurrentInventory table <br>
+4. Create a relationship between CurrentInventory[ProductID] and Transactions[ProductID]. <br>
+5. After the prompt "A DirectQuery connection is required", select "Add a local model"</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1-5-2-4-3</li>
+        <li>B. 1-2-5-3-4</li>
+        <li>C. 2-3-5-1-4</li>
+        <li>D. 1-3-2-5-4</li>
+      </ul>
+      <ul>
+        <li>A. 1-5-2-4-3</li>
+        <li class="active">B. 1-2-5-3-4</li>
+        <li>C. 2-3-5-1-4</li>
+        <li>D. 1-3-2-5-4</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> First, you connect to the existing SalesTransactions semantic model in Power BI Desktop. Then, use Get Data → SQL Server to access the CurrentInventory table. When prompted for a DirectQuery connection, select Add a local model. Finally, create a relationship between CurrentInventory[ProductID] and Transactions[ProductID] to enable analysis of inventory impact on sales.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 205 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 205</h1>
+    <div class="question">
+      <p>You manage a data source in Azure SQL Database where sales transactions are recorded and updated continuously. You are tasked with creating reports to monitor for potential fraudulent transactions, which requires that the data in your reports reflects changes from the database within five minutes of their occurrence. <br>
+What is the most appropriate way to set up the data connection to meet this requirement?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Implement a SQL query to fetch the data.</li>
+        <li>B. Configure the 'Command timeout' setting in minutes.</li>
+        <li>C. Use the Import data connectivity mode.</li>
+        <li>D. Use the DirectQuery data connectivity mode.</li>
+      </ul>
+      <ul>
+        <li>A. Implement a SQL query to fetch the data.</li>
+        <li>B. Configure the 'Command timeout' setting in minutes.</li>
+        <li>C. Use the Import data connectivity mode.</li>
+        <li class="active">D. Use the DirectQuery data connectivity mode.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> DirectQuery enables Power BI reports to query the underlying Azure SQL Database in real time, ensuring that the data reflects changes almost immediately, meeting the five-minute freshness requirement. Import mode, in contrast, loads a static snapshot of the data, which would not provide near-real-time updates.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 206 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 206</h1>
+    <div class="question">
+      <p>Which is the first (highest) role in Power BI Service which is NOT inherently granted permission to share dashboards?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Viewer</li>
+        <li>B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+      <ul>
+        <li>A. Viewer</li>
+        <li class="active">B. Contributor</li>
+        <li>C. Member</li>
+        <li>D. Admin</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI Service, the Contributor role can create and edit content in a workspace but cannot share dashboards or reports with others. Sharing permissions start with the Member role, which allows users to distribute content while Admins retain full control over the workspace. Viewers only have read access and cannot edit or share content.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 207 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 207</h1>
+    <div class="question">
+      <p>You're working on a Power BI report that analyzes sales data for a large online retailer. The dataset is quite large and complex, and you've noticed that refreshing the data takes a significant amount of time. You want to optimize the dataset to improve refresh performance. <br>
+Which of the following techniques can help achieve faster data refresh times? (Select all that apply)
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Replacing DirectQuery mode with Import mode.</li>
+        <li>B. Splitting a large, denormalized table into smaller, related tables to normalize the data model.</li>
+        <li>C. Removing unused columns and rows from the dataset.</li>
+        <li>D. Disabling query folding in Power Query.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Replacing DirectQuery mode with Import mode.</li>
+        <li class="active">B. Splitting a large, denormalized table into smaller, related tables to normalize the data model.</li>
+        <li class="active">C. Removing unused columns and rows from the dataset.</li>
+        <li>D. Disabling query folding in Power Query.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Using Import mode loads data into Power BI’s in-memory engine, which speeds up refresh and query performance. Normalizing the data model by splitting large tables reduces data redundancy and improves efficiency. Removing unused columns and rows decreases dataset size, further enhancing refresh times. Disabling query folding is counterproductive, as query folding pushes transformations to the source, improving refresh performance.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 208 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 208</h1>
+    <div class="question">
+      <p>You are tasked with managing access within a Power BI environment for business unit analysts who frequently utilize the "Profit and Loss" dashboard. It is crucial that these analysts access financial data while ensuring that Row-Level Security (RLS) policies remain enforced to restrict data visibility based on individual or group attributes. <br>
+The analysts need to view insights and have the ability to create personalized reports based on the "Profit and Loss" dataset without altering the core datasets or workspace configurations. Which configuration should you choose to meet these requirements?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. PowerBI.com Role: Contributor to the workspace, Dataset Permission: Can edit, with RLS enforced</li>
+        <li>B. PowerBI.com Role: Access to an app, Dataset Permission: Can delete, with RLS enforced</li>
+        <li>C. PowerBI.com Role: Contributor to the workspace, Dataset Permission: Can build, with RLS enforced</li>
+        <li>D. PowerBI.com Role: Viewer to the workspace, Dataset Permission: Can build, with RLS enforced</li>
+      </ul>
+      <ul>
+        <li>A. PowerBI.com Role: Contributor to the workspace, Dataset Permission: Can edit, with RLS enforced</li>
+        <li>B. PowerBI.com Role: Access to an app, Dataset Permission: Can delete, with RLS enforced</li>
+        <li>C. PowerBI.com Role: Contributor to the workspace, Dataset Permission: Can build, with RLS enforced</li>
+        <li class="active">D. PowerBI.com Role: Viewer to the workspace, Dataset Permission: Can build, with RLS enforced</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Assigning Viewer access to the workspace allows analysts to see content without modifying the workspace or datasets. Granting "Can build" permission on the dataset lets them create personalized reports while RLS continues to enforce row-level restrictions, ensuring data security and proper access control.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 209 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 209</h1>
+    <div class="question">
+      <p>You're a Power BI developer creating an interactive report to present your company's marketing campaign performance. The report is divided into four key sections: <br>
+- Overview: A summary of the campaign's overall performance. <br>
+- Channel Performance: Detailed breakdown of performance across different marketing channels (e.g., social media, email, search). <br>
+- Customer Segmentation: Analysis of campaign effectiveness across various customer segments. <br>
+- Regional Analysis: Geographical view of campaign reach and impact. <br>
+You've designed an engaging landing page for your report with a visually appealing layout. To ensure a smooth user experience, you want to provide easy navigation from this landing page to each of the four report sections. You are considering adding the page navigation buttons to the home page, and set manually other buttons in the other pages to go back to the home page. <br>
+Is this an effective solution to achieve seamless navigation within your report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Adding navigation buttons on the landing (home) page to each report section, and providing buttons on each section page to return to the home page, creates a simple and intuitive navigation flow. This approach enhances user experience by allowing users to easily jump between sections and return to the main overview without confusion.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 210 -->
+  <div class="questionFormat">
+    <h1>Question 210</h1>
+    <div class="question">
+      <p>You are tasked with building a report that highlights your company's most valuable customers. This report should showcase the top 20 customers based on their total purchase value over the last year. <br>
+You have a dataset with customer details, purchase history, and order values. Which filter type and level should you use to achieve this? <br>
+Filter Type: [Answer Choice] <br>
+Level: [Answer Choice]</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Advanced filter, Page level</li>
+        <li>B. Relative date filter, Report level</li>
+        <li>C. Top N filter, Visual level</li>
+        <li>D. Basic filter, Page level</li>
+      </ul>
+      <ul>
+        <li>A. Advanced filter, Page level</li>
+        <li>B. Relative date filter, Report level</li>
+        <li class="active">C. Top N filter, Visual level</li>
+        <li>D. Basic filter, Page level</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Top N filter allows you to display only the top 20 customers based on a measure like total purchase value. Applying it at the visual level ensures that the ranking affects only the specific visual highlighting these customers, without altering other visuals or pages in the report.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

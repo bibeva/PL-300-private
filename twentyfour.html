@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 231 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 231</h1>
+    <div class="question">
+      <p>You're tasked with cleaning and preparing a dataset in Power Query Editor before using it for analysis in Power BI Desktop. You want to use the Data Preview features to understand the quality and distribution of your data. For each of the following scenarios, select the most appropriate Data Preview feature to achieve the desired outcome: <br>
+Scenarios: <br>
+1) Identify the percentage of values in a column that are considered errors (e.g., invalid entries, incorrect data types).  <br>
+2) Determine the number of unique values in each column of your dataset.  <br>
+3) Get a quick overview of the distribution of values in a numerical column, including the frequency (count) of each different value. <br>
+Features: <br>
+A) Column quality <br>
+B) Column profile <br>
+C) Column distribution</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1-A, 2-B, 3-C</li>
+        <li>B. 1-A, 2-C, 3-B</li>
+        <li>C. 1-B, 2-B, 3-C</li>
+        <li>D. 1-C, 2-B, 3-C</li>
+      </ul>
+      <ul>
+        <li class="active">A. 1-A, 2-B, 3-C</li>
+        <li>B. 1-A, 2-C, 3-B</li>
+        <li>C. 1-B, 2-B, 3-C</li>
+        <li>D. 1-C, 2-B, 3-C</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Column quality shows the percentage of valid, error, and empty values, which helps identify errors. Column profile provides statistics such as count, distinct count, and unique values, making it ideal for determining the number of unique values. Column distribution visualizes value frequencies and distributions, which is best for understanding how numerical values are spread.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 232 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 232</h1>
+    <div class="question">
+      <p>You are a data analyst for a retail company, tasked with creating a Power BI report to analyze sales performance across various regions. The company stores monthly sales data in a SQL Server database (accessed via DirectQuery) and historical sales targets in an Excel spreadsheet (imported). Your goal is to create a report that allows for real-time sales monitoring against static yearly targets. <br>
+ Tables Involved: <br>
+- SQL Server Database (DirectQuery): <br>
+Table Name: MonthlySales <br>
+Columns: RegionID, Month, SalesAmount <br>   
+- Excel Spreadsheet (Imported): <br>
+Table Name: YearlySalesTargets <br>
+Columns: RegionID, Year, SalesTarget <br>
+How would you design your Power BI model to enable analysis of sales performance against targets, considering the need for real-time data and static yearly targets?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Import both tables into Power BI and refresh data monthly</li>
+        <li>B. Use DirectQuery for both tables to ensure data freshness</li>
+        <li>C. Create a composite model with DirectQuery for MonthlySales and import for YearlySalesTargets</li>
+        <li>D. Store both tables in SQL Server and use a live connection</li>
+      </ul>
+      <ul>
+        <li>A. Import both tables into Power BI and refresh data monthly</li>
+        <li>B. Use DirectQuery for both tables to ensure data freshness</li>
+        <li class="active">C. Create a composite model with DirectQuery for MonthlySales and import for YearlySalesTargets</li>
+        <li>D. Store both tables in SQL Server and use a live connection</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A composite model lets you combine real-time data (MonthlySales via DirectQuery) with static or slowly changing data (YearlySalesTargets via Import). This design ensures up-to-date sales monitoring while keeping targets efficiently stored in memory for fast comparisons, which best fits the requirement.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 233 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 233</h1>
+    <div class="question">
+      <p>After integrating transaction records into Power BI, your entity employs a range of designations for transaction metrics, including proceeds, net proceeds, and cumulative sales. <br>
+The goal is to fine-tune the 'Transaction Records' table to boost the efficacy of the Q&A functionality for users within Power BI Dashboards. <br>
+Proposed Solution: Apply a row label configuration to the 'Transaction Records' table. <br>
+Does this proposed solution accomplish the intended goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Row label configuration is used to identify the row identifier (for example, a name or title column) so Power BI can refer to rows more naturally in visuals and Q&A. It does not improve understanding of different metric names or synonyms such as proceeds, net proceeds, or cumulative sales. To enhance Q&A for those terms, you should configure synonyms for columns and measures, not row labels.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 234 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 234</h1>
+    <div class="question">
+      <p>In your Power BI report, you have both a pie chart and a bar graph. The visuals currently interact using the default configuration settings. <br>
+You want to configure the report so that selecting a bar in the bar graph causes the pie chart to update, reflecting the dataset associated with the selected bar. The pie chart data should not just be highlighted, but filtered. <br>
+What action should you take to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Activate the bar graph and apply a 'Filter' interaction to the pie chart.</li>
+        <li>B. Activate the pie chart and configure the 'Filter' interaction on the bar graph.</li>
+        <li>C. Activate the pie chart and disable interactions with the bar graph.</li>
+        <li>D. Activate the bar graph and disable interactions with the pie chart.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Activate the bar graph and apply a 'Filter' interaction to the pie chart.</li>
+        <li>B. Activate the pie chart and configure the 'Filter' interaction on the bar graph.</li>
+        <li>C. Activate the pie chart and disable interactions with the bar graph.</li>
+        <li>D. Activate the bar graph and disable interactions with the pie chart.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To have the pie chart filter (not just highlight) based on a selection in the bar graph, you must edit interactions, select the bar graph as the source visual, and set the interaction on the pie chart to Filter.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 235 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 235</h1>
+    <div class="question">
+      <p>In Power Query Editor, you are refining a financial dataset that includes a column named 'interestRate'. This column is crucial for your analysis but contains error values due to inconsistencies during the data collection process. <br>
+To ensure the integrity of your analysis, you need to replace any errors in the 'interestRate' column with a fixed interest rate of 5% while keeping all the rows in your dataset. What is the most efficient method to achieve this with minimal manual intervention?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Manually remove all rows that contain errors in the 'interestRate' column and append new rows with the default interest rate of 5%.</li>
+        <li>B. Use the 'Find and Replace' feature in Power Query to search for error values in the 'interestRate' column and replace them with 5%.</li>
+        <li>C. Apply a conditional column in Power Query that checks for errors in the 'interestRate' column and replaces them with a default value of 5% if an error is found.</li>
+        <li>D. Utilize the 'Replace Errors' function in Power Query, specifying 5% as the replacement value for any errors detected in the 'interestRate' column.</li>
+      </ul>
+      <ul>
+        <li>A. Manually remove all rows that contain errors in the 'interestRate' column and append new rows with the default interest rate of 5%.</li>
+        <li>B. Use the 'Find and Replace' feature in Power Query to search for error values in the 'interestRate' column and replace them with 5%.</li>
+        <li>C. Apply a conditional column in Power Query that checks for errors in the 'interestRate' column and replaces them with a default value of 5% if an error is found.</li>
+        <li class="active">D. Utilize the 'Replace Errors' function in Power Query, specifying 5% as the replacement value for any errors detected in the 'interestRate' column.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Replace Errors is designed specifically for this scenario. It efficiently replaces error values without removing rows or adding extra logic, requires minimal effort, and preserves the dataset’s structure for accurate financial analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 236 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 236</h1>
+    <div class="question">
+      <p>You have a Power BI data model with four queries named CustomerData, SalesData, ProductData, and RegionData. The CustomerData query loads customer information into the model and is referenced by the other three queries. <br>
+You notice that refreshing data for the model is taking a long time. You need to improve the data refresh performance while keeping costs low. What action should you take?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Use the Table.Buffer function in the CustomerData query.</li>
+        <li>B. Duplicate CustomerData into each of the other queries.</li>
+        <li>C. Configure CustomerData as a dataflow entity.</li>
+        <li>D. Increase the capacity settings in the Power BI Admin portal.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Use the Table.Buffer function in the CustomerData query.</li>
+        <li>B. Duplicate CustomerData into each of the other queries.</li>
+        <li>C. Configure CustomerData as a dataflow entity.</li>
+        <li>D. Increase the capacity settings in the Power BI Admin portal.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power Query, when a query like CustomerData is referenced by multiple other queries (SalesData, ProductData, RegionData), Power Query may recompute CustomerData each time it is referenced, which can significantly slow down the refresh process, especially for large datasets. By using Table.Buffer on CustomerData, the query’s result is cached in memory, so subsequent queries that reference it can access the cached data instead of recomputing it from the source. This improves refresh performance without adding extra cost or requiring changes to the data source, unlike creating dataflows or increasing capacity. It is a simple, low-cost optimization for single-model scenarios.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 237 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 237</h1>
+    <div class="question">
+      <p>Which of the following statements best describes the primary advantage of using paginated reports in Power BI?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Paginated reports are designed to analyze big data in real-time.</li>
+        <li>B. Paginated reports are optimized for interactive data visualizations and exploratory analysis.</li>
+        <li>C. Paginated reports provide pixel-perfect layouts suitable for printing and exporting to formats like PDF.</li>
+        <li>D. Paginated reports automatically update visuals based on AI insights without user intervention.</li>
+      </ul>
+      <ul>
+        <li>A. Paginated reports are designed to analyze big data in real-time.</li>
+        <li>B. Paginated reports are optimized for interactive data visualizations and exploratory analysis.</li>
+        <li class="active">C. Paginated reports provide pixel-perfect layouts suitable for printing and exporting to formats like PDF.</li>
+        <li>D. Paginated reports automatically update visuals based on AI insights without user intervention.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Paginated reports in Power BI are designed for precise, highly formatted reporting, where each page layout is controlled and consistent. This makes them ideal for scenarios like invoices, statements, or regulatory reports that need to be printed or exported while preserving exact formatting. They are not optimized for interactive or real-time exploratory analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 238 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 238</h1>
+    <div class="question">
+      <p>You are designing a Power BI Desktop dashboard for tracking software development issues by pulling data from the Analytics section in Azure DevOps. To achieve this, you need to set up a data connector in Power BI Desktop that will allow secure access to Azure DevOps. <br>
+Your solution must:   <br>
+- Utilize Analytics views. <br>
+- Enable data filtering directly from the cloud. <br>
+Which data connector would be the most appropriate choice?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. OData Protocol</li>
+        <li>B. Azure DevOps (Work Items only)</li>
+        <li>C. Azure DevOps Server (Self-hosted Boards only)</li>
+        <li>D. OData Feed</li>
+      </ul>
+      <ul>
+        <li class="active">A. OData Protocol</li>
+        <li>B. Azure DevOps (Work Items only)</li>
+        <li>C. Azure DevOps Server (Self-hosted Boards only)</li>
+        <li>D. OData Feed</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Azure DevOps provides Analytics views through an OData endpoint, which allows Power BI to securely query the data. Using the OData connector in Power BI Desktop enables you to connect to these views, apply filters directly in the query, and retrieve structured data for reporting. Other connectors (like “Work Items only”) do not support Analytics views or cloud-based filtering.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 239 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 239</h1>
+    <div class="question">
+      <p>A large financial institution uses Power BI for data analysis and reporting across various departments, including investment banking, retail banking, and asset management. <br>
+With hundreds of reports and dashboards being created and shared, they need a way to ensure these resources are well-organized, easily discoverable, and accessible to the right people. <br>
+What is the recommended approach in Power BI to manage this large volume of content and promote efficient collaboration across different departments?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Store all reports and dashboards in a single workspace and grant access to everyone in the organization.</li>
+        <li>B. Create multiple workspaces based on departmental or functional areas.</li>
+        <li>C. Export all reports as PDF files and store them in a shared network folder.</li>
+        <li>D. Publish all reports to the Power BI service and enable public access for everyone on the internet.</li>
+      </ul>
+      <ul>
+        <li>A. Store all reports and dashboards in a single workspace and grant access to everyone in the organization.</li>
+        <li class="active">B. Create multiple workspaces based on departmental or functional areas.</li>
+        <li>C. Export all reports as PDF files and store them in a shared network folder.</li>
+        <li>D. Publish all reports to the Power BI service and enable public access for everyone on the internet.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In large organizations, organizing content by department or function using separate workspaces improves discoverability, access control, and collaboration. Each workspace can have dedicated permissions, ensuring that sensitive data is only accessible to the right users. Storing everything in a single workspace or enabling public access would create security and management challenges, while exporting reports as PDFs limits interactivity and usability.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 240 -->
+  <div class="questionFormat">
+    <h1>Question 240</h1>
+    <div class="question">
+      <p>You're working with a massive dataset containing millions of customer transactions for a global e-commerce platform. One of your tables, "CustomerDemographics," includes a column named "CustomerID" with extremely high cardinality – almost every value in this column is unique. <br>
+This high cardinality is causing performance issues with your Power BI reports, particularly slow query execution and increased memory consumption. Which strategy would you employ to effectively manage this high cardinality in the "CustomerID" column and optimize your Power BI report's performance?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Delete the "CustomerID" column as it's not necessary for analysis.</li>
+        <li>B. Convert the "CustomerID" column to a higher precision data type, such as "Big Integer."</li>
+        <li>C. Create a calculated table that groups "CustomerID" values into broader categories, reducing the number of distinct values.</li>
+        <li>D. Replace the "CustomerID" column with a calculated column that generates random numbers.</li>
+      </ul>
+      <ul>
+        <li>A. Delete the "CustomerID" column as it's not necessary for analysis.</li>
+        <li>B. Convert the "CustomerID" column to a higher precision data type, such as "Big Integer."</li>
+        <li class="active">C. Create a calculated table that groups "CustomerID" values into broader categories, reducing the number of distinct values.</li>
+        <li>D. Replace the "CustomerID" column with a calculated column that generates random numbers.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> High cardinality columns, like a nearly unique "CustomerID," can significantly impact memory usage and query performance in Power BI. Grouping customers into broader categories (e.g., customer segments or cohorts) reduces cardinality, improving compression and calculation speed while preserving analytical value. Simply deleting or randomizing the column would lose critical information, and changing the data type does not address performance issues caused by high cardinality.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 261 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 261</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst at an international electronics retailer. You're building a Power BI report to track sales performance across different regions and product categories. You have three tables: <br>
+- Sales: This table contains details about each sale, including the transaction ID, product ID, region ID, date of sale, and sales amount. <br>
+- Products: This table provides information about each product, such as the product ID, product name, and the category it belongs to. <br>
+- Regions: This table lists all the regions where the company operates, with their corresponding region IDs and names. <br>
+To allow your report users to analyze sales by product name and region, how should you establish relationships between these tables?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Connect Sales to Products using ProductID (many-to-one) and Sales to Regions using RegionID (many-to-one)</li>
+        <li>B. Connect Products to Sales using ProductID (many-to-one) and Regions to Sales using RegionID (many-to-one)</li>
+        <li>C. Create a single relationship between Sales and a merged table of Products and Regions.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Connect Sales to Products using ProductID (many-to-one) and Sales to Regions using RegionID (many-to-one)</li>
+        <li>B. Connect Products to Sales using ProductID (many-to-one) and Regions to Sales using RegionID (many-to-one)</li>
+        <li>C. Create a single relationship between Sales and a merged table of Products and Regions.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In a star schema, the fact table (Sales) contains transactional data and dimension tables (Products, Regions) provide descriptive attributes. Each sale can reference only one product and one region, but each product or region can appear in many sales. Therefore, the correct relationship is many-to-one from Sales to Products and from Sales to Regions, enabling accurate aggregation and filtering by product name and region.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 262 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 262</h1>
+    <div class="question">
+      <p>For an upcoming Power BI report, you intend to apply conditional formatting to highlight key data points dynamically. Identify two visual types where conditional formatting can be directly applied to enhance data interpretation.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Bar chart</li>
+        <li>B. Matrix</li>
+        <li>C. Line chart</li>
+        <li>D. Table</li>
+      </ul>
+      <ul>
+        <li>A. Bar chart</li>
+        <li class="active">B. Matrix</li>
+        <li>C. Line chart</li>
+        <li class="active">D. Table</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Conditional formatting in Power BI can be applied directly to tables and matrices to dynamically change cell colors, font colors, or background based on values or rules. This helps highlight key data points, trends, or thresholds. Visuals like bar charts or line charts cannot have conditional formatting applied to individual data points in the same way; their formatting is typically based on data series or categories rather than per-cell rules.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 263 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 263</h1>
+    <div class="question">
+      <p>Imagine you're creating a Power BI report to analyze customer demographics for a global marketing campaign. You've added a slicer to your main report page, allowing users to filter data by country. <br>
+Now, you want to include the same slicer on other report pages, such as those showing customer age distribution or product preferences, to maintain a consistent filtering experience throughout the report. <br>
+What's the key requirement to ensure these slicers work in sync across different report pages?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. The slicers must be based on the same underlying field.</li>
+        <li>B. The slicers must have identical formatting (e.g., color, font).</li>
+        <li>C. The report pages must be part of the same report section.</li>
+        <li>D. The slicers must be placed in the same position on each page.</li>
+      </ul>
+      <ul>
+        <li class="active">A. The slicers must be based on the same underlying field.</li>
+        <li>B. The slicers must have identical formatting (e.g., color, font).</li>
+        <li>C. The report pages must be part of the same report section.</li>
+        <li>D. The slicers must be placed in the same position on each page.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> To synchronize slicers across multiple report pages in Power BI, the slicers must be connected to the same underlying field from the dataset. Once this condition is met, you can use the "Sync Slicers" pane to ensure that selections on one page automatically filter visuals on other pages. Formatting, placement, or report sections do not affect slicer synchronization.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 264 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 264</h1>
+    <div class="question">
+      <p>You're designing a Power BI model for analyzing retail sales and notice that the granularity of your Sales table is at the transaction level, while your Products table includes detailed product information. <br>
+To optimize the model for query performance, which of the following strategies should you adopt?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Increase the granularity of the Sales table by adding more detailed transaction information.</li>
+        <li>B. Decrease the granularity of the Products table to match the Sales table.</li>
+        <li>C. Implement aggregation tables for common queries and use them with detail-level reporting.</li>
+        <li>D. Duplicate the Sales table to create summarized versions for each product category.</li>
+      </ul>
+      <ul>
+        <li>A. Increase the granularity of the Sales table by adding more detailed transaction information.</li>
+        <li>B. Decrease the granularity of the Products table to match the Sales table.</li>
+        <li class="active">C. Implement aggregation tables for common queries and use them with detail-level reporting.</li>
+        <li>D. Duplicate the Sales table to create summarized versions for each product category.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Aggregation tables store pre-summarized data at higher levels (e.g., by product category or region), which can greatly improve query performance when users analyze summarized metrics. The detail-level Sales table remains available for drill-down or detailed reporting. Increasing granularity or duplicating tables would add complexity and reduce performance, while decreasing granularity of the Products table is not relevant.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 265 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 265</h1>
+    <div class="question">
+      <p>For a Power BI dataset, you aim to source data from flat files and require a storage solution that supports setting up scheduled refreshes using Microsoft 365 credentials. Which two storage options would you suggest for this purpose? <br>
+Select all answers that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. External US drive</li>
+        <li>B. Files saved on OneDrive for Business</li>
+        <li>C. Cloud Storage Service</li>
+        <li>D. Files located in SharePoint Online Team Sites</li>
+      </ul>
+      <ul>
+        <li>A. External US drive</li>
+        <li class="active">B. Files saved on OneDrive for Business</li>
+        <li>C. Cloud Storage Service</li>
+        <li class="active">D. Files located in SharePoint Online Team Sites</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Both OneDrive for Business and SharePoint Online support seamless integration with Power BI, allowing datasets to use Microsoft 365 credentials for scheduled refreshes. They provide cloud-based storage with built-in authentication, enabling automatic refresh without manual intervention. Local drives or generic cloud storage services typically require gateways and do not natively support Microsoft 365 authentication for scheduled refreshes.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 266 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 266</h1>
+    <div class="question">
+      <p>In the process of data preparation within Power BI Desktop, you've utilized Power Query to incorporate a dataset. Your task is to ascertain if a specific column consists exclusively of distinct values. <br>
+Which two features in the Data preview should you utilize to fulfill this requirement? Select all that apply</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Monospaced</li>
+        <li>B. Column distribution</li>
+        <li>C. Column quality</li>
+        <li>D. Column profile</li>
+      </ul>
+      <ul>
+        <li>A. Monospaced</li>
+        <li class="active">B. Column distribution</li>
+        <li>C. Column quality</li>
+        <li class="active">D. Column profile</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The Column distribution feature in Power Query visually shows the count of distinct, unique, and repeated values in a column, making it easy to verify uniqueness. Column profile provides detailed statistics about a column, including the number of distinct values, empty values, and errors, which also helps determine if all values are unique. Column quality focuses on errors, valid, and empty values, while "Monospaced" is unrelated.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 267 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 267</h1>
+    <div class="question">
+      <p>In managing a workspace with Power BI Pro license, you're evaluating the refresh capabilities for datasets. How many times can a dataset be refreshed daily in this environment?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 8</li>
+        <li>B. 10</li>
+        <li>C. 16</li>
+        <li>D. 24</li>
+      </ul>
+      <ul>
+        <li class="active">A. 8</li>
+        <li>B. 10</li>
+        <li>C. 16</li>
+        <li>D. 24</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In a Power BI workspace using a Pro license, datasets can be scheduled to refresh up to 8 times per day. This limit applies regardless of dataset size. For more frequent refreshes (up to 48 times daily), a Premium capacity workspace would be required.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 268 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 268</h1>
+    <div class="question">
+      <p>You're creating a report in Power BI to visualize customer satisfaction survey results. The report includes a table visual showing the satisfaction rating for each customer, ranging from 1 (very dissatisfied) to 5 (very satisfied). <br>
+You want to enhance the visual representation of these ratings to quickly grasp customer sentiment without relying solely on the numerical values. You also need to ensure that each distinct rating has a unique visual representation while keeping the report design clean and minimalist. <br>
+Which conditional formatting option should you use to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Font color</li>
+        <li>B. Web URL</li>
+        <li>C. Data bars</li>
+        <li>D. Background color</li>
+      </ul>
+      <ul>
+        <li>A. Font color</li>
+        <li>B. Web URL</li>
+        <li>C. Data bars</li>
+        <li class="active">D. Background color</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Applying background color via conditional formatting allows you to assign a distinct color to each satisfaction rating. This makes it easy to visually differentiate ratings at a glance, helping users quickly interpret customer sentiment. Data bars are more suited for showing magnitude or trends, while font color or web URL formatting are less effective for highlighting discrete categorical values.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 269 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 269</h1>
+    <div class="question">
+      <p>You manage a Power BI dashboard that tracks quality metrics for a factory’s production line. The dashboard includes: <br>
+- A bar chart illustrating the daily count of defective items produced. <br>
+- A gauge visual displaying the current daily defect rate as a percentage. <br>
+You need a solution that will notify you if the daily defect rate surpasses 3%. What should you set up?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. a report bookmark</li>
+        <li>B. a data alert</li>
+        <li>C. a text box with conditional formatting</li>
+        <li>D. a drill-through filter</li>
+      </ul>
+      <ul>
+        <li>A. a report bookmark</li>
+        <li class="active">B. a data alert</li>
+        <li>C. a text box with conditional formatting</li>
+        <li>D. a drill-through filter</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI Service, data alerts can be configured on card, gauge, or KPI visuals to notify you when a value crosses a specific threshold. Setting a data alert on the gauge visual allows you to automatically receive a notification if the daily defect rate exceeds 3%, ensuring timely action. Bookmarks, text boxes, or drill-through filters cannot generate automatic notifications.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 270 -->
+  <div class="questionFormat">
+    <h1>Question 270</h1>
+    <div class="question">
+      <p>Scenario: In Power BI Desktop, you're working with a dataset that includes an inventory table of art pieces displayed on a report page. The table includes columns for 'Art Title' and 'Art Image URL,' which contains links to images of the artworks hosted online. <br>
+Objective: You need to configure the table visual to display the art images directly, instead of showing the URLs. <br>
+What adjustment should you make to the 'Art Image URL' column in the table visual to display the images directly within the table?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. From the Visual Formatting menu, choose Values and enable 'Display URLs as Icons'.</li>
+        <li>B. Set the Data Category for the 'Art Image URL' field to 'Web URL'.</li>
+        <li>C. Change the Data Type of the 'Art Image URL' field to 'Binary'.</li>
+        <li>D. Assign the Data Category of the 'Art Image URL' field to 'Image URL'.</li>
+      </ul>
+      <ul>
+        <li>A. From the Visual Formatting menu, choose Values and enable 'Display URLs as Icons'.</li>
+        <li>B. Set the Data Category for the 'Art Image URL' field to 'Web URL'.</li>
+        <li>C. Change the Data Type of the 'Art Image URL' field to 'Binary'.</li>
+        <li class="active">D. Assign the Data Category of the 'Art Image URL' field to 'Image URL'.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI Desktop, to display images in a table or matrix visual instead of showing plain URLs, you must set the Data Category of the column containing the image links to Image URL. This tells Power BI that the field contains image addresses, enabling the visual to render the actual images. Setting it as a generic Web URL or changing the data type to binary will not display the images directly.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

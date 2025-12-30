@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 251 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 251</h1>
+    <div class="question">
+      <p>Imagine you're a Power BI developer tasked with creating a report for a global sales team. The report is packed with valuable data, but you want to make it truly accessible. <br>
+Your goal is to supercharge the Q&A feature so users can easily ask questions in their own words and get accurate results. Which two strategies would best enhance the Q&A experience? <br>
+Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Develop a linguistic schema for the dataset.</li>
+        <li>B. Define synonyms for dataset attributes.</li>
+        <li>C. Increase the visual complexity of the report.</li>
+        <li>D. Embed the report in a SharePoint site.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Develop a linguistic schema for the dataset.</li>
+        <li class="active">B. Define synonyms for dataset attributes.</li>
+        <li>C. Increase the visual complexity of the report.</li>
+        <li>D. Embed the report in a SharePoint site.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Developing a linguistic schema helps Power BI understand natural language patterns, and defining synonyms ensures users’ varied wording maps correctly to dataset fields. Increasing visual complexity or embedding in SharePoint does not improve how Q&A interprets user questions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 252 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 252</h1>
+    <div class="question">
+      <p>You are tasked with refreshing a Power BI dashboard that uses a cloud-based spreadsheet from SharePoint Online as its data foundation. <br>
+The objective is to transition to an updated spreadsheet version that contains more recent figures and insights, ensuring this transition does not disrupt the existing data model, the integrity of the dashboard,  break automatic refreshes online, and no modifications should be done in Power Query. <br>
+For each of the following statements, select it if the statement is true.
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. The updated spreadsheet must have the same file path and name as the original document.</li>
+        <li>B. The structure of the updated spreadsheet must mirror the original document's layout and data organization.</li>
+        <li>C. It is possible to modify the contents of the spreadsheet directly from within Power BI.</li>
+      </ul>
+      <ul>
+        <li class="active">A. The updated spreadsheet must have the same file path and name as the original document.</li>
+        <li class="active">B. The structure of the updated spreadsheet must mirror the original document's layout and data organization.</li>
+        <li>C. It is possible to modify the contents of the spreadsheet directly from within Power BI.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Keeping the same file path and name ensures the existing connection and scheduled refresh continue to work. Maintaining the same structure prevents the data model and visuals from breaking. You cannot directly modify spreadsheet contents from within Power BI, so C is false.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 253 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 253</h1>
+    <div class="question">
+      <p>You are a data analyst for a large retail company. You are building a Power BI report to analyze sales data. The sales data is stored in a SQL Server database table named "Sales" with over 500 million rows. You want to initially import a smaller sample of the data from the "Sales" table for performance reasons during development. <br>
+Solution: You use Power Query Editor to connect to the "Sales" table and apply a filter to the data before loading it into the Power BI model. <br>
+Does this meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Filtering the data in Power Query before loading limits the number of rows imported into the model. This is an effective and recommended approach during development to improve performance while keeping the same source, schema, and transformations for later full-scale loading.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 254 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 254</h1>
+    <div class="question">
+      <p>You are a data analyst for a large retail company. You are building a Power BI report to analyze sales data. The sales data is stored in a SQL Server database table named "Sales" with over 500 million rows. You want to initially import a smaller sample of the data from the "Sales" table for performance reasons during development. <br>
+Solution: You write a DAX expression that uses the FILTER function to filter the data. <br>
+Does this meet the goal?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li>A. Yes</li>
+        <li class="active">B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> DAX is evaluated after data is loaded into the model, so using a DAX FILTER does not reduce the amount of data imported from SQL Server. To import a smaller sample for performance during development, filtering must be done in Power Query or at the source query level.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 255 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 255</h1>
+    <div class="question">
+      <p>You are a data analyst for a large retail company. You are building a Power BI report to analyze sales data. The sales data is stored in a SQL Server database table named "Sales" with over 500 million rows. You want to initially import a smaller sample of the data from the "Sales" table for performance reasons during development. <br>
+Solution: You add a WHERE clause to the SQL statement when connecting to the "Sales" table. <br>
+Does this meet the goal?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Adding a WHERE clause in the SQL query filters the data at the source, ensuring that only a smaller subset of the 500+ million rows is imported into Power BI. This approach reduces data load and improves performance during development.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 256 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 256</h1>
+    <div class="question">
+      <p>Imagine a marketing team collaborating on a project within a Power BI workspace named "Campaign Performance." Liam, a team member with Contributor access, has created several reports analyzing campaign data. However, one report now contains outdated information that could mislead the team. <br>
+Liam wants to remove this report to maintain data accuracy. Does Liam have the necessary permission to delete the report from the "Campaign Performance" workspace?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes, but only if they are also a Member.</li>
+        <li>B. Yes, Contributors can delete content they've created.</li>
+        <li>C. No, only Admins can delete content from a workspace.</li>
+        <li>D. No, deletion rights are reserved for Power BI Service Administrators.</li>
+      </ul>
+      <ul>
+        <li>A. Yes, but only if they are also a Member.</li>
+        <li class="active">B. Yes, Contributors can delete content they've created.</li>
+        <li>C. No, only Admins can delete content from a workspace.</li>
+        <li>D. No, deletion rights are reserved for Power BI Service Administrators.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In a Power BI workspace, users with the Contributor role can create, edit, and delete content they own, including reports, dashboards, and datasets. They cannot, however, manage workspace settings or remove content created by other users—those actions require Admin permissions.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 257 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 257</h1>
+    <div class="question">
+      <p>For the purpose of assembling a "Dashboard" within Power BI, which platform is most appropriate to utilize?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Power BI Desktop for report creation</li>
+        <li>B. Data Modeler for advanced analytics</li>
+        <li>C. Power BI Desktop for data integration</li>
+        <li>D. The Power BI service</li>
+      </ul>
+      <ul>
+        <li>A. Power BI Desktop for report creation</li>
+        <li>B. Data Modeler for advanced analytics</li>
+        <li>C. Power BI Desktop for data integration</li>
+        <li class="active">D. The Power BI service</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, a dashboard is a collection of visuals (tiles) that can come from one or multiple reports or datasets. Dashboards are created and shared within the Power BI service, not in Power BI Desktop. Desktop is used primarily for building reports and preparing data, whereas dashboards are assembled, viewed, and shared online in the service.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 258 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 258</h1>
+    <div class="question">
+      <p>You're developing a Power BI dashboard for the CEO and top executives of a retail giant. The dashboard provides a high-level overview of key performance indicators (KPIs) like sales, profit margins, and customer satisfaction. <br>
+To enable executives to delve deeper into specific areas of interest, you want to incorporate an interactive feature that allows them to seamlessly transition from the summary view to more granular data. Which visual interaction option should you configure to achieve this "drill-down" capability?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Cross-filtering</li>
+        <li>B. Drill-through</li>
+        <li>C. Tooltips</li>
+        <li>D. Bookmarking</li>
+      </ul>
+      <ul>
+        <li>A. Cross-filtering</li>
+        <li class="active">B. Drill-through</li>
+        <li>C. Tooltips</li>
+        <li>D. Bookmarking</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> The drill-through feature in Power BI allows users to navigate from a high-level summary (like a KPI dashboard) to a detailed report page that focuses on a specific category or data point. This enables executives to explore granular information without cluttering the main dashboard. Cross-filtering affects visuals on the same page, tooltips provide hover-over details, and bookmarking captures specific views but does not dynamically navigate to detailed data.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 259 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 259</h1>
+    <div class="question">
+      <p>Imagine you're a data analyst tasked with building a dashboard to monitor real-time stock market data. You want the dashboard to display the latest stock prices, trading volumes, and market trends, ensuring that executives always have access to the most up-to-the-minute information. <br>
+Can you achieve this live, dynamic updating by pinning report pages to the dashboard?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. True</li>
+        <li>B. False</li>
+      </ul>
+      <ul>
+        <li>A. True</li>
+        <li class="active">B. False</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Pinning report pages to a dashboard only creates a static snapshot of the visuals at the moment you pin them. These pinned visuals do not update in real-time. To show live, dynamic stock market data, you need to use real-time streaming datasets, push datasets, or DirectQuery/Live Connection visuals configured for automatic updates.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 260 -->
+  <div class="questionFormat">
+    <h1>Question 260</h1>
+    <div class="question">
+      <p>Imagine you're a Power BI developer at a bustling online retailer. You're building a dashboard to track sales performance, but you've noticed that different departments use various terms to refer to sales data. <br>
+The finance team uses "revenue," the marketing team prefers "turnover," and the sales team simply says "sales." You want to ensure everyone can easily query the data using their preferred terminology. <br>
+To enhance the Q&A experience, you propose adding synonyms for the "Sales" table in your dataset. These synonyms would include "revenue," "turnover," and other common terms used within the company. <br>
+Will this solution effectively improve the Q&A experience for users across different departments?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No, synonyms should be added for columns, not tables.</li>
+        <li>C. No, a linguistic schema is required for this scenario.</li>
+        <li>D. No, Q&A automatically recognizes these variations.</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No, synonyms should be added for columns, not tables.</li>
+        <li>C. No, a linguistic schema is required for this scenario.</li>
+        <li>D. No, Q&A automatically recognizes these variations.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Adding synonyms for a table (or its columns) in Power BI improves the Q&A experience by allowing users to ask questions using different terminology. In this scenario, mapping "revenue," "turnover," and "sales" as synonyms for the "Sales" table ensures that Q&A can understand queries from finance, marketing, and sales teams without confusion.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

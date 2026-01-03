@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL 300</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Multiple Questions -->
+  <!-- Question 291 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 291</h1>
+    <div class="question">
+      <p>Imagine you work as a Power BI developer for a large retail company with multiple departments. Each department creates its own sales reports, but they all need to adhere to the company's branding guidelines. <br>
+You need to create a consistent look and feel across all reports, including specific font styles, color palettes, and chart formatting (e.g., bar chart column width, axis label styles). <br>
+Task: What is the most efficient and effective way to achieve a consistent branded theme across multiple Power BI reports?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. From Power BI Desktop, customize the current theme.</li>
+        <li>B. From Power BI Desktop, use a built-in report theme.</li>
+        <li>C. Create a theme as a PBIVIZ file and import the theme into Power BI Desktop.</li>
+        <li>D. Create a theme as a JSON file and import the theme into Power BI Desktop.</li>
+      </ul>
+      <ul>
+        <li>A. From Power BI Desktop, customize the current theme.</li>
+        <li>B. From Power BI Desktop, use a built-in report theme.</li>
+        <li>C. Create a theme as a PBIVIZ file and import the theme into Power BI Desktop.</li>
+        <li class="active">D. Create a theme as a JSON file and import the theme into Power BI Desktop.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A JSON theme allows you to centrally define fonts, colors, and visual formatting and reuse it across multiple reports. This ensures consistent branding, is easy to share and update, and is the recommended enterprise approach compared to manual customization or built-in themes.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 292 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 292</h1>
+    <div class="question">
+      <p>In the process of designing a report centered on the sales metrics of products alongside their customer attrition rates, your objective is to configure the visualization to exclusively showcase the top eight products that are experiencing the highest levels of customer attrition. <br>
+Proposed Solution: You implement a Top N filter at the visual level to display the top eight products. <br>
+Is this an appropriate solution?
+      </p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Yes</li>
+        <li>B. No</li>
+      </ul>
+      <ul>
+        <li class="active">A. Yes</li>
+        <li>B. No</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A Top N filter applied at the visual level is the correct approach to display only the top eight products based on highest customer attrition. It dynamically ranks products by the selected attrition measure and limits the visual to the top results, matching the requirement precisely.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 293 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 293</h1>
+    <div class="question">
+      <p>You manage a dynamic online retail platform database hosted on Azure SQL Database, tracking order details and customer interactions in real-time. <br>
+To enhance customer satisfaction and operational efficiency, you aim to identify and address any anomalies in order processing times within minutes of their occurrence. What should you do?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Implement a complex stored procedure.</li>
+        <li>B. Adjust the query performance optimization settings.</li>
+        <li>C. Utilize the Import data connectivity mode in Power BI.</li>
+        <li>D. Opt for the DirectQuery data connectivity mode in Power BI.</li>
+      </ul>
+      <ul>
+        <li>A. Implement a complex stored procedure.</li>
+        <li>B. Adjust the query performance optimization settings.</li>
+        <li>C. Utilize the Import data connectivity mode in Power BI.</li>
+        <li class="active">D. Opt for the DirectQuery data connectivity mode in Power BI.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> DirectQuery queries Azure SQL Database in near real time, ensuring anomalies in order processing times are visible within minutes. Import mode relies on scheduled refreshes, which cannot provide the immediacy required for real-time operational monitoring.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 294 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 294</h1>
+    <div class="question">
+      <p>You're a data analyst for a bookstore chain. You have two datasets stored in Excel files: <br>
+- "Books": Contains information about each book (ISBN, Title, Author, Genre, Price). <br>
+- "Inventory": Contains data about the stock levels of each book at different store locations (ISBN, StoreID, Quantity). <br>
+You need to combine these datasets in Power Query to analyze which books are selling well in each store and identify any potential stock shortages. The combined dataset should include all the columns from both datasets. <br>
+Task: Which Power Query operation should you use to combine the "Books" and "Inventory" datasets?
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Merge Queries</li>
+        <li>B. Combine Files</li>
+        <li>C. Append Queries</li>
+      </ul>
+      <ul>
+        <li class="active">A. Merge Queries</li>
+        <li>B. Combine Files</li>
+        <li>C. Append Queries</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Merge Queries is used to join two tables based on a common key, in this case ISBN, and include columns from both datasets. Append is for stacking rows, and Combine Files is for consolidating multiple files with the same structure, not for relational analysis.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 295 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 295</h1>
+    <div class="question">
+      <p>Within a Power BI model, you're looking to organize items into a display folder for better management and navigation. Identify all the items that can be grouped into a display folder. Select all that apply.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Calculated column</li>
+        <li>B. Column</li>
+        <li>C. Measure</li>
+        <li>D. Hierarchies</li>
+      </ul>
+      <ul>
+        <li class="active">A. Calculated column</li>
+        <li class="active">B. Column</li>
+        <li class="active">C. Measure</li>
+        <li class="active">D. Hierarchies</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Display folders in Power BI are a metadata feature used to logically organize fields in the Fields pane without affecting the underlying data model. You can place regular columns, calculated columns, measures, and hierarchies into display folders to make large or complex models easier to navigate and more user-friendly for report authors and consumers.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 296 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 296</h1>
+    <div class="question">
+      <p>Imagine you're building a Power BI report to analyze sales data for a large retail chain with stores across the United States. You have a dataset with information about each sale, including the car model sold, the date of the sale, the region where the sale occurred, and the sales amount. To protect sensitive sales data, you need to implement Row-Level Security (RLS). This means controlling which users can see which parts of the data based on their roles within the company. <br>
+You have two specific roles to manage: <br>
+- "East Coast Sales": This role is for sales managers responsible for the East Coast region. They should only be able to see sales data from their region (e.g., New York, New Jersey, Florida). <br>
+- "Recent Sales": This role is for analysts who need to focus on recent sales trends. They should only be able to see sales data from the last 12 months, regardless of the region. <br>
+Now, let's say you have a user named Sarah who needs access to sales data. Sarah is both a sales manager for the East Coast region and an analyst who needs to review recent sales trends. So, she belongs to both the "East Coast Sales" and "Recent Sales" roles.
+Question: Given that Sarah is a member of both roles, what data will she be able to see in the Power BI report?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Sarah will see all sales data, regardless of region or date.</li>
+        <li>B. Sarah will see an error and will not be able to access the report.</li>
+        <li>C. Sarah will see only sales data from the East Coast regions.</li>
+        <li>D. Sarah will see only sales data from the East Coast regions within the last 12 months.</li>
+        <li>E. All sales data from the East Coast and all sales from the last 12 months</li>
+      </ul>
+      <ul>
+        <li>A. Sarah will see all sales data, regardless of region or date.</li>
+        <li>B. Sarah will see an error and will not be able to access the report.</li>
+        <li>C. Sarah will see only sales data from the East Coast regions.</li>
+        <li class="active">D. Sarah will see only sales data from the East Coast regions within the last 12 months.</li>
+        <li>E. All sales data from the East Coast and all sales from the last 12 months</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In Power BI, when a user belongs to multiple Row-Level Security roles, the filters are combined using an AND logic. This means Sarah will only see data that satisfies both role conditions at the same time, limited to East Coast sales that occurred within the last 12 months.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 297 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 297</h1>
+    <div class="question">
+      <p>Match the Power BI Service feature with its appropriate use case. <br>
+Features: <br>
+1 - Apps <br>
+2 - DirectQuery <br>
+3 - Power BI Gateway <br>
+4 - Workspaces <br>
+Use Cases: <br>
+A) Sharing a curated set of dashboards and reports with broader audiences. <br>
+B) Accessing on-premises data sources in real-time. <br>
+C) Collaborating on BI projects within a team. <br>
+D) Querying large datasets without importing them into Power BI.
+</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. 1-B, 2-D, 3-A, 4-C</li>
+        <li>B. 1-C, 2-D, 3-B, 4-A</li>
+        <li>C. 1-A, 2-C, 3-B, 4-D</li>
+        <li>D. 1-A, 2-D, 3-B, 4-C</li>
+      </ul>
+      <ul>
+        <li>A. 1-B, 2-D, 3-A, 4-C</li>
+        <li>B. 1-C, 2-D, 3-B, 4-A</li>
+        <li>C. 1-A, 2-C, 3-B, 4-D</li>
+        <li class="active">D. 1-A, 2-D, 3-B, 4-C</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Apps are used to distribute curated dashboards and reports to a wider audience. DirectQuery queries data at the source without importing large datasets. The Power BI Gateway enables real-time access to on-premises data. Workspaces support collaboration among team members on BI content.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 298 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 298</h1>
+    <div class="question">
+      <p>Which of the following is NOT a data connectivity mode in Power BI?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Import</li>
+        <li>B. DirectQuery</li>
+        <li>C. LiveQuery</li>
+        <li>D. Connect Live</li>
+      </ul>
+      <ul>
+        <li>A. Import</li>
+        <li>B. DirectQuery</li>
+        <li class="active">C. LiveQuery</li>
+        <li>D. Connect Live</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> Power BI data connectivity modes include Import, DirectQuery, and Live connection (often shown as Connect live). “LiveQuery” is not an official data connectivity mode in Power BI; it is a common but incorrect term used informally to describe live connections.</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 299 -->
+  <!-- <div class="questionFormat">
+    <h1>Question 299</h1>
+    <div class="question">
+      <p>To create a custom column in Power BI using DAX that concatenates the first three letters of a product name with the year of the sale date, you should use the ___________ function combined with ___________.</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. LEFT(); FORMAT()</li>
+        <li>B. CONCATENATE(); YEAR()</li>
+        <li>C. SUBSTITUTE(); TEXT()</li>
+        <li>D. RIGHT(); DATE()</li>
+      </ul>
+      <ul>
+        <li class="active">A. LEFT(); FORMAT()</li>
+        <li>B. CONCATENATE(); YEAR()</li>
+        <li>C. SUBSTITUTE(); TEXT()</li>
+        <li>D. RIGHT(); DATE()</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> In DAX, LEFT() extracts the first N characters from a text string (here, the first three letters of the product name), and FORMAT() converts a date or number into a text string (here, extracting the year from the sale date). Combining these functions allows you to create a custom column like LEFT(ProductName,3) & FORMAT(SaleDate,"YYYY").</p>
+    </div>
+  </div> -->
+
+  <!-- Multiple Questions -->
+  <!-- Question 300 -->
+  <div class="questionFormat">
+    <h1>Question 300</h1>
+    <div class="question">
+      <p>In your Power BI project, you are tasked with integrating customer information and order details into a unified dataset for analysis. You are working with two tables: CustomerInfo, which holds detailed information on customers, and OrderDetails, which records each customer's transactions. <br>
+Your objective is to consolidate these tables into a single, navigable dataset while ensuring no customer information is omitted, even if some customers have not placed orders. What action should you take to achieve this?</p>
+    </div>
+    <div class="answer">
+      <ul>
+        <li>A. Generate a composite key.</li>
+        <li>B. Concatenate the queries for CustomerInfo and OrderDetails.</li>
+        <li>C. Activate "Assume Referential Integrity" option in Power BI.</li>
+        <li>D. Combine CustomerInfo with OrderDetails using a left-outer join.</li>
+      </ul>
+      <ul>
+        <li>A. Generate a composite key.</li>
+        <li>B. Concatenate the queries for CustomerInfo and OrderDetails.</li>
+        <li>C. Activate "Assume Referential Integrity" option in Power BI.</li>
+        <li class="active">D. Combine CustomerInfo with OrderDetails using a left-outer join.</li>
+      </ul>
+    </div>
+    <div class="explanation">
+      <p><strong>Explanation:</strong> A left-outer join ensures that all rows from the left table (CustomerInfo) are included in the resulting dataset, even if there are no matching rows in the right table (OrderDetails). This guarantees that customers without orders are still present in the unified dataset, which is essential for complete customer analysis. Concatenating queries or creating a composite key does not preserve unmatched customer records.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
